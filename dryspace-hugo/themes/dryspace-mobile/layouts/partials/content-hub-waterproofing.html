@@ -1,0 +1,428 @@
+<!-- Content Hub: Waterproofing Knowledge Center - Sophia Rodriguez Implementation -->
+<section class="content-hub py-5 bg-light" id="waterproofing-hub">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-3">Waterproofing Knowledge Center</h2>
+            <p class="lead text-muted">
+                Everything you need to know about protecting your basement, curated by our experts
+            </p>
+        </div>
+
+        <!-- Content Categories -->
+        <div class="row g-4 mb-5">
+            <!-- Beginner's Guide -->
+            <div class="col-lg-4">
+                <div class="card h-100 shadow-sm content-card" data-content-type="guide">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0">
+                            <i class="fas fa-book-open me-2"></i>Beginner's Guide
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-3">New to basement waterproofing? Start here with our comprehensive guides.</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none content-link" data-track="beginner-signs">
+                                    <i class="fas fa-arrow-right text-primary me-2"></i>
+                                    7 Warning Signs Your Basement Needs Waterproofing
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none content-link" data-track="beginner-types">
+                                    <i class="fas fa-arrow-right text-primary me-2"></i>
+                                    Interior vs. Exterior Waterproofing Explained
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none content-link" data-track="beginner-cost">
+                                    <i class="fas fa-arrow-right text-primary me-2"></i>
+                                    True Cost of Basement Waterproofing in 2025
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none content-link" data-track="beginner-diy">
+                                    <i class="fas fa-arrow-right text-primary me-2"></i>
+                                    DIY vs Professional: What You Need to Know
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="mt-3">
+                            <span class="badge bg-info">
+                                <i class="fas fa-clock me-1"></i>5 min reads
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Tools -->
+            <div class="col-lg-4">
+                <div class="card h-100 shadow-sm content-card border-primary" data-content-type="tools">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0">
+                            <i class="fas fa-calculator me-2"></i>Interactive Tools
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-3">Use our smart tools to diagnose problems and estimate costs.</p>
+                        <div class="list-group list-group-flush">
+                            <a href="#waterproofing-calculator" class="list-group-item list-group-item-action interactive-tool" data-tool="calculator">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="mb-1">Cost Calculator</h6>
+                                        <small>Get instant pricing estimates</small>
+                                    </div>
+                                    <span class="badge bg-success">Popular</span>
+                                </div>
+                            </a>
+                            <a href="#problem-diagnostic" class="list-group-item list-group-item-action interactive-tool" data-tool="diagnostic">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="mb-1">Problem Diagnostic Tool</h6>
+                                        <small>Identify your basement issues</small>
+                                    </div>
+                                    <span class="badge bg-warning">AI-Powered</span>
+                                </div>
+                            </a>
+                            <a href="#roi-calculator" class="list-group-item list-group-item-action interactive-tool" data-tool="roi">
+                                <div>
+                                    <h6 class="mb-1">ROI Calculator</h6>
+                                    <small>See your property value increase</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mt-3 text-center">
+                            <button class="btn btn-primary btn-sm" onclick="startInteractiveTour()">
+                                <i class="fas fa-play me-1"></i>Try Our Tools
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Learning -->
+            <div class="col-lg-4">
+                <div class="card h-100 shadow-sm content-card" data-content-type="video">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0">
+                            <i class="fas fa-video me-2"></i>Video Learning
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-3">Visual learner? Watch our expert tutorials and case studies.</p>
+                        <div class="video-grid">
+                            <div class="video-item mb-3">
+                                <div class="ratio ratio-16x9 mb-2">
+                                    <iframe src="about:blank" data-src="https://youtube.com/embed/demo1" 
+                                            title="Basement Waterproofing Process"
+                                            allowfullscreen
+                                            loading="lazy"></iframe>
+                                </div>
+                                <h6 class="small">The Complete Waterproofing Process</h6>
+                                <span class="badge bg-secondary">12:34</span>
+                            </div>
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <div class="video-thumbnail position-relative">
+                                        <img src="/images/video-thumb-1.jpg" alt="Emergency Response" class="img-fluid rounded">
+                                        <div class="position-absolute bottom-0 end-0 m-1">
+                                            <span class="badge bg-dark">5:22</span>
+                                        </div>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Emergency Response</p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="video-thumbnail position-relative">
+                                        <img src="/images/video-thumb-2.jpg" alt="Success Stories" class="img-fluid rounded">
+                                        <div class="position-absolute bottom-0 end-0 m-1">
+                                            <span class="badge bg-dark">8:15</span>
+                                        </div>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Success Stories</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personalized Content Recommendations -->
+        <div class="personalized-content bg-white rounded shadow-sm p-4 mb-5">
+            <h3 class="h5 mb-3">
+                <i class="fas fa-magic text-primary me-2"></i>
+                Recommended for You
+            </h3>
+            <div class="row g-3" id="personalized-recommendations">
+                <!-- Dynamic content based on user behavior -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="recommendation-card p-3 border rounded">
+                        <span class="badge bg-info mb-2">Based on your location</span>
+                        <h6>Toronto Spring Flooding Guide</h6>
+                        <p class="small text-muted mb-2">Specific tips for GTA homeowners</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="recommendation-card p-3 border rounded">
+                        <span class="badge bg-success mb-2">Trending Now</span>
+                        <h6>2025 City Rebate Changes</h6>
+                        <p class="small text-muted mb-2">What you need to know</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="recommendation-card p-3 border rounded">
+                        <span class="badge bg-warning mb-2">Quick Read</span>
+                        <h6>5-Minute Basement Check</h6>
+                        <p class="small text-muted mb-2">Monthly maintenance tips</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Start Check</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="recommendation-card p-3 border rounded">
+                        <span class="badge bg-danger mb-2">Urgent</span>
+                        <h6>Emergency Prep Checklist</h6>
+                        <p class="small text-muted mb-2">Be ready for flooding</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Get Checklist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Journey Progress -->
+        <div class="content-journey bg-primary bg-opacity-10 rounded p-4">
+            <h4 class="h5 mb-3">Your Learning Journey</h4>
+            <div class="progress mb-3" style="height: 25px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 35%;" 
+                     aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                    <span class="fw-bold">35% Complete</span>
+                </div>
+            </div>
+            <div class="row g-3 text-center">
+                <div class="col-4">
+                    <div class="journey-milestone completed">
+                        <i class="fas fa-check-circle text-success fs-3 mb-2"></i>
+                        <p class="small mb-0">Basics Mastered</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="journey-milestone active">
+                        <i class="fas fa-book text-primary fs-3 mb-2"></i>
+                        <p class="small mb-0">Advanced Topics</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="journey-milestone">
+                        <i class="fas fa-trophy text-muted fs-3 mb-2"></i>
+                        <p class="small mb-0">Expert Level</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Micro-Learning Popup -->
+<div class="modal fade" id="microLearningModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">
+                    <i class="fas fa-lightbulb me-2"></i>Quick Tip
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="microLearningContent">
+                    <!-- Dynamic micro-learning content -->
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-primary btn-sm" onclick="nextMicroLesson()">
+                        Next Tip <i class="fas fa-arrow-right ms-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.content-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.content-link {
+    color: #212529;
+    transition: color 0.2s ease;
+}
+
+.content-link:hover {
+    color: #0d6efd;
+}
+
+.interactive-tool {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.interactive-tool:hover {
+    background-color: #f8f9fa;
+}
+
+.video-thumbnail {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0.375rem;
+}
+
+.video-thumbnail img {
+    transition: transform 0.3s ease;
+}
+
+.video-thumbnail:hover img {
+    transform: scale(1.05);
+}
+
+.recommendation-card {
+    transition: all 0.3s ease;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.journey-milestone {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.journey-milestone.completed,
+.journey-milestone.active {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .content-hub .card-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .video-grid .row {
+        margin-top: 1rem;
+    }
+}
+</style>
+
+<script>
+// Content engagement tracking
+document.addEventListener('DOMContentLoaded', function() {
+    // Track content interactions
+    document.querySelectorAll('.content-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const contentType = this.dataset.track;
+            // Send to analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'content_engagement', {
+                    'content_type': contentType,
+                    'content_category': 'knowledge_hub'
+                });
+            }
+        });
+    });
+
+    // Interactive tool tracking
+    document.querySelectorAll('.interactive-tool').forEach(tool => {
+        tool.addEventListener('click', function(e) {
+            const toolType = this.dataset.tool;
+            // Send to analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'tool_interaction', {
+                    'tool_type': toolType,
+                    'tool_category': 'interactive'
+                });
+            }
+        });
+    });
+
+    // Lazy load videos
+    const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const iframe = entry.target;
+                if (iframe.dataset.src) {
+                    iframe.src = iframe.dataset.src;
+                    delete iframe.dataset.src;
+                }
+            }
+        });
+    });
+
+    document.querySelectorAll('iframe[data-src]').forEach(iframe => {
+        videoObserver.observe(iframe);
+    });
+});
+
+// Micro-learning system
+let microLessons = [
+    {
+        title: "Did You Know?",
+        content: "90% of basement water problems come from poor grading around your foundation. A simple slope adjustment can prevent major issues!",
+        cta: "Check Your Grading"
+    },
+    {
+        title: "Quick Fact",
+        content: "The City of Toronto offers up to $3,400 in rebates for basement waterproofing. We handle all the paperwork for you!",
+        cta: "Learn About Rebates"
+    },
+    {
+        title: "Pro Tip",
+        content: "Check your sump pump monthly by pouring a bucket of water into the pit. It should activate immediately and drain quickly.",
+        cta: "Sump Pump Guide"
+    }
+];
+
+let currentMicroLesson = 0;
+
+function showMicroLearning() {
+    const modal = new bootstrap.Modal(document.getElementById('microLearningModal'));
+    updateMicroLessonContent();
+    modal.show();
+}
+
+function updateMicroLessonContent() {
+    const content = document.getElementById('microLearningContent');
+    const lesson = microLessons[currentMicroLesson];
+    
+    content.innerHTML = `
+        <h6>${lesson.title}</h6>
+        <p>${lesson.content}</p>
+        <a href="#" class="btn btn-outline-primary btn-sm">${lesson.cta}</a>
+    `;
+}
+
+function nextMicroLesson() {
+    currentMicroLesson = (currentMicroLesson + 1) % microLessons.length;
+    updateMicroLessonContent();
+}
+
+// Show micro-learning after 30 seconds on page
+setTimeout(() => {
+    if (!sessionStorage.getItem('microLearningShown')) {
+        showMicroLearning();
+        sessionStorage.setItem('microLearningShown', 'true');
+    }
+}, 30000);
+
+// Interactive tour
+function startInteractiveTour() {
+    // Implementation for guided tour of tools
+    alert('Interactive tour coming soon! For now, try our cost calculator below.');
+    document.getElementById('waterproofing-calculator').scrollIntoView({ behavior: 'smooth' });
+}
+</script>

@@ -1,0 +1,16 @@
+# Ignore everything
+*
+
+# But not the dryspace-hugo directory
+!dryspace-hugo/
+!dryspace-hugo/**
+
+# Hugo specific ignores within dryspace-hugo
+dryspace-hugo/public/
+dryspace-hugo/resources/_gen/
+dryspace-hugo/node_modules/
+dryspace-hugo/.hugo_build.lock
+dryspace-hugo/package-lock.json
+
+# Keep the .gitignore file itself
+!.gitignore

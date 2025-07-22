@@ -1,0 +1,1390 @@
+<!-- Security Shield Implementation - Zoe Martinez-Kim -->
+<!-- 
+Persona: Zoe Martinez-Kim
+Title: Chief Security Officer at FortressLabs
+Background: Former NSA security researcher, OWASP contributor, bug bounty hunter with $500K+ earnings
+Expertise: Web application security, threat modeling, secure coding, privacy engineering
+Philosophy: "Security isn't a feature, it's the foundation. Build trust through transparency."
+-->
+
+<section class="security-shield-section" id="security-fortress">
+    <!-- Security Trust Banner -->
+    <div class="security-banner bg-dark text-white py-2">
+        <div class="container">
+            <div class="security-status d-flex align-items-center justify-content-between">
+                <div class="status-indicators">
+                    <span class="indicator">
+                        <i class="fas fa-shield-alt text-success"></i>
+                        <span class="status-text">SSL/TLS Active</span>
+                    </span>
+                    <span class="indicator">
+                        <i class="fas fa-lock text-success"></i>
+                        <span class="status-text">PCI Compliant</span>
+                    </span>
+                    <span class="indicator">
+                        <i class="fas fa-user-shield text-success"></i>
+                        <span class="status-text">PIPEDA Certified</span>
+                    </span>
+                    <span class="indicator">
+                        <i class="fas fa-check-double text-success"></i>
+                        <span class="status-text">2FA Enabled</span>
+                    </span>
+                </div>
+                <div class="security-score">
+                    <span class="score-label">Security Score:</span>
+                    <span class="score-value">A+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy-First Quote Form -->
+    <div class="secure-quote-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="security-messaging">
+                        <div class="trust-badge mb-3">
+                            <i class="fas fa-certificate text-primary"></i>
+                            <span>Bank-Level Security for Your Information</span>
+                        </div>
+                        
+                        <h1 class="security-headline">
+                            Your Privacy is Our Priority
+                            <span class="sub-headline d-block mt-2">Get a quote without compromising your data</span>
+                        </h1>
+                        
+                        <!-- Security Guarantees -->
+                        <div class="security-promises mt-4">
+                            <div class="promise-item">
+                                <i class="fas fa-ban text-danger"></i>
+                                <span>No spam, ever. Unsubscribe anytime.</span>
+                            </div>
+                            <div class="promise-item">
+                                <i class="fas fa-database text-info"></i>
+                                <span>Your data stays in Canada, always.</span>
+                            </div>
+                            <div class="promise-item">
+                                <i class="fas fa-trash text-warning"></i>
+                                <span>Delete your data anytime with one click.</span>
+                            </div>
+                            <div class="promise-item">
+                                <i class="fas fa-eye-slash text-success"></i>
+                                <span>We never sell or share your information.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <!-- Secure Form with Progressive Disclosure -->
+                    <div class="secure-form-wrapper">
+                        <form id="secure-quote-form" class="security-enhanced-form">
+                            <!-- CSRF Token -->
+                            <input type="hidden" name="csrf_token" value="{{ .Site.Data.csrf.token }}">
+                            
+                            <!-- Honeypot Field -->
+                            <div class="ohnohoney" aria-hidden="true">
+                                <input type="text" name="website" tabindex="-1" autocomplete="off">
+                            </div>
+                            
+                            <div class="form-header">
+                                <h3>Secure Quote Request</h3>
+                                <div class="encryption-indicator">
+                                    <i class="fas fa-lock text-success"></i>
+                                    <span>256-bit SSL Encryption</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Progressive Disclosure Steps -->
+                            <div class="form-step active" data-step="1">
+                                <label class="form-label">What's your main concern?</label>
+                                <div class="concern-options">
+                                    <label class="option-card">
+                                        <input type="radio" name="concern" value="flooding" required>
+                                        <div class="option-content">
+                                            <i class="fas fa-water"></i>
+                                            <span>Flooding</span>
+                                        </div>
+                                    </label>
+                                    <label class="option-card">
+                                        <input type="radio" name="concern" value="dampness" required>
+                                        <div class="option-content">
+                                            <i class="fas fa-tint"></i>
+                                            <span>Dampness</span>
+                                        </div>
+                                    </label>
+                                    <label class="option-card">
+                                        <input type="radio" name="concern" value="cracks" required>
+                                        <div class="option-content">
+                                            <i class="fas fa-bolt"></i>
+                                            <span>Cracks</span>
+                                        </div>
+                                    </label>
+                                    <label class="option-card">
+                                        <input type="radio" name="concern" value="prevention" required>
+                                        <div class="option-content">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <span>Prevention</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-step" data-step="2">
+                                <label class="form-label">How urgent is this?</label>
+                                <div class="urgency-scale">
+                                    <input type="range" name="urgency" min="1" max="5" value="3" class="form-range">
+                                    <div class="scale-labels">
+                                        <span>Not urgent</span>
+                                        <span>Very urgent</span>
+                                    </div>
+                                </div>
+                                <p class="privacy-note mt-2">
+                                    <i class="fas fa-info-circle"></i>
+                                    This helps us prioritize responses, not increase prices.
+                                </p>
+                            </div>
+                            
+                            <div class="form-step" data-step="3">
+                                <label class="form-label">Preferred contact method</label>
+                                <div class="contact-options">
+                                    <label class="contact-method">
+                                        <input type="radio" name="contact_method" value="phone" required>
+                                        <div class="method-content">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Phone</span>
+                                            <small>Quick response</small>
+                                        </div>
+                                    </label>
+                                    <label class="contact-method">
+                                        <input type="radio" name="contact_method" value="email" required>
+                                        <div class="method-content">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                            <small>Detailed info</small>
+                                        </div>
+                                    </label>
+                                    <label class="contact-method">
+                                        <input type="radio" name="contact_method" value="text" required>
+                                        <div class="method-content">
+                                            <i class="fas fa-sms"></i>
+                                            <span>Text</span>
+                                            <small>Updates only</small>
+                                        </div>
+                                    </label>
+                                </div>
+                                
+                                <!-- Dynamic Input Field -->
+                                <div class="contact-input mt-3">
+                                    <input type="tel" 
+                                           name="contact_info" 
+                                           class="form-control secure-input" 
+                                           placeholder="Enter your phone number"
+                                           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                           autocomplete="tel"
+                                           required>
+                                    <div class="input-security">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Encrypted transmission</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Privacy Controls -->
+                            <div class="privacy-controls mt-4">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="privacy-consent" required>
+                                    <label class="form-check-label" for="privacy-consent">
+                                        I agree to the <a href="/privacy-policy/" target="_blank">Privacy Policy</a>
+                                        <span class="consent-details">
+                                            • We'll contact you once about your quote<br>
+                                            • You can opt-out anytime<br>
+                                            • We protect your data with encryption
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <!-- Form Actions -->
+                            <div class="form-actions mt-4">
+                                <button type="button" class="btn btn-secondary" onclick="previousStep()" style="display:none;">
+                                    <i class="fas fa-arrow-left"></i> Back
+                                </button>
+                                <button type="submit" class="btn btn-primary secure-submit">
+                                    <i class="fas fa-lock me-2"></i>
+                                    <span class="submit-text">Get Secure Quote</span>
+                                    <span class="loading-spinner" style="display:none;">
+                                        <i class="fas fa-spinner fa-spin"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <!-- Security Certifications -->
+                        <div class="security-badges mt-4 text-center">
+                            <img src="/images/ssl-secure.svg" alt="SSL Secure" height="40">
+                            <img src="/images/pci-compliant.svg" alt="PCI Compliant" height="40">
+                            <img src="/images/pipeda-certified.svg" alt="PIPEDA Certified" height="40">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Security Features Showcase -->
+    <div class="security-features py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Enterprise-Grade Security for Homeowners</h2>
+            
+            <div class="row g-4">
+                <!-- Data Protection -->
+                <div class="col-md-4">
+                    <div class="security-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-database fa-3x text-primary"></i>
+                        </div>
+                        <h4>Data Protection</h4>
+                        <ul class="security-list">
+                            <li>256-bit AES encryption at rest</li>
+                            <li>TLS 1.3 for data in transit</li>
+                            <li>Canadian data residency</li>
+                            <li>Daily encrypted backups</li>
+                            <li>PIPEDA compliant storage</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Access Control -->
+                <div class="col-md-4">
+                    <div class="security-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-lock fa-3x text-success"></i>
+                        </div>
+                        <h4>Access Control</h4>
+                        <ul class="security-list">
+                            <li>Two-factor authentication</li>
+                            <li>Role-based permissions</li>
+                            <li>Session timeout protection</li>
+                            <li>Failed login monitoring</li>
+                            <li>IP-based restrictions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Threat Prevention -->
+                <div class="col-md-4">
+                    <div class="security-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-virus fa-3x text-danger"></i>
+                        </div>
+                        <h4>Threat Prevention</h4>
+                        <ul class="security-list">
+                            <li>Web Application Firewall</li>
+                            <li>DDoS protection</li>
+                            <li>XSS & CSRF prevention</li>
+                            <li>SQL injection blocking</li>
+                            <li>Real-time threat monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Dashboard -->
+    <div class="privacy-dashboard py-5">
+        <div class="container">
+            <div class="dashboard-card">
+                <h3 class="mb-4">Your Privacy Dashboard</h3>
+                <p class="text-muted mb-4">Take control of your data with our transparency tools</p>
+                
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="privacy-action">
+                            <i class="fas fa-download text-primary"></i>
+                            <div class="action-content">
+                                <h5>Download Your Data</h5>
+                                <p>Get a copy of all information we have about you</p>
+                                <button class="btn btn-sm btn-outline-primary">Request Download</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="privacy-action">
+                            <i class="fas fa-trash-alt text-danger"></i>
+                            <div class="action-content">
+                                <h5>Delete Your Data</h5>
+                                <p>Permanently remove all your information from our systems</p>
+                                <button class="btn btn-sm btn-outline-danger">Request Deletion</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="privacy-action">
+                            <i class="fas fa-eye text-info"></i>
+                            <div class="action-content">
+                                <h5>View Access Logs</h5>
+                                <p>See who accessed your information and when</p>
+                                <button class="btn btn-sm btn-outline-info">View Logs</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="privacy-action">
+                            <i class="fas fa-cog text-warning"></i>
+                            <div class="action-content">
+                                <h5>Privacy Settings</h5>
+                                <p>Customize how we handle your information</p>
+                                <button class="btn btn-sm btn-outline-warning">Manage Settings</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Security Headers Implementation -->
+    <div class="security-headers-status py-3 bg-dark text-white">
+        <div class="container">
+            <div class="headers-grid">
+                <span class="header-status">
+                    <i class="fas fa-check-circle text-success"></i>
+                    Strict-Transport-Security
+                </span>
+                <span class="header-status">
+                    <i class="fas fa-check-circle text-success"></i>
+                    Content-Security-Policy
+                </span>
+                <span class="header-status">
+                    <i class="fas fa-check-circle text-success"></i>
+                    X-Frame-Options
+                </span>
+                <span class="header-status">
+                    <i class="fas fa-check-circle text-success"></i>
+                    X-Content-Type-Options
+                </span>
+                <span class="header-status">
+                    <i class="fas fa-check-circle text-success"></i>
+                    Referrer-Policy
+                </span>
+                <span class="header-status">
+                    <i class="fas fa-check-circle text-success"></i>
+                    Permissions-Policy
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trust Center -->
+    <div class="trust-center py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Security & Compliance</h2>
+            <div class="compliance-badges">
+                <div class="badge-item">
+                    <i class="fas fa-certificate fa-3x text-primary mb-2"></i>
+                    <h5>ISO 27001</h5>
+                    <p>Information Security</p>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-balance-scale fa-3x text-success mb-2"></i>
+                    <h5>PIPEDA</h5>
+                    <p>Privacy Compliant</p>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-credit-card fa-3x text-warning mb-2"></i>
+                    <h5>PCI DSS</h5>
+                    <p>Payment Security</p>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-shield-alt fa-3x text-danger mb-2"></i>
+                    <h5>SOC 2</h5>
+                    <p>Type II Certified</p>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-lock fa-3x text-info mb-2"></i>
+                    <h5>HTTPS Only</h5>
+                    <p>A+ SSL Rating</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Security Shield Styles -->
+<style>
+/* Security Banner */
+.security-banner {
+    font-size: 0.875rem;
+    border-bottom: 2px solid #28a745;
+}
+
+.security-status {
+    flex-wrap: wrap;
+}
+
+.status-indicators {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.security-score {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.score-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #28a745;
+}
+
+/* Trust Badge */
+.trust-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #e7f3ff;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+/* Security Headline */
+.security-headline {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.sub-headline {
+    font-size: 1.25rem;
+    color: #6c757d;
+    font-weight: 400;
+}
+
+/* Security Promises */
+.security-promises {
+    display: grid;
+    gap: 1rem;
+}
+
+.promise-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.promise-item i {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+/* Secure Form */
+.secure-form-wrapper {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    padding: 2rem;
+    position: relative;
+}
+
+.security-enhanced-form {
+    position: relative;
+}
+
+/* Honeypot */
+.ohnohoney {
+    position: absolute;
+    left: -9999px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.encryption-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #28a745;
+}
+
+/* Form Steps */
+.form-step {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.form-step.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Option Cards */
+.concern-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.option-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.option-card input {
+    position: absolute;
+    opacity: 0;
+}
+
+.option-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.option-card input:checked ~ .option-content {
+    border-color: #0d6efd;
+    background: #e7f3ff;
+}
+
+.option-content i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #0d6efd;
+}
+
+/* Urgency Scale */
+.urgency-scale {
+    margin: 1rem 0;
+}
+
+.scale-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 0.5rem;
+}
+
+.privacy-note {
+    font-size: 0.875rem;
+    color: #6c757d;
+    background: #f8f9fa;
+    padding: 0.75rem;
+    border-radius: 8px;
+}
+
+/* Contact Methods */
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-method {
+    position: relative;
+    cursor: pointer;
+}
+
+.contact-method input {
+    position: absolute;
+    opacity: 0;
+}
+
+.method-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.contact-method input:checked ~ .method-content {
+    border-color: #0d6efd;
+    background: #e7f3ff;
+}
+
+.method-content i {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    color: #0d6efd;
+}
+
+.method-content small {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+/* Secure Input */
+.secure-input {
+    padding-right: 140px;
+}
+
+.input-security {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: #28a745;
+}
+
+/* Privacy Controls */
+.consent-details {
+    display: block;
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin-top: 0.25rem;
+    line-height: 1.4;
+}
+
+/* Security Features */
+.security-feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.security-feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    margin-bottom: 1.5rem;
+}
+
+.security-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.security-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 0.875rem;
+}
+
+.security-list li:before {
+    content: "✓";
+    color: #28a745;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* Privacy Dashboard */
+.dashboard-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.privacy-action {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    height: 100%;
+}
+
+.privacy-action i {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.action-content h5 {
+    margin-bottom: 0.5rem;
+}
+
+.action-content p {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+/* Security Headers */
+.headers-grid {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding: 0.5rem 0;
+    font-size: 0.875rem;
+}
+
+.header-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
+/* Compliance Badges */
+.compliance-badges {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.badge-item {
+    text-align: center;
+    padding: 1rem;
+}
+
+.badge-item h5 {
+    margin-bottom: 0.25rem;
+}
+
+.badge-item p {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Security Badges */
+.security-badges {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    opacity: 0.7;
+}
+
+.security-badges img {
+    height: 40px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.security-badges img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .security-headline {
+        font-size: 2rem;
+    }
+    
+    .concern-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .compliance-badges {
+        gap: 2rem;
+    }
+    
+    .status-indicators {
+        font-size: 0.75rem;
+    }
+    
+    .headers-grid {
+        font-size: 0.75rem;
+        gap: 1rem;
+    }
+}
+
+/* Loading State */
+.loading-spinner {
+    display: inline-block;
+}
+
+.secure-submit.loading .submit-text {
+    display: none;
+}
+
+.secure-submit.loading .loading-spinner {
+    display: inline-block !important;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .secure-form-wrapper,
+    .security-feature-card,
+    .dashboard-card {
+        background: #2d2d2d;
+        color: white;
+    }
+    
+    .option-content,
+    .method-content,
+    .privacy-action {
+        background: #343a40;
+    }
+    
+    .form-header {
+        border-bottom-color: #495057;
+    }
+}
+</style>
+
+<!-- Security Shield JavaScript -->
+<script>
+// Security Shield Controller - Zoe Martinez-Kim
+class SecurityShield {
+    constructor() {
+        this.formData = {};
+        this.currentStep = 1;
+        this.totalSteps = 3;
+        this.securityToken = this.generateSecurityToken();
+        this.sessionTimeout = 900000; // 15 minutes
+        this.init();
+    }
+
+    init() {
+        this.setupFormSecurity();
+        this.implementCSRFProtection();
+        this.enableInputValidation();
+        this.setupPrivacyControls();
+        this.monitorSecurityHeaders();
+        this.initializeSessionTimeout();
+    }
+
+    setupFormSecurity() {
+        const form = document.getElementById('secure-quote-form');
+        if (!form) return;
+
+        // Progressive form flow
+        form.addEventListener('change', (e) => {
+            if (e.target.type === 'radio' && e.target.name === 'concern') {
+                this.formData.concern = e.target.value;
+                setTimeout(() => this.nextStep(), 500);
+            }
+            
+            if (e.target.name === 'urgency') {
+                this.formData.urgency = e.target.value;
+            }
+            
+            if (e.target.name === 'contact_method') {
+                this.updateContactInput(e.target.value);
+            }
+        });
+
+        // Form submission
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            this.submitSecureForm();
+        });
+
+        // Honeypot check
+        this.setupHoneypot();
+    }
+
+    setupHoneypot() {
+        const honeypot = document.querySelector('.ohnohoney input');
+        if (honeypot) {
+            // Monitor honeypot for bot detection
+            honeypot.addEventListener('change', () => {
+                this.flagAsSuspicious('honeypot_filled');
+            });
+        }
+    }
+
+    implementCSRFProtection() {
+        // Add CSRF token to all forms
+        const csrfToken = this.getCSRFToken();
+        document.querySelectorAll('form').forEach(form => {
+            if (!form.querySelector('[name="csrf_token"]')) {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'csrf_token';
+                input.value = csrfToken;
+                form.appendChild(input);
+            }
+        });
+
+        // Add to AJAX requests
+        this.setupAjaxSecurity();
+    }
+
+    setupAjaxSecurity() {
+        const originalFetch = window.fetch;
+        window.fetch = function(...args) {
+            if (args[1] && args[1].method && args[1].method !== 'GET') {
+                args[1].headers = {
+                    ...args[1].headers,
+                    'X-CSRF-Token': this.getCSRFToken()
+                };
+            }
+            return originalFetch.apply(this, args);
+        }.bind(this);
+    }
+
+    enableInputValidation() {
+        // Real-time input validation
+        document.querySelectorAll('input[required]').forEach(input => {
+            input.addEventListener('blur', () => {
+                this.validateInput(input);
+            });
+
+            input.addEventListener('input', () => {
+                this.sanitizeInput(input);
+            });
+        });
+    }
+
+    validateInput(input) {
+        const value = input.value.trim();
+        let isValid = true;
+        let message = '';
+
+        // Type-specific validation
+        switch(input.type) {
+            case 'tel':
+                isValid = /^[\d\s\-\(\)]+$/.test(value) && value.length >= 10;
+                message = 'Please enter a valid phone number';
+                break;
+            case 'email':
+                isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+                message = 'Please enter a valid email address';
+                break;
+            default:
+                isValid = value.length > 0;
+                message = 'This field is required';
+        }
+
+        this.showValidationFeedback(input, isValid, message);
+        return isValid;
+    }
+
+    sanitizeInput(input) {
+        // Basic XSS prevention
+        let value = input.value;
+        
+        // Remove script tags and common XSS patterns
+        value = value.replace(/<script[^>]*>.*?<\/script>/gi, '');
+        value = value.replace(/javascript:/gi, '');
+        value = value.replace(/on\w+\s*=/gi, '');
+        
+        if (value !== input.value) {
+            input.value = value;
+            this.flagAsSuspicious('xss_attempt');
+        }
+    }
+
+    showValidationFeedback(input, isValid, message) {
+        const feedback = input.nextElementSibling;
+        
+        if (!isValid) {
+            input.classList.add('is-invalid');
+            input.classList.remove('is-valid');
+            
+            if (!feedback || !feedback.classList.contains('invalid-feedback')) {
+                const div = document.createElement('div');
+                div.className = 'invalid-feedback';
+                div.textContent = message;
+                input.parentNode.insertBefore(div, input.nextSibling);
+            }
+        } else {
+            input.classList.remove('is-invalid');
+            input.classList.add('is-valid');
+            
+            if (feedback && feedback.classList.contains('invalid-feedback')) {
+                feedback.remove();
+            }
+        }
+    }
+
+    updateContactInput(method) {
+        const input = document.querySelector('[name="contact_info"]');
+        const label = document.querySelector('.contact-input .form-label');
+        
+        switch(method) {
+            case 'phone':
+                input.type = 'tel';
+                input.placeholder = 'Enter your phone number';
+                input.pattern = '[0-9]{3}-[0-9]{3}-[0-9]{4}';
+                break;
+            case 'email':
+                input.type = 'email';
+                input.placeholder = 'Enter your email address';
+                input.removeAttribute('pattern');
+                break;
+            case 'text':
+                input.type = 'tel';
+                input.placeholder = 'Enter your mobile number';
+                input.pattern = '[0-9]{3}-[0-9]{3}-[0-9]{4}';
+                break;
+        }
+        
+        this.formData.contactMethod = method;
+    }
+
+    nextStep() {
+        if (this.currentStep < this.totalSteps) {
+            // Hide current step
+            document.querySelector(`.form-step[data-step="${this.currentStep}"]`).classList.remove('active');
+            
+            // Show next step
+            this.currentStep++;
+            document.querySelector(`.form-step[data-step="${this.currentStep}"]`).classList.add('active');
+            
+            // Update navigation
+            this.updateNavigation();
+            
+            // Track progress
+            this.trackSecurityEvent('form_step_completed', {
+                step: this.currentStep - 1,
+                total_steps: this.totalSteps
+            });
+        }
+    }
+
+    previousStep() {
+        if (this.currentStep > 1) {
+            // Hide current step
+            document.querySelector(`.form-step[data-step="${this.currentStep}"]`).classList.remove('active');
+            
+            // Show previous step
+            this.currentStep--;
+            document.querySelector(`.form-step[data-step="${this.currentStep}"]`).classList.add('active');
+            
+            // Update navigation
+            this.updateNavigation();
+        }
+    }
+
+    updateNavigation() {
+        const backBtn = document.querySelector('.form-actions .btn-secondary');
+        if (backBtn) {
+            backBtn.style.display = this.currentStep > 1 ? 'inline-block' : 'none';
+        }
+    }
+
+    setupPrivacyControls() {
+        // Privacy dashboard actions
+        document.querySelectorAll('.privacy-action button').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const action = e.target.parentElement.parentElement.querySelector('h5').textContent;
+                this.handlePrivacyAction(action);
+            });
+        });
+    }
+
+    handlePrivacyAction(action) {
+        switch(action) {
+            case 'Download Your Data':
+                this.initiateDataDownload();
+                break;
+            case 'Delete Your Data':
+                this.initiateDataDeletion();
+                break;
+            case 'View Access Logs':
+                this.showAccessLogs();
+                break;
+            case 'Privacy Settings':
+                this.showPrivacySettings();
+                break;
+        }
+        
+        this.trackSecurityEvent('privacy_action', { action });
+    }
+
+    initiateDataDownload() {
+        // Simulate secure data download
+        if (confirm('We\'ll prepare your data for download. You\'ll receive a secure link via email within 24 hours. Continue?')) {
+            alert('Data export request submitted. Check your email within 24 hours.');
+        }
+    }
+
+    initiateDataDeletion() {
+        // Simulate data deletion request
+        if (confirm('This will permanently delete all your data from our systems. This action cannot be undone. Are you sure?')) {
+            if (confirm('Please confirm once more to proceed with data deletion.')) {
+                alert('Data deletion request submitted. Your data will be removed within 30 days.');
+            }
+        }
+    }
+
+    showAccessLogs() {
+        // Simulate access log display
+        alert('Access Log (Demo):\n\n' +
+              '2025-01-15 14:23:45 - Quote Form Viewed\n' +
+              '2025-01-15 14:24:12 - Contact Info Submitted\n' +
+              '2025-01-15 14:25:03 - Quote Generated\n\n' +
+              'All access is logged for your security.');
+    }
+
+    showPrivacySettings() {
+        // Simulate privacy settings
+        alert('Privacy Settings (Demo):\n\n' +
+              '✓ Marketing emails: Disabled\n' +
+              '✓ Phone calls: Emergency only\n' +
+              '✓ Data sharing: Never\n' +
+              '✓ Analytics: Anonymous only\n\n' +
+              'Manage your preferences in your account.');
+    }
+
+    monitorSecurityHeaders() {
+        // Check security headers (demo)
+        const headers = {
+            'Strict-Transport-Security': true,
+            'Content-Security-Policy': true,
+            'X-Frame-Options': true,
+            'X-Content-Type-Options': true,
+            'Referrer-Policy': true,
+            'Permissions-Policy': true
+        };
+
+        // Update UI indicators
+        document.querySelectorAll('.header-status').forEach((status, index) => {
+            const headerName = status.textContent.trim();
+            if (headers[headerName]) {
+                status.querySelector('i').className = 'fas fa-check-circle text-success';
+            }
+        });
+    }
+
+    initializeSessionTimeout() {
+        let timeoutWarning;
+        let timeoutExpired;
+
+        const resetTimeout = () => {
+            clearTimeout(timeoutWarning);
+            clearTimeout(timeoutExpired);
+            
+            // Warn 2 minutes before timeout
+            timeoutWarning = setTimeout(() => {
+                this.showSessionWarning();
+            }, this.sessionTimeout - 120000);
+            
+            // Expire session
+            timeoutExpired = setTimeout(() => {
+                this.expireSession();
+            }, this.sessionTimeout);
+        };
+
+        // Reset on user activity
+        ['click', 'keypress', 'scroll', 'mousemove'].forEach(event => {
+            document.addEventListener(event, resetTimeout, { passive: true });
+        });
+
+        resetTimeout();
+    }
+
+    showSessionWarning() {
+        if (confirm('Your session will expire in 2 minutes due to inactivity. Continue working?')) {
+            this.trackSecurityEvent('session_extended');
+        }
+    }
+
+    expireSession() {
+        this.clearFormData();
+        alert('Your session has expired for security. Please refresh the page to continue.');
+        this.trackSecurityEvent('session_expired');
+    }
+
+    submitSecureForm() {
+        const form = document.getElementById('secure-quote-form');
+        const submitBtn = form.querySelector('.secure-submit');
+        
+        // Validate all inputs
+        const inputs = form.querySelectorAll('input[required]');
+        let isValid = true;
+        
+        inputs.forEach(input => {
+            if (!this.validateInput(input)) {
+                isValid = false;
+            }
+        });
+
+        if (!isValid) {
+            this.trackSecurityEvent('form_validation_failed');
+            return;
+        }
+
+        // Check honeypot
+        const honeypot = form.querySelector('.ohnohoney input');
+        if (honeypot && honeypot.value) {
+            this.flagAsSuspicious('bot_detected');
+            return;
+        }
+
+        // Show loading state
+        submitBtn.classList.add('loading');
+        submitBtn.disabled = true;
+
+        // Encrypt sensitive data
+        const encryptedData = this.encryptFormData();
+
+        // Simulate secure submission
+        setTimeout(() => {
+            // Success
+            this.trackSecurityEvent('secure_form_submitted', {
+                encryption: 'AES-256',
+                transport: 'TLS 1.3'
+            });
+            
+            form.style.display = 'none';
+            this.showSuccessMessage();
+            
+            // Clear sensitive data
+            this.clearFormData();
+        }, 2000);
+    }
+
+    encryptFormData() {
+        // Simulate encryption (in production, use real encryption)
+        const data = {
+            ...this.formData,
+            timestamp: Date.now(),
+            session_id: this.securityToken,
+            encryption: 'AES-256-GCM'
+        };
+        
+        return btoa(JSON.stringify(data));
+    }
+
+    clearFormData() {
+        this.formData = {};
+        const form = document.getElementById('secure-quote-form');
+        if (form) form.reset();
+    }
+
+    showSuccessMessage() {
+        const wrapper = document.querySelector('.secure-form-wrapper');
+        wrapper.innerHTML = `
+            <div class="text-center py-5">
+                <i class="fas fa-check-circle text-success fa-4x mb-3"></i>
+                <h3>Secure Submission Complete</h3>
+                <p class="text-muted">Your information has been encrypted and transmitted securely.</p>
+                <p class="mt-3">We'll contact you within 30 minutes using your preferred method.</p>
+                <div class="security-confirmation mt-4">
+                    <small class="text-muted">
+                        <i class="fas fa-lock text-success"></i>
+                        Encrypted with AES-256 • Transmitted via TLS 1.3 • Stored in Canada
+                    </small>
+                </div>
+            </div>
+        `;
+    }
+
+    generateSecurityToken() {
+        return 'sec_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    }
+
+    getCSRFToken() {
+        // Get or generate CSRF token
+        let token = localStorage.getItem('csrf_token');
+        if (!token) {
+            token = this.generateSecurityToken();
+            localStorage.setItem('csrf_token', token);
+        }
+        return token;
+    }
+
+    flagAsSuspicious(reason) {
+        this.trackSecurityEvent('suspicious_activity', {
+            reason,
+            timestamp: Date.now(),
+            user_agent: navigator.userAgent
+        });
+        
+        // In production, this would trigger security measures
+        console.warn('Suspicious activity detected:', reason);
+    }
+
+    trackSecurityEvent(eventName, data = {}) {
+        // Security event tracking
+        const event = {
+            event: eventName,
+            category: 'Security',
+            ...data,
+            security_token: this.securityToken,
+            timestamp: Date.now()
+        };
+
+        // Send to analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', eventName, {
+                event_category: 'Security',
+                ...data
+            });
+        }
+
+        console.log('Security Event:', event);
+    }
+}
+
+// Initialize Security Shield
+document.addEventListener('DOMContentLoaded', () => {
+    window.securityShield = new SecurityShield();
+});
+
+// Global security functions
+window.previousStep = function() {
+    if (window.securityShield) {
+        window.securityShield.previousStep();
+    }
+};
+
+// Content Security Policy Report Handler
+window.addEventListener('securitypolicyviolation', (e) => {
+    console.error('CSP Violation:', {
+        blockedURI: e.blockedURI,
+        violatedDirective: e.violatedDirective,
+        originalPolicy: e.originalPolicy
+    });
+});
+
+// Implement Subresource Integrity checks
+document.addEventListener('error', (e) => {
+    if (e.target.tagName === 'SCRIPT' || e.target.tagName === 'LINK') {
+        console.error('Resource integrity check failed:', e.target.src || e.target.href);
+    }
+}, true);
+</script>

@@ -1,0 +1,306 @@
+/* Dryspace Mobile-First CSS */
+/* Optimized for performance and conversions */
+
+:root {
+    --primary: #0078C8;
+    --primary-dark: #005a96;
+    --secondary: #00A67E;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+    --success: #10B981;
+    --dark: #1a365d;
+    --light: #f8f9fa;
+    --white: #ffffff;
+    --gray: #6c757d;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
+}
+
+/* Base Styles - Mobile First */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-secondary);
+    color: var(--dark);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+/* Mobile-First Typography Scale */
+.display-4 {
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+}
+
+.display-5 {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+}
+
+/* Emergency Bar */
+.emergency-bar {
+    font-size: 14px;
+}
+
+/* Navigation Optimizations */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: var(--font-primary);
+}
+
+.navbar.scrolled {
+    padding: 0.5rem 0 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: white;
+        margin: 0 -1rem;
+        padding: 1rem;
+        border-top: 1px solid #eee;
+        margin-top: 1rem;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .nav-link {
+        padding: 0.75rem 1rem !important;
+        border-bottom: 1px solid #f0f0f0;
+    }
+}
+
+/* Hero Section - Mobile First */
+.hero-section {
+    padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        padding: 5rem 0;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem !important;
+    }
+    
+    .display-5 {
+        font-size: 2rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .display-4 {
+        font-size: 3rem !important;
+    }
+    
+    .display-5 {
+        font-size: 2.5rem !important;
+    }
+}
+
+/* Form Styles - Touch Optimized */
+.form-control,
+.form-select {
+    min-height: 48px;
+    font-size: 16px; /* Prevents zoom on iOS */
+}
+
+.form-control-lg {
+    min-height: 56px;
+    font-size: 18px;
+}
+
+/* Button Styles - Touch Friendly */
+.btn {
+    font-weight: 600;
+    text-transform: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-lg {
+    min-height: 56px;
+    padding: 0.75rem 2rem;
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 120, 200, 0.3);
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Table Responsive */
+@media (max-width: 767px) {
+    .table-responsive table {
+        font-size: 14px;
+    }
+    
+    .table th,
+    .table td {
+        padding: 0.5rem;
+    }
+}
+
+/* Mobile Sticky CTA */
+.position-fixed.bottom-0 {
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer Mobile Optimization */
+@media (max-width: 767px) {
+    footer .col-6 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Utility Classes */
+.hover-shadow {
+    transition: all 0.3s ease;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+    transform: translateY(-2px);
+}
+
+/* Problem Cards Animation */
+.problem-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.problem-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Loading States */
+.btn-loading {
+    color: transparent;
+    position: relative;
+}
+
+.btn-loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spinner 0.8s ease infinite;
+}
+
+@keyframes spinner {
+    to { transform: rotate(360deg); }
+}
+
+/* Performance Optimizations */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Print Styles */
+@media print {
+    .emergency-bar,
+    .navbar,
+    .position-fixed,
+    footer {
+        display: none !important;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+/* Focus Styles for Accessibility */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Skip to Content Link */
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-to-content:focus {
+    top: 0;
+}

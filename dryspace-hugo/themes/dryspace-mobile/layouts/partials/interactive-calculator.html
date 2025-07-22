@@ -1,0 +1,712 @@
+<!-- Interactive Waterproofing Cost Calculator - Sophia Rodriguez Implementation -->
+<section class="calculator-section py-5 bg-white" id="waterproofing-calculator">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-lg">
+                    <div class="card-header bg-primary text-white text-center py-4">
+                        <h2 class="h3 mb-2">
+                            <i class="fas fa-calculator me-2"></i>
+                            Instant Waterproofing Cost Calculator
+                        </h2>
+                        <p class="mb-0">Get accurate pricing in under 60 seconds</p>
+                    </div>
+                    <div class="card-body p-4">
+                        <!-- Step Progress -->
+                        <div class="calculator-progress mb-4">
+                            <div class="progress" style="height: 30px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 20%;" 
+                                     id="calculatorProgress">
+                                    Step 1 of 5
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Calculator Steps -->
+                        <form id="waterproofingCalculator">
+                            <!-- Step 1: Problem Type -->
+                            <div class="calculator-step active" data-step="1">
+                                <h4 class="mb-4">What's your main basement issue?</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="problem-option">
+                                            <input type="radio" name="problem" value="water-leaking" class="d-none">
+                                            <div class="card h-100 text-center p-3 problem-card">
+                                                <i class="fas fa-water text-primary fs-1 mb-2"></i>
+                                                <h6>Water Leaking</h6>
+                                                <small class="text-muted">Visible water or flooding</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="problem-option">
+                                            <input type="radio" name="problem" value="damp-walls" class="d-none">
+                                            <div class="card h-100 text-center p-3 problem-card">
+                                                <i class="fas fa-tint text-warning fs-1 mb-2"></i>
+                                                <h6>Damp/Wet Walls</h6>
+                                                <small class="text-muted">Moisture or condensation</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="problem-option">
+                                            <input type="radio" name="problem" value="foundation-cracks" class="d-none">
+                                            <div class="card h-100 text-center p-3 problem-card">
+                                                <i class="fas fa-exclamation-triangle text-danger fs-1 mb-2"></i>
+                                                <h6>Foundation Cracks</h6>
+                                                <small class="text-muted">Visible cracks in walls</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="problem-option">
+                                            <input type="radio" name="problem" value="preventive" class="d-none">
+                                            <div class="card h-100 text-center p-3 problem-card">
+                                                <i class="fas fa-shield-alt text-success fs-1 mb-2"></i>
+                                                <h6>Preventive Care</h6>
+                                                <small class="text-muted">No issues yet</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Basement Size -->
+                            <div class="calculator-step" data-step="2">
+                                <h4 class="mb-4">What's your basement size?</h4>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-8">
+                                        <div class="mb-4">
+                                            <label class="form-label">Square Footage</label>
+                                            <div class="input-group input-group-lg">
+                                                <input type="number" class="form-control" id="basementSize" 
+                                                       placeholder="e.g., 800" min="100" max="5000">
+                                                <span class="input-group-text">sq ft</span>
+                                            </div>
+                                            <small class="text-muted">Not sure? Use the slider below for estimates</small>
+                                        </div>
+                                        <div class="size-selector mb-3">
+                                            <input type="range" class="form-range" id="sizeSlider" 
+                                                   min="400" max="2000" step="100" value="800">
+                                            <div class="d-flex justify-content-between">
+                                                <small>Small (400)</small>
+                                                <small>Medium (1200)</small>
+                                                <small>Large (2000+)</small>
+                                            </div>
+                                        </div>
+                                        <div class="visual-size-guide text-center">
+                                            <div class="basement-visual" id="basementVisual">
+                                                <i class="fas fa-home fs-1"></i>
+                                                <p class="mt-2 mb-0">Typical Toronto Home: <strong>800-1000 sq ft</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Water Severity -->
+                            <div class="calculator-step" data-step="3">
+                                <h4 class="mb-4">How severe is the water problem?</h4>
+                                <div class="severity-options">
+                                    <label class="severity-option d-block mb-3">
+                                        <input type="radio" name="severity" value="minor" class="d-none">
+                                        <div class="card p-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="severity-icon me-3">
+                                                    <i class="fas fa-droplet text-info fs-3"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-1">Minor</h6>
+                                                    <small class="text-muted">Occasional dampness, small stains</small>
+                                                </div>
+                                                <div class="severity-indicator">
+                                                    <div class="progress" style="width: 100px; height: 10px;">
+                                                        <div class="progress-bar bg-info" style="width: 25%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="severity-option d-block mb-3">
+                                        <input type="radio" name="severity" value="moderate" class="d-none">
+                                        <div class="card p-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="severity-icon me-3">
+                                                    <i class="fas fa-water text-warning fs-3"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-1">Moderate</h6>
+                                                    <small class="text-muted">Regular water seepage, wet walls</small>
+                                                </div>
+                                                <div class="severity-indicator">
+                                                    <div class="progress" style="width: 100px; height: 10px;">
+                                                        <div class="progress-bar bg-warning" style="width: 50%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="severity-option d-block mb-3">
+                                        <input type="radio" name="severity" value="severe" class="d-none">
+                                        <div class="card p-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="severity-icon me-3">
+                                                    <i class="fas fa-house-flood-water text-danger fs-3"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-1">Severe</h6>
+                                                    <small class="text-muted">Standing water, flooding during rain</small>
+                                                </div>
+                                                <div class="severity-indicator">
+                                                    <div class="progress" style="width: 100px; height: 10px;">
+                                                        <div class="progress-bar bg-danger" style="width: 75%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="severity-option d-block">
+                                        <input type="radio" name="severity" value="emergency" class="d-none">
+                                        <div class="card p-3 border-danger">
+                                            <div class="d-flex align-items-center">
+                                                <div class="severity-icon me-3">
+                                                    <i class="fas fa-exclamation-circle text-danger fs-3 animate__animated animate__flash animate__infinite"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-1 text-danger">Emergency</h6>
+                                                    <small class="text-muted">Active flooding, immediate help needed</small>
+                                                </div>
+                                                <div class="severity-indicator">
+                                                    <div class="progress" style="width: 100px; height: 10px;">
+                                                        <div class="progress-bar bg-danger" style="width: 100%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Step 4: Additional Features -->
+                            <div class="calculator-step" data-step="4">
+                                <h4 class="mb-4">Select additional services needed:</h4>
+                                <div class="feature-options">
+                                    <label class="feature-option d-block mb-3">
+                                        <input type="checkbox" name="features" value="sump-pump" class="form-check-input me-2">
+                                        <span class="feature-label">
+                                            <i class="fas fa-plug text-primary me-2"></i>
+                                            Sump Pump Installation/Upgrade
+                                            <span class="badge bg-success ms-2">Recommended</span>
+                                        </span>
+                                    </label>
+                                    <label class="feature-option d-block mb-3">
+                                        <input type="checkbox" name="features" value="french-drain" class="form-check-input me-2">
+                                        <span class="feature-label">
+                                            <i class="fas fa-grip-lines text-primary me-2"></i>
+                                            Interior French Drain System
+                                        </span>
+                                    </label>
+                                    <label class="feature-option d-block mb-3">
+                                        <input type="checkbox" name="features" value="crack-repair" class="form-check-input me-2">
+                                        <span class="feature-label">
+                                            <i class="fas fa-tools text-primary me-2"></i>
+                                            Foundation Crack Repair
+                                        </span>
+                                    </label>
+                                    <label class="feature-option d-block mb-3">
+                                        <input type="checkbox" name="features" value="exterior-membrane" class="form-check-input me-2">
+                                        <span class="feature-label">
+                                            <i class="fas fa-shield-alt text-primary me-2"></i>
+                                            Exterior Waterproof Membrane
+                                            <span class="badge bg-info ms-2">Best Protection</span>
+                                        </span>
+                                    </label>
+                                    <label class="feature-option d-block">
+                                        <input type="checkbox" name="features" value="window-wells" class="form-check-input me-2">
+                                        <span class="feature-label">
+                                            <i class="fas fa-window-maximize text-primary me-2"></i>
+                                            Window Well Drainage
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Step 5: Contact & Results -->
+                            <div class="calculator-step" data-step="5">
+                                <h4 class="mb-4">Get Your Personalized Quote</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Your Name</label>
+                                            <input type="text" class="form-control" name="name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" name="phone" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" name="email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Postal Code</label>
+                                            <input type="text" class="form-control" name="postal" 
+                                                   pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <!-- Live Price Preview -->
+                                        <div class="price-preview bg-light rounded p-4">
+                                            <h5 class="mb-3">Estimated Investment Range</h5>
+                                            <div class="price-range-display mb-3">
+                                                <div class="d-flex justify-content-between align-items-end">
+                                                    <div>
+                                                        <small class="text-muted">From</small>
+                                                        <h3 class="text-primary mb-0">$<span id="priceMin">3,500</span></h3>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <i class="fas fa-minus text-muted"></i>
+                                                    </div>
+                                                    <div class="text-end">
+                                                        <small class="text-muted">To</small>
+                                                        <h3 class="text-primary mb-0">$<span id="priceMax">7,500</span></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="savings-alert bg-success bg-opacity-10 text-success p-2 rounded mb-3">
+                                                <i class="fas fa-piggy-bank me-2"></i>
+                                                <strong>Save up to $3,400</strong> with Toronto rebates!
+                                            </div>
+                                            <ul class="list-unstyled small">
+                                                <li><i class="fas fa-check text-success me-1"></i> Free inspection included</li>
+                                                <li><i class="fas fa-check text-success me-1"></i> Lifetime warranty</li>
+                                                <li><i class="fas fa-check text-success me-1"></i> Financing available</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Navigation Buttons -->
+                        <div class="calculator-nav mt-4">
+                            <button type="button" class="btn btn-outline-secondary" id="calcPrev" style="display: none;">
+                                <i class="fas fa-arrow-left me-2"></i>Previous
+                            </button>
+                            <button type="button" class="btn btn-primary float-end" id="calcNext">
+                                Next<i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                            <button type="submit" class="btn btn-success float-end" id="calcSubmit" style="display: none;">
+                                Get My Quote<i class="fas fa-check ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="text-center mt-4">
+                    <small class="text-muted">
+                        <i class="fas fa-lock text-success me-1"></i>Your information is secure
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-users text-primary me-1"></i>Used by 10,000+ homeowners
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-star text-warning me-1"></i>98% accuracy rate
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Results Modal -->
+<div class="modal fade" id="calculatorResults" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">
+                    <i class="fas fa-chart-line me-2"></i>Your Waterproofing Investment Analysis
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="results-content">
+                    <!-- Dynamic results inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.problem-card,
+.severity-option .card,
+.feature-option {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.problem-option input:checked ~ .problem-card,
+.severity-option input:checked ~ .card {
+    border-color: #0d6efd;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+.feature-option input:checked ~ .feature-label {
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+.calculator-step {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.calculator-step.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.basement-visual {
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.price-preview {
+    border: 2px solid #e9ecef;
+    position: sticky;
+    top: 20px;
+}
+
+.price-range-display h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .calculator-section .card {
+        margin: 0 -15px;
+        border-radius: 0;
+    }
+    
+    .problem-option .card {
+        padding: 1rem !important;
+    }
+    
+    .problem-option i {
+        font-size: 2rem !important;
+    }
+}
+</style>
+
+<script>
+// Calculator logic
+class WaterproofingCalculator {
+    constructor() {
+        this.currentStep = 1;
+        this.totalSteps = 5;
+        this.data = {
+            problem: '',
+            size: 800,
+            severity: '',
+            features: [],
+            contact: {}
+        };
+        this.init();
+    }
+
+    init() {
+        // Size slider sync
+        const sizeSlider = document.getElementById('sizeSlider');
+        const sizeInput = document.getElementById('basementSize');
+        
+        sizeSlider.addEventListener('input', (e) => {
+            sizeInput.value = e.target.value;
+            this.data.size = parseInt(e.target.value);
+            this.updateVisualSize(e.target.value);
+            this.updatePricePreview();
+        });
+        
+        sizeInput.addEventListener('input', (e) => {
+            const value = parseInt(e.target.value) || 800;
+            sizeSlider.value = Math.min(Math.max(value, 400), 2000);
+            this.data.size = value;
+            this.updateVisualSize(value);
+            this.updatePricePreview();
+        });
+
+        // Navigation
+        document.getElementById('calcNext').addEventListener('click', () => this.nextStep());
+        document.getElementById('calcPrev').addEventListener('click', () => this.prevStep());
+        document.getElementById('calcSubmit').addEventListener('click', () => this.submitCalculator());
+
+        // Input tracking
+        document.querySelectorAll('input[name="problem"]').forEach(input => {
+            input.addEventListener('change', (e) => {
+                this.data.problem = e.target.value;
+                this.updatePricePreview();
+            });
+        });
+
+        document.querySelectorAll('input[name="severity"]').forEach(input => {
+            input.addEventListener('change', (e) => {
+                this.data.severity = e.target.value;
+                this.updatePricePreview();
+                
+                // Show emergency alert
+                if (e.target.value === 'emergency') {
+                    this.showEmergencyAlert();
+                }
+            });
+        });
+
+        document.querySelectorAll('input[name="features"]').forEach(input => {
+            input.addEventListener('change', () => {
+                this.data.features = Array.from(document.querySelectorAll('input[name="features"]:checked'))
+                    .map(cb => cb.value);
+                this.updatePricePreview();
+            });
+        });
+    }
+
+    nextStep() {
+        if (this.validateStep(this.currentStep)) {
+            if (this.currentStep < this.totalSteps) {
+                this.currentStep++;
+                this.showStep(this.currentStep);
+            }
+        }
+    }
+
+    prevStep() {
+        if (this.currentStep > 1) {
+            this.currentStep--;
+            this.showStep(this.currentStep);
+        }
+    }
+
+    showStep(step) {
+        // Hide all steps
+        document.querySelectorAll('.calculator-step').forEach(s => s.classList.remove('active'));
+        
+        // Show current step
+        document.querySelector(`[data-step="${step}"]`).classList.add('active');
+        
+        // Update progress
+        const progress = (step / this.totalSteps) * 100;
+        const progressBar = document.getElementById('calculatorProgress');
+        progressBar.style.width = progress + '%';
+        progressBar.textContent = `Step ${step} of ${this.totalSteps}`;
+        
+        // Update navigation buttons
+        document.getElementById('calcPrev').style.display = step === 1 ? 'none' : 'inline-block';
+        document.getElementById('calcNext').style.display = step === this.totalSteps ? 'none' : 'inline-block';
+        document.getElementById('calcSubmit').style.display = step === this.totalSteps ? 'inline-block' : 'none';
+    }
+
+    validateStep(step) {
+        switch(step) {
+            case 1:
+                if (!this.data.problem) {
+                    this.showError('Please select your main basement issue');
+                    return false;
+                }
+                break;
+            case 2:
+                if (!this.data.size || this.data.size < 100) {
+                    this.showError('Please enter your basement size');
+                    return false;
+                }
+                break;
+            case 3:
+                if (!this.data.severity) {
+                    this.showError('Please select the severity level');
+                    return false;
+                }
+                break;
+        }
+        return true;
+    }
+
+    updateVisualSize(size) {
+        const visual = document.getElementById('basementVisual');
+        const scale = 0.5 + (size / 2000);
+        visual.style.transform = `scale(${scale})`;
+    }
+
+    updatePricePreview() {
+        if (!this.data.problem || !this.data.size) return;
+        
+        // Base pricing logic
+        let minPrice = 3000;
+        let maxPrice = 7000;
+        
+        // Problem type multipliers
+        const problemMultipliers = {
+            'water-leaking': 1.5,
+            'damp-walls': 1.2,
+            'foundation-cracks': 1.3,
+            'preventive': 0.8
+        };
+        
+        // Severity multipliers
+        const severityMultipliers = {
+            'minor': 0.8,
+            'moderate': 1.0,
+            'severe': 1.5,
+            'emergency': 2.0
+        };
+        
+        // Size factor
+        const sizeFactor = this.data.size / 800;
+        
+        // Calculate base prices
+        minPrice *= (problemMultipliers[this.data.problem] || 1);
+        maxPrice *= (problemMultipliers[this.data.problem] || 1);
+        
+        if (this.data.severity) {
+            minPrice *= (severityMultipliers[this.data.severity] || 1);
+            maxPrice *= (severityMultipliers[this.data.severity] || 1);
+        }
+        
+        minPrice *= sizeFactor;
+        maxPrice *= sizeFactor;
+        
+        // Add features
+        const featurePrices = {
+            'sump-pump': 2500,
+            'french-drain': 3500,
+            'crack-repair': 1000,
+            'exterior-membrane': 8000,
+            'window-wells': 1500
+        };
+        
+        this.data.features.forEach(feature => {
+            const price = featurePrices[feature] || 0;
+            minPrice += price * 0.8;
+            maxPrice += price * 1.2;
+        });
+        
+        // Update display
+        document.getElementById('priceMin').textContent = Math.round(minPrice).toLocaleString();
+        document.getElementById('priceMax').textContent = Math.round(maxPrice).toLocaleString();
+    }
+
+    showEmergencyAlert() {
+        const alert = document.createElement('div');
+        alert.className = 'alert alert-danger alert-dismissible fade show position-fixed top-50 start-50 translate-middle';
+        alert.style.zIndex = '9999';
+        alert.innerHTML = `
+            <h5 class="alert-heading">
+                <i class="fas fa-exclamation-triangle me-2"></i>Emergency Service Available!
+            </h5>
+            <p class="mb-2">We can have a team at your location within 2 hours.</p>
+            <hr>
+            <a href="tel:4375450067" class="btn btn-danger">
+                <i class="fas fa-phone me-2"></i>Call Emergency Line Now
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        `;
+        document.body.appendChild(alert);
+        
+        setTimeout(() => {
+            alert.remove();
+        }, 10000);
+    }
+
+    showError(message) {
+        // Simple error display
+        alert(message);
+    }
+
+    submitCalculator() {
+        // Collect contact info
+        const form = document.getElementById('waterproofingCalculator');
+        const formData = new FormData(form);
+        
+        // Show results
+        this.showResults();
+        
+        // Track conversion
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'calculator_complete', {
+                'value': document.getElementById('priceMax').textContent,
+                'currency': 'CAD'
+            });
+        }
+    }
+
+    showResults() {
+        const modal = new bootstrap.Modal(document.getElementById('calculatorResults'));
+        const resultsContent = document.querySelector('.results-content');
+        
+        resultsContent.innerHTML = `
+            <div class="text-center mb-4">
+                <i class="fas fa-check-circle text-success fs-1 mb-3"></i>
+                <h4>Your Personalized Quote is Ready!</h4>
+                <p class="text-muted">Based on your inputs, here's what we recommend:</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card bg-primary bg-opacity-10">
+                        <div class="card-body">
+                            <h5 class="card-title">Recommended Solution</h5>
+                            <p>Interior waterproofing system with lifetime warranty</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>French drain installation</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Sump pump with battery backup</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Foundation crack repair</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Investment Summary</h5>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Service Cost:</span>
+                                <strong>$${document.getElementById('priceMax').textContent}</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2 text-success">
+                                <span>City Rebate:</span>
+                                <strong>-$3,400</strong>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <span>Your Investment:</span>
+                                <h4 class="text-primary mb-0">$${(parseInt(document.getElementById('priceMax').textContent.replace(/,/g, '')) - 3400).toLocaleString()}</h4>
+                            </div>
+                            <p class="text-muted small mt-2 mb-0">
+                                *Financing available from $89/month
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <p class="mb-3">A waterproofing expert will contact you within 30 minutes to discuss your project.</p>
+                <a href="tel:4375450067" class="btn btn-primary btn-lg">
+                    <i class="fas fa-phone me-2"></i>Call Now for Faster Service
+                </a>
+            </div>
+        `;
+        
+        modal.show();
+    }
+}
+
+// Initialize calculator
+document.addEventListener('DOMContentLoaded', () => {
+    new WaterproofingCalculator();
+});
+</script>

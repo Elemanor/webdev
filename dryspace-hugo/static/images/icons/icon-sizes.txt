@@ -1,0 +1,41 @@
+# PWA Icon Sizes Required
+
+The following icon sizes should be created from your logo:
+
+## Main App Icons (square, centered logo on solid background)
+- icon-72x72.png
+- icon-96x96.png  
+- icon-128x128.png
+- icon-144x144.png
+- icon-152x152.png
+- icon-192x192.png
+- icon-384x384.png
+- icon-512x512.png
+
+## Special Icons
+- badge-72x72.png (for notification badges)
+- emergency-96x96.png (red emergency icon)
+- camera-96x96.png (camera icon for photo quote)
+- calendar-96x96.png (calendar icon for scheduling)
+- checkmark.png (for notifications)
+- xmark.png (for notifications)
+
+## Design Guidelines
+1. Use #0d6efd (Bootstrap primary blue) as background
+2. White logo/icon in center
+3. Add 10% padding around logo
+4. Use PNG format with transparency
+5. Ensure icons are "maskable" (safe area in center)
+
+## Tools to Generate Icons
+- https://maskable.app/ (test maskable icons)
+- https://www.pwabuilder.com/imageGenerator (generate all sizes)
+- https://realfavicongenerator.net/ (comprehensive icon generator)
+
+## Example Command (ImageMagick)
+```bash
+# Generate all sizes from a source logo.png
+convert logo.png -resize 72x72 -background "#0d6efd" -gravity center -extent 72x72 icon-72x72.png
+convert logo.png -resize 96x96 -background "#0d6efd" -gravity center -extent 96x96 icon-96x96.png
+# ... repeat for all sizes
+```

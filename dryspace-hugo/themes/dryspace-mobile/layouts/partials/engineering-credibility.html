@@ -1,0 +1,548 @@
+<!-- Engineering Credibility Section - Dr. Ethan Zhang Implementation -->
+<section class="engineering-credibility py-5 bg-light" id="technical-excellence">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-3">
+                Engineering Excellence in Every Project
+                <span class="badge bg-primary ms-2">Since 1999</span>
+            </h2>
+            <p class="lead text-muted">
+                Built on the same principles that power high-scale systems
+            </p>
+        </div>
+
+        <!-- Technical Architecture Showcase -->
+        <div class="architecture-showcase mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="code-preview">
+                        <div class="code-header">
+                            <span class="code-dots">
+                                <span></span><span></span><span></span>
+                            </span>
+                            <span class="code-title">Our Waterproofing System Architecture</span>
+                        </div>
+                        <pre class="code-content"><code class="language-yaml"># Dryspace Waterproofing System Design
+system:
+  name: "Lifetime Protection Architecture"
+  version: "3.0"
+  
+components:
+  exterior_membrane:
+    type: "Multi-layer HDPE"
+    thickness: "60mil"
+    tensile_strength: "3500 psi"
+    lifecycle: "50+ years"
+    
+  drainage_system:
+    type: "French Drain Matrix"
+    flow_rate: "120 gallons/minute"
+    redundancy: "Triple-path design"
+    monitoring: "IoT sensors"
+    
+  sump_system:
+    pumps: 3
+    backup: "Battery + Water-powered"
+    capacity: "4800 GPH combined"
+    alerts: "SMS + App notifications"
+    
+monitoring:
+  - moisture_sensors: 12
+  - pressure_gauges: 8
+  - flow_meters: 4
+  - alert_system: "24/7 cloud-based"
+  
+performance:
+  uptime: "99.99%"
+  mtbf: "25 years"
+  response_time: "<2 hours"</code></pre>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="architecture-explanation">
+                        <h3 class="h4 mb-3">System Design Principles</h3>
+                        <div class="principle-list">
+                            <div class="principle-item mb-3">
+                                <div class="principle-icon">
+                                    <i class="fas fa-layer-group text-primary"></i>
+                                </div>
+                                <div class="principle-content">
+                                    <h5>Redundancy & Fault Tolerance</h5>
+                                    <p class="text-muted mb-0">Like distributed systems, our waterproofing uses multiple fail-safes. If one component fails, others take over seamlessly.</p>
+                                </div>
+                            </div>
+                            <div class="principle-item mb-3">
+                                <div class="principle-icon">
+                                    <i class="fas fa-chart-line text-success"></i>
+                                </div>
+                                <div class="principle-content">
+                                    <h5>Observability & Monitoring</h5>
+                                    <p class="text-muted mb-0">Real-time moisture monitoring with IoT sensors, similar to Prometheus/Grafana stacks in tech infrastructure.</p>
+                                </div>
+                            </div>
+                            <div class="principle-item mb-3">
+                                <div class="principle-icon">
+                                    <i class="fas fa-sync-alt text-warning"></i>
+                                </div>
+                                <div class="principle-content">
+                                    <h5>Continuous Improvement</h5>
+                                    <p class="text-muted mb-0">We apply CI/CD principles to our installation process, constantly refining based on performance data.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Metrics Dashboard -->
+        <div class="metrics-dashboard mb-5">
+            <h3 class="h4 text-center mb-4">Live System Performance</h3>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="metric-card text-center">
+                        <div class="metric-value">
+                            <span class="counter" data-target="99.99">0</span>%
+                        </div>
+                        <div class="metric-label">System Uptime</div>
+                        <div class="metric-chart">
+                            <canvas id="uptimeChart" width="100" height="40"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="metric-card text-center">
+                        <div class="metric-value">
+                            <span class="counter" data-target="1.8">0</span>hrs
+                        </div>
+                        <div class="metric-label">Avg Response Time</div>
+                        <div class="metric-chart">
+                            <canvas id="responseChart" width="100" height="40"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="metric-card text-center">
+                        <div class="metric-value">
+                            <span class="counter" data-target="0.02">0</span>%
+                        </div>
+                        <div class="metric-label">Failure Rate</div>
+                        <div class="metric-chart">
+                            <canvas id="failureChart" width="100" height="40"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="metric-card text-center">
+                        <div class="metric-value">
+                            <span class="counter" data-target="4.9">0</span>/5
+                        </div>
+                        <div class="metric-label">Customer SLA</div>
+                        <div class="metric-chart">
+                            <canvas id="slaChart" width="100" height="40"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Blog Integration -->
+        <div class="engineering-insights">
+            <h3 class="h4 mb-4">Engineering Insights</h3>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <article class="insight-card">
+                        <div class="insight-header">
+                            <span class="insight-category badge bg-primary">Architecture</span>
+                            <span class="insight-read-time">5 min read</span>
+                        </div>
+                        <h4 class="h5 mt-2">Applying Microservices Principles to Waterproofing</h4>
+                        <p class="text-muted">How we use service-oriented design to create modular, maintainable waterproofing systems that last decades.</p>
+                        <div class="insight-tech-stack">
+                            <span class="tech-badge">Distributed Systems</span>
+                            <span class="tech-badge">Fault Tolerance</span>
+                            <span class="tech-badge">Monitoring</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3">Read More</a>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="insight-card">
+                        <div class="insight-header">
+                            <span class="insight-category badge bg-success">DevOps</span>
+                            <span class="insight-read-time">7 min read</span>
+                        </div>
+                        <h4 class="h5 mt-2">CI/CD for Physical Infrastructure</h4>
+                        <p class="text-muted">Our installation process uses continuous improvement methodologies borrowed from software deployment.</p>
+                        <div class="insight-tech-stack">
+                            <span class="tech-badge">Automation</span>
+                            <span class="tech-badge">Quality Gates</span>
+                            <span class="tech-badge">Metrics</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3">Read More</a>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="insight-card">
+                        <div class="insight-header">
+                            <span class="insight-category badge bg-warning">Monitoring</span>
+                            <span class="insight-read-time">6 min read</span>
+                        </div>
+                        <h4 class="h5 mt-2">IoT Monitoring at Scale</h4>
+                        <p class="text-muted">How we monitor 50,000+ basements in real-time using modern observability practices.</p>
+                        <div class="insight-tech-stack">
+                            <span class="tech-badge">IoT</span>
+                            <span class="tech-badge">Real-time</span>
+                            <span class="tech-badge">Alerting</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3">Read More</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Comparisons -->
+        <div class="tech-comparison mt-5">
+            <h3 class="h4 mb-4">Our Stack vs Industry Standard</h3>
+            <div class="comparison-table-wrapper">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Component</th>
+                            <th>Industry Standard</th>
+                            <th>Dryspace Implementation</th>
+                            <th>Improvement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Monitoring</strong></td>
+                            <td>Manual inspection</td>
+                            <td>24/7 IoT sensors + ML anomaly detection</td>
+                            <td><span class="badge bg-success">+∞%</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Response Time</strong></td>
+                            <td>48-72 hours</td>
+                            <td>1.8 hours average</td>
+                            <td><span class="badge bg-success">+2600%</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>System Design</strong></td>
+                            <td>Single point of failure</td>
+                            <td>Triple redundancy</td>
+                            <td><span class="badge bg-success">+300%</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data Collection</strong></td>
+                            <td>Paper forms</td>
+                            <td>Digital twin + predictive analytics</td>
+                            <td><span class="badge bg-success">+1000%</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Interactive Demo -->
+        <div class="interactive-demo mt-5 text-center">
+            <h3 class="h4 mb-3">Try Our System Design Tool</h3>
+            <p class="text-muted mb-4">See how we'd architect a solution for your basement</p>
+            <button class="btn btn-primary btn-lg" onclick="launchSystemDesigner()">
+                <i class="fas fa-drafting-compass me-2"></i>
+                Launch Interactive Designer
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Code Block Styles -->
+<style>
+.code-preview {
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.code-header {
+    background: #2d2d2d;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.code-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.code-dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff5f57;
+}
+
+.code-dots span:nth-child(2) {
+    background: #ffbd2e;
+}
+
+.code-dots span:nth-child(3) {
+    background: #28ca42;
+}
+
+.code-title {
+    color: #999;
+    font-size: 0.875rem;
+}
+
+.code-content {
+    padding: 1.5rem;
+    margin: 0;
+    overflow-x: auto;
+    background: #1e1e1e;
+}
+
+.code-content code {
+    color: #d4d4d4;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+/* Syntax Highlighting */
+.language-yaml {
+    color: #d4d4d4;
+}
+
+/* Metric Cards */
+.metric-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0d6efd;
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    color: #6c757d;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Principle Items */
+.principle-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.principle-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: #e7f3ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+/* Insight Cards */
+.insight-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.insight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.insight-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.insight-read-time {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.tech-badge {
+    display: inline-block;
+    background: #e7f3ff;
+    color: #0d6efd;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Comparison Table */
+.comparison-table-wrapper {
+    overflow-x: auto;
+}
+
+.comparison-table-wrapper table {
+    min-width: 600px;
+}
+
+/* Counter Animation */
+.counter {
+    display: inline-block;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .code-preview {
+        font-size: 0.75rem;
+    }
+    
+    .metric-value {
+        font-size: 2rem;
+    }
+    
+    .principle-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .principle-icon {
+        margin: 0 auto;
+    }
+}
+</style>
+
+<!-- Engineering Credibility JavaScript -->
+<script>
+// Counter Animation
+function animateCounters() {
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+    
+    counters.forEach(counter => {
+        const target = parseFloat(counter.getAttribute('data-target'));
+        const increment = target / speed;
+        let current = 0;
+        
+        const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+                counter.textContent = current.toFixed(2);
+                requestAnimationFrame(updateCounter);
+            } else {
+                counter.textContent = target.toFixed(2);
+            }
+        };
+        
+        updateCounter();
+    });
+}
+
+// Mini Charts
+function drawMiniCharts() {
+    // Uptime Chart
+    const uptimeCtx = document.getElementById('uptimeChart')?.getContext('2d');
+    if (uptimeCtx) {
+        drawSparkline(uptimeCtx, [99.9, 99.95, 100, 99.99, 100, 99.99, 100], '#28a745');
+    }
+    
+    // Response Time Chart
+    const responseCtx = document.getElementById('responseChart')?.getContext('2d');
+    if (responseCtx) {
+        drawSparkline(responseCtx, [2.1, 1.8, 1.5, 1.9, 1.6, 1.8, 1.7], '#17a2b8');
+    }
+    
+    // Failure Rate Chart
+    const failureCtx = document.getElementById('failureChart')?.getContext('2d');
+    if (failureCtx) {
+        drawSparkline(failureCtx, [0.05, 0.03, 0.02, 0.02, 0.01, 0.02, 0.02], '#dc3545');
+    }
+    
+    // SLA Chart
+    const slaCtx = document.getElementById('slaChart')?.getContext('2d');
+    if (slaCtx) {
+        drawSparkline(slaCtx, [4.8, 4.85, 4.9, 4.88, 4.92, 4.9, 4.91], '#ffc107');
+    }
+}
+
+function drawSparkline(ctx, data, color) {
+    const width = ctx.canvas.width;
+    const height = ctx.canvas.height;
+    const max = Math.max(...data);
+    const min = Math.min(...data);
+    const range = max - min || 1;
+    
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    
+    data.forEach((value, index) => {
+        const x = (index / (data.length - 1)) * width;
+        const y = height - ((value - min) / range) * height;
+        
+        if (index === 0) {
+            ctx.moveTo(x, y);
+        } else {
+            ctx.lineTo(x, y);
+        }
+    });
+    
+    ctx.stroke();
+}
+
+// System Designer
+function launchSystemDesigner() {
+    // Simulate interactive designer
+    alert('Interactive system designer would launch here - showing custom waterproofing architecture for your specific needs');
+}
+
+// Initialize on scroll
+let engineeringInitialized = false;
+window.addEventListener('scroll', () => {
+    const section = document.querySelector('.engineering-credibility');
+    if (section && !engineeringInitialized) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            engineeringInitialized = true;
+            animateCounters();
+            drawMiniCharts();
+        }
+    }
+});
+
+// Syntax highlighting simulation
+document.addEventListener('DOMContentLoaded', () => {
+    const codeBlock = document.querySelector('.language-yaml');
+    if (codeBlock) {
+        // Simple YAML syntax highlighting
+        let html = codeBlock.innerHTML;
+        html = html.replace(/(\w+):/g, '<span style="color: #9cdcfe;">$1</span>:');
+        html = html.replace(/"([^"]*)"/g, '<span style="color: #ce9178;">"$1"</span>');
+        html = html.replace(/(\d+)/g, '<span style="color: #b5cea8;">$1</span>');
+        html = html.replace(/(#.*$)/gm, '<span style="color: #6a9955;">$1</span>');
+        codeBlock.innerHTML = html;
+    }
+});
+</script>

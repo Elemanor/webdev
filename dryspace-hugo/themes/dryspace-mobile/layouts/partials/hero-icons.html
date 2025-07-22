@@ -1,0 +1,260 @@
+<!-- Hero Section - Zara's Icon-Driven Narrative -->
+<section class="hero-section relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-secondary-50 min-h-screen flex items-center">
+    <!-- Icon Rain Animation Background -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="icon-rain">
+            <i class="fas fa-tint icon-rain-drop" style="left: 10%; animation-delay: 0s;"></i>
+            <i class="fas fa-shield-alt icon-rain-drop" style="left: 30%; animation-delay: 1s;"></i>
+            <i class="fas fa-home icon-rain-drop" style="left: 50%; animation-delay: 2s;"></i>
+            <i class="fas fa-check-circle icon-rain-drop" style="left: 70%; animation-delay: 0.5s;"></i>
+            <i class="fas fa-star icon-rain-drop" style="left: 90%; animation-delay: 1.5s;"></i>
+        </div>
+    </div>
+    
+    <div class="container py-5 relative z-10">
+        <div class="row align-items-center">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                <!-- Icon-Based Trust Indicator -->
+                <div class="icon-symphony mb-4">
+                    <div class="icon-story icon-reveal icon-pulse">
+                        <i class="fas fa-award fa-2x text-warning"></i>
+                    </div>
+                    <div class="icon-story icon-reveal icon-dance" style="animation-delay: 0.2s;">
+                        <i class="fas fa-shield-alt fa-2x text-primary"></i>
+                    </div>
+                    <div class="icon-story icon-reveal icon-float" style="animation-delay: 0.4s;">
+                        <i class="fas fa-clock fa-2x text-info"></i>
+                    </div>
+                    <div class="icon-story icon-reveal icon-glow" style="animation-delay: 0.6s;">
+                        <i class="fas fa-dollar-sign fa-2x text-success"></i>
+                    </div>
+                </div>
+                
+                <!-- Animated Headline with Icon Morphing -->
+                <h1 class="display-4 fw-bold mb-3">
+                    <span class="icon-morph d-inline-block me-2">
+                        <i class="fas fa-water fa-primary text-danger"></i>
+                        <i class="fas fa-shield-alt fa-secondary text-primary" style="opacity: 0;"></i>
+                    </span>
+                    Toronto Basement Waterproofing <span class="text-primary">Experts</span>
+                </h1>
+                
+                <!-- Icon-Enhanced Value Props -->
+                <div class="row g-3 mb-4">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center icon-story icon-reveal">
+                            <i class="fas fa-check-circle text-success me-2 fs-5 icon-bounce"></i>
+                            <span class="fw-bold">25+ Years</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center icon-story icon-reveal" style="animation-delay: 0.1s;">
+                            <i class="fas fa-infinity text-primary me-2 fs-5 icon-spin-custom"></i>
+                            <span class="fw-bold">Lifetime Warranty</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center icon-story icon-reveal" style="animation-delay: 0.2s;">
+                            <i class="fas fa-certificate text-info me-2 fs-5 icon-dance"></i>
+                            <span class="fw-bold">Licensed & Insured</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center icon-story icon-reveal" style="animation-delay: 0.3s;">
+                            <i class="fas fa-bolt text-warning me-2 fs-5 icon-shake"></i>
+                            <span class="fw-bold">Same-Day Service</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Icon Progress Story -->
+                <div id="water-story" class="mb-4"></div>
+                
+                <!-- CTA Buttons with Icon Animations -->
+                <div class="d-flex flex-column flex-sm-row gap-3">
+                    <a href="tel:{{ .Site.Params.phone }}" class="btn btn-primary btn-lg icon-story">
+                        <i class="fas fa-phone icon-shake me-2"></i>
+                        <span>Call (437) 545-0067</span>
+                        <i class="fas fa-arrow-right ms-2 icon-dance"></i>
+                    </a>
+                    <button class="btn btn-outline-primary btn-lg" data-symphony="waterproofing">
+                        <i class="fas fa-magic me-2 icon-pulse"></i>
+                        See How We Protect
+                    </button>
+                </div>
+                
+                <!-- Urgency with Icon Badge -->
+                <div class="mt-4 position-relative">
+                    <div class="icon-badge emergency-icon" data-badge="!">
+                        <i class="fas fa-exclamation-triangle text-danger fa-lg"></i>
+                    </div>
+                    <span class="text-danger fw-bold ms-3">
+                        Spring flooding season - Protect your home now!
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Interactive Icon Form -->
+            <div class="col-lg-5">
+                <div class="bg-white rounded shadow-lg p-4 position-relative overflow-hidden">
+                    <!-- Form Header with Icon Animation -->
+                    <div class="text-center mb-4">
+                        <div class="icon-flip-container d-inline-block mb-3">
+                            <div class="icon-flip">
+                                <i class="fas fa-clipboard-list fa-3x fa-front text-primary"></i>
+                                <i class="fas fa-check-circle fa-3x fa-back text-success"></i>
+                            </div>
+                        </div>
+                        <h3 class="h4 fw-bold">Get Your Free Assessment</h3>
+                        <div class="icon-progress mt-2">
+                            <i class="fas fa-clock icon-color-shift"></i>
+                            <span class="ms-2 text-muted">Response in 30 minutes</span>
+                        </div>
+                    </div>
+                    
+                    <form class="needs-validation" novalidate>
+                        <div class="mb-3 position-relative">
+                            <div class="input-group">
+                                <span class="input-group-text icon-story">
+                                    <i class="fas fa-user icon-dance"></i>
+                                </span>
+                                <input type="text" class="form-control form-control-lg" placeholder="Your Name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3 position-relative">
+                            <div class="input-group">
+                                <span class="input-group-text icon-story">
+                                    <i class="fas fa-phone icon-pulse"></i>
+                                </span>
+                                <input type="tel" class="form-control form-control-lg" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3 position-relative">
+                            <div class="input-group">
+                                <span class="input-group-text icon-story">
+                                    <i class="fas fa-envelope icon-float"></i>
+                                </span>
+                                <input type="email" class="form-control form-control-lg" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3 position-relative">
+                            <div class="input-group">
+                                <span class="input-group-text icon-story">
+                                    <i class="fas fa-exclamation-circle icon-shake text-warning"></i>
+                                </span>
+                                <select class="form-select form-select-lg" required>
+                                    <option value="">Select Your Issue</option>
+                                    <option>🌊 Water in Basement</option>
+                                    <option>⚠️ Foundation Cracks</option>
+                                    <option>💧 Wet/Damp Walls</option>
+                                    <option>🔌 Sump Pump Failure</option>
+                                    <option>🚨 Emergency Flooding</option>
+                                    <option>❓ Other/Not Sure</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg w-100 mb-3 icon-story position-relative overflow-hidden">
+                            <span class="d-flex align-items-center justify-content-center">
+                                <i class="fas fa-paper-plane me-2 icon-dance"></i>
+                                Get Free Assessment
+                                <i class="fas fa-arrow-right ms-2 icon-float"></i>
+                            </span>
+                        </button>
+                        
+                        <div class="text-center">
+                            <small class="text-muted">
+                                <i class="fas fa-lock me-1 icon-pulse text-success"></i>
+                                100% Secure • No Obligations
+                            </small>
+                        </div>
+                    </form>
+                    
+                    <!-- Success Animation Overlay -->
+                    <div class="form-success-overlay position-absolute inset-0 d-none">
+                        <div class="icon-burst celebrate">
+                            <i class="fas fa-check-circle fa-5x text-success"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Icon Rain Effect */
+@keyframes icon-rain {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.3;
+    }
+    90% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.icon-rain-drop {
+    position: absolute;
+    color: rgba(0, 128, 255, 0.1);
+    font-size: 2rem;
+    animation: icon-rain 10s linear infinite;
+}
+
+/* Form Success Overlay */
+.form-success-overlay {
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+/* Input Focus Effects */
+.form-control:focus + .input-group-text i,
+.form-select:focus + .input-group-text i {
+    animation: icon-bounce 0.5s ease;
+    color: #0080ff;
+}
+
+/* Icon Story Progress */
+.icon-story-step {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icon-story-step.active {
+    transform: scale(1.1);
+}
+
+.icon-story-step:hover {
+    transform: translateY(-5px);
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .icon-symphony {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .icon-rain-drop {
+        font-size: 1.5rem;
+    }
+}
+</style>

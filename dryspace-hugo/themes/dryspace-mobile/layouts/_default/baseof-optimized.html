@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" data-theme="waterproof">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Preconnect to critical origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    
+    <!-- SEO Meta Tags -->
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ .Permalink }}">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    {{ if .Params.image }}<meta property="og:image" content="{{ .Params.image | absURL }}">{{ end }}
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+    <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    {{ if .Params.image }}<meta name="twitter:image" content="{{ .Params.image | absURL }}">{{ end }}
+    
+    <!-- Critical CSS (Inline for immediate rendering) -->
+    <style>
+        /* Critical CSS - Extracted for above-the-fold content */
+        :root{--primary:#0080ff;--secondary:#6c757d;--success:#28a745;--danger:#dc3545;--warning:#ffc107;--info:#17a2b8;--light:#f8f9fa;--dark:#343a40}
+        *,::after,::before{box-sizing:border-box}
+        body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+        .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+        @media(min-width:576px){.container{max-width:540px}}
+        @media(min-width:768px){.container{max-width:720px}}
+        @media(min-width:992px){.container{max-width:960px}}
+        @media(min-width:1200px){.container{max-width:1140px}}
+        .btn{display:inline-block;font-weight:400;text-align:center;vertical-align:middle;user-select:none;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+        .btn-primary{color:#fff;background-color:#0080ff;border-color:#0080ff}
+        .btn-primary:hover{color:#fff;background-color:#0066cc;border-color:#0066cc}
+        .btn-lg{padding:.5rem 1rem;font-size:1.25rem;line-height:1.5;border-radius:.3rem}
+        .d-none{display:none!important}
+        .text-center{text-align:center!important}
+        .fw-bold{font-weight:700!important}
+        
+        /* Prevent layout shift from fonts */
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('/fonts/inter-v12-latin-regular.woff2') format('woff2');
+        }
+        
+        /* Emergency bar - prevent CLS */
+        .emergency-bar{position:sticky;top:0;z-index:1050;background-color:#dc3545;color:#fff;text-align:center;padding:.5rem 0}
+        .navbar{position:sticky;top:32px;z-index:1040;background-color:#fff;box-shadow:0 .125rem .25rem rgba(0,0,0,.075)}
+        
+        /* Loading skeleton for hero */
+        .hero-skeleton{min-height:100vh;background:linear-gradient(90deg,#f0f0f0 25%,#e0e0e0 50%,#f0f0f0 75%);background-size:200% 100%;animation:loading 1.5s infinite}
+        @keyframes loading{0%{background-position:200% 0}100%{background-position:-200% 0}}
+    </style>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="/fonts/inter-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Async load non-critical CSS -->
+    <link rel="preload" href="/css/optimized.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/optimized.min.css"></noscript>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Plumber",
+        "name": "Dryspace Waterproofing",
+        "url": "{{ .Site.BaseURL }}",
+        "telephone": "{{ .Site.Params.phone }}",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "addressCountry": "CA"
+        },
+        "priceRange": "$$$",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        }
+    }
+    </script>
+    
+    {{ if .Site.Params.googleAnalytics }}
+    <!-- Google Analytics (async) -->
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', '{{ .Site.Params.googleAnalytics }}', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    {{ end }}
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <!-- Emergency Bar (Mobile First) -->
+    <div class="emergency-bar" role="banner" aria-label="Emergency contact">
+        <div class="container">
+            <small class="d-block d-md-inline fw-bold">
+                <span class="d-none d-sm-inline">24/7 Emergency Basement Flooding Service:</span>
+                <span class="d-sm-none">24/7 Emergency:</span>
+            </small>
+            <a href="tel:{{ .Site.Params.phone }}" class="text-white fw-bold text-decoration-none ms-2">
+                <svg class="icon-phone" width="16" height="16" fill="currentColor" aria-hidden="true">
+                    <use href="#icon-phone"></use>
+                </svg>
+                {{ .Site.Params.phone }}
+            </a>
+        </div>
+    </div>
+    
+    <!-- Mobile-First Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                <span class="text-primary fs-4">Dryspace</span>
+                <span class="text-secondary fs-6 d-none d-sm-inline">Waterproofing</span>
+            </a>
+            
+            <!-- Mobile Call Button -->
+            <div class="d-lg-none ms-auto me-2">
+                <a href="tel:{{ .Site.Params.phone }}" class="btn btn-primary btn-sm rounded-pill">
+                    <svg class="icon-phone" width="16" height="16" fill="currentColor" aria-hidden="true">
+                        <use href="#icon-phone"></use>
+                    </svg>
+                    Call Now
+                </a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    {{ range .Site.Menus.main }}
+                    <li class="nav-item{{ if .HasChildren }} dropdown{{ end }}">
+                        {{ if .HasChildren }}
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">{{ .Name }}</a>
+                        <ul class="dropdown-menu">
+                            <!-- Dynamic submenu items would go here -->
+                        </ul>
+                        {{ else }}
+                        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                        {{ end }}
+                    </li>
+                    {{ end }}
+                    <li class="nav-item d-none d-lg-block ms-3">
+                        <a href="/contact/" class="btn btn-primary rounded-pill px-4">
+                            Get Free Quote
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main id="main">
+        {{ block "main" . }}{{ end }}
+    </main>
+    
+    <!-- Mobile-First Footer -->
+    <footer class="bg-dark text-light pt-5 pb-3" role="contentinfo">
+        <div class="container">
+            <!-- Mobile CTAs -->
+            <div class="d-md-none text-center mb-4">
+                <a href="tel:{{ .Site.Params.phone }}" class="btn btn-primary btn-lg w-100 mb-2">
+                    <svg class="icon-phone" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <use href="#icon-phone"></use>
+                    </svg>
+                    Call for Free Quote
+                </a>
+                <a href="/contact/" class="btn btn-outline-light w-100">
+                    <svg class="icon-email" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <use href="#icon-email"></use>
+                    </svg>
+                    Email Us
+                </a>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-primary mb-3">Dryspace Waterproofing</h5>
+                    <p class="small text-muted">
+                        Toronto's most trusted basement waterproofing experts since 1999. 
+                        Protecting homes with lifetime warranties and 24/7 emergency service.
+                    </p>
+                </div>
+                
+                <div class="col-lg-2 col-6">
+                    <h6 class="text-uppercase mb-3">Services</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="/services/basement-waterproofing/" class="text-muted text-decoration-none">Basement Waterproofing</a></li>
+                        <li class="mb-2"><a href="/services/foundation-repair/" class="text-muted text-decoration-none">Foundation Repair</a></li>
+                        <li class="mb-2"><a href="/services/crack-injection/" class="text-muted text-decoration-none">Crack Injection</a></li>
+                        <li class="mb-2"><a href="/services/sump-pump/" class="text-muted text-decoration-none">Sump Pump Installation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-6">
+                    <h6 class="text-uppercase mb-3">Areas</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="/toronto-basement-waterproofing/" class="text-muted text-decoration-none">Toronto</a></li>
+                        <li class="mb-2"><a href="/mississauga-basement-waterproofing/" class="text-muted text-decoration-none">Mississauga</a></li>
+                        <li class="mb-2"><a href="/brampton-basement-waterproofing/" class="text-muted text-decoration-none">Brampton</a></li>
+                        <li class="mb-2"><a href="/areas/" class="text-muted text-decoration-none">All Areas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="text-uppercase mb-3">Contact Info</h6>
+                    <address class="small text-muted">
+                        <div class="mb-2">
+                            <svg class="icon-phone" width="16" height="16" fill="currentColor" aria-hidden="true">
+                                <use href="#icon-phone"></use>
+                            </svg>
+                            <a href="tel:{{ .Site.Params.phone }}" class="text-muted text-decoration-none">{{ .Site.Params.phone }}</a>
+                        </div>
+                        <div class="mb-2">
+                            <svg class="icon-email" width="16" height="16" fill="currentColor" aria-hidden="true">
+                                <use href="#icon-email"></use>
+                            </svg>
+                            <a href="mailto:{{ .Site.Params.email }}" class="text-muted text-decoration-none">{{ .Site.Params.email }}</a>
+                        </div>
+                        <div class="mb-2">
+                            <svg class="icon-location" width="16" height="16" fill="currentColor" aria-hidden="true">
+                                <use href="#icon-location"></use>
+                            </svg>
+                            {{ .Site.Params.address }}
+                        </div>
+                        <div>
+                            <svg class="icon-clock" width="16" height="16" fill="currentColor" aria-hidden="true">
+                                <use href="#icon-clock"></use>
+                            </svg>
+                            24/7 Emergency Service
+                        </div>
+                    </address>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <small class="text-muted">&copy; {{ now.Year }} Dryspace Waterproofing. All rights reserved.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <small>
+                        <a href="/privacy/" class="text-muted text-decoration-none me-3">Privacy</a>
+                        <a href="/terms/" class="text-muted text-decoration-none me-3">Terms</a>
+                        <a href="/sitemap.xml" class="text-muted text-decoration-none">Sitemap</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Mobile Sticky CTA (visible only on mobile) -->
+    <div class="d-lg-none position-fixed bottom-0 start-0 end-0 bg-white border-top shadow-lg p-3" style="z-index: 1030;">
+        <div class="row g-2">
+            <div class="col-6">
+                <a href="tel:{{ .Site.Params.phone }}" class="btn btn-primary w-100">
+                    <svg class="icon-phone" width="16" height="16" fill="currentColor" aria-hidden="true">
+                        <use href="#icon-phone"></use>
+                    </svg>
+                    Call Now
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="/contact/" class="btn btn-outline-primary w-100">
+                    Get Quote
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- SVG Icon Sprite (Hidden) -->
+    <svg style="display: none;">
+        <symbol id="icon-phone" viewBox="0 0 16 16">
+            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </symbol>
+        <symbol id="icon-email" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+        </symbol>
+        <symbol id="icon-location" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+        </symbol>
+        <symbol id="icon-clock" viewBox="0 0 16 16">
+            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+        </symbol>
+    </svg>
+    
+    <!-- Deferred JavaScript Loading -->
+    <script>
+        // Load non-critical scripts after page load
+        window.addEventListener('load', function() {
+            // Bootstrap Bundle
+            const bootstrap = document.createElement('script');
+            bootstrap.src = '/js/bootstrap.bundle.min.js';
+            bootstrap.async = true;
+            document.body.appendChild(bootstrap);
+            
+            // Main app script
+            const mainScript = document.createElement('script');
+            mainScript.src = '/js/optimized.min.js';
+            mainScript.async = true;
+            document.body.appendChild(mainScript);
+            
+            // Web Vitals tracking
+            if ('PerformanceObserver' in window) {
+                const perfScript = document.createElement('script');
+                perfScript.src = '/js/web-vitals.min.js';
+                perfScript.async = true;
+                perfScript.onload = function() {
+                    webVitals.getCLS(console.log);
+                    webVitals.getFID(console.log);
+                    webVitals.getLCP(console.log);
+                };
+                document.body.appendChild(perfScript);
+            }
+        });
+        
+        // Progressive Enhancement: Only load animations if user hasn't requested reduced motion
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.addEventListener('DOMContentLoaded', function() {
+                // Intersection Observer for lazy loading animations
+                if ('IntersectionObserver' in window) {
+                    const animateOnScroll = document.querySelectorAll('.animate-on-scroll');
+                    const animateObserver = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('animated');
+                                animateObserver.unobserve(entry.target);
+                            }
+                        });
+                    }, { threshold: 0.1 });
+                    
+                    animateOnScroll.forEach(el => animateObserver.observe(el));
+                }
+            });
+        }
+    </script>
+</body>
+</html>

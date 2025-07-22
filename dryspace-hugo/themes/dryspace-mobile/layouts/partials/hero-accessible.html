@@ -1,0 +1,473 @@
+<!-- Accessible Hero Section - Dr. Amara Johnson-Liu's Implementation -->
+<section class="hero-section" role="banner" aria-label="Get basement waterproofing services">
+    <!-- Skip to main content link (first focusable element) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Animation control -->
+    <div class="animation-controls" role="group" aria-label="Animation controls">
+        <button type="button" 
+                class="btn-animation-toggle"
+                aria-pressed="false"
+                aria-label="Pause all animations">
+            <span class="pause-icon" aria-hidden="true">⏸️</span>
+            <span class="play-icon" style="display:none;" aria-hidden="true">▶️</span>
+            <span class="visually-hidden">Animations are currently playing</span>
+        </button>
+    </div>
+    
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                <!-- Trust Indicators with Accessible Text -->
+                <div class="trust-badge mb-3" role="complementary" aria-label="Company credentials">
+                    <p class="mb-0">
+                        <span class="icon-wrapper">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                            <span class="visually-hidden">Verified:</span>
+                        </span>
+                        <strong>Toronto's #1 Choice • 50,000+ Homes Protected Since 1999</strong>
+                    </p>
+                </div>
+                
+                <!-- Main Heading - Clear and Descriptive -->
+                <h1 class="display-4 fw-bold mb-3">
+                    Toronto Basement Waterproofing Experts
+                    <span class="d-block text-primary">Guaranteed Dry Basements with Lifetime Warranty</span>
+                </h1>
+                
+                <!-- Clear Value Proposition -->
+                <div class="lead mb-4" role="region" aria-label="Our service benefits">
+                    <p>Stop basement flooding permanently with Toronto's most experienced contractors.</p>
+                    <ul class="benefits-list list-unstyled">
+                        <li>
+                            <i class="fas fa-check" aria-hidden="true"></i>
+                            <strong>Lifetime transferable warranty</strong>
+                        </li>
+                        <li>
+                            <i class="fas fa-check" aria-hidden="true"></i>
+                            <strong>Save $3,400 with city rebates</strong>
+                        </li>
+                        <li>
+                            <i class="fas fa-check" aria-hidden="true"></i>
+                            <strong>24/7 emergency response in under 2 hours</strong>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Accessible CTA Buttons -->
+                <div class="cta-group" role="group" aria-label="Contact options">
+                    <a href="tel:4375450067" 
+                       class="btn btn-primary btn-lg"
+                       aria-label="Call us at 437-545-0067">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        Call (437) 545-0067
+                    </a>
+                    <a href="#quote-form" 
+                       class="btn btn-outline-primary btn-lg"
+                       aria-label="Skip to quote form">
+                        Get Free Quote
+                    </a>
+                </div>
+                
+                <!-- Urgency Message with Proper Semantics -->
+                <div class="alert alert-warning mt-3" role="alert">
+                    <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                    <strong>Seasonal Alert:</strong> Spring flooding season is here - Book your free inspection today!
+                </div>
+            </div>
+            
+            <!-- Accessible Contact Form -->
+            <div class="col-lg-5">
+                <div class="contact-form-wrapper bg-white rounded shadow-lg p-4" id="quote-form">
+                    <form class="needs-validation" 
+                          novalidate 
+                          aria-label="Request free waterproofing assessment"
+                          role="form">
+                        
+                        <h2 class="h4 fw-bold mb-3 text-center">Get Your Free Assessment</h2>
+                        
+                        <p class="text-center text-muted mb-4">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            Same-day response guaranteed
+                        </p>
+                        
+                        <!-- Accessible form fields with proper labels -->
+                        <div class="mb-3">
+                            <label for="customer-name" class="form-label">
+                                Your Name <span class="required" aria-label="required">*</span>
+                            </label>
+                            <input type="text" 
+                                   class="form-control form-control-lg" 
+                                   id="customer-name"
+                                   name="name"
+                                   aria-required="true"
+                                   aria-describedby="name-help name-error"
+                                   required>
+                            <span id="name-help" class="form-text">Enter your full name</span>
+                            <span id="name-error" class="error-message" role="alert" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="customer-phone" class="form-label">
+                                Phone Number <span class="required" aria-label="required">*</span>
+                            </label>
+                            <input type="tel" 
+                                   class="form-control form-control-lg" 
+                                   id="customer-phone"
+                                   name="phone"
+                                   aria-required="true"
+                                   aria-describedby="phone-help phone-error"
+                                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                   required>
+                            <span id="phone-help" class="form-text">Format: 123-456-7890</span>
+                            <span id="phone-error" class="error-message" role="alert" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="customer-email" class="form-label">
+                                Email Address <span class="required" aria-label="required">*</span>
+                            </label>
+                            <input type="email" 
+                                   class="form-control form-control-lg" 
+                                   id="customer-email"
+                                   name="email"
+                                   aria-required="true"
+                                   aria-describedby="email-help email-error"
+                                   required>
+                            <span id="email-help" class="form-text">We'll send confirmation to this email</span>
+                            <span id="email-error" class="error-message" role="alert" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="service-needed" class="form-label">
+                                What Service Do You Need? <span class="required" aria-label="required">*</span>
+                            </label>
+                            <select class="form-select form-select-lg" 
+                                    id="service-needed"
+                                    name="service"
+                                    aria-required="true"
+                                    aria-describedby="service-help service-error"
+                                    required>
+                                <option value="">Choose a service...</option>
+                                <option value="water-basement">Water in Basement</option>
+                                <option value="foundation-cracks">Foundation Cracks</option>
+                                <option value="damp-walls">Wet or Damp Walls</option>
+                                <option value="sump-pump">Sump Pump Failure</option>
+                                <option value="emergency">Emergency Flooding</option>
+                                <option value="other">Other / Not Sure</option>
+                            </select>
+                            <span id="service-help" class="form-text">Select the main issue you're experiencing</span>
+                            <span id="service-error" class="error-message" role="alert" aria-live="polite"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="postal-code" class="form-label">
+                                Postal Code
+                            </label>
+                            <input type="text" 
+                                   class="form-control form-control-lg" 
+                                   id="postal-code"
+                                   name="postal_code"
+                                   aria-describedby="postal-help"
+                                   pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]"
+                                   placeholder="M5V 3A8">
+                            <span id="postal-help" class="form-text">Helps us assign the nearest team</span>
+                        </div>
+                        
+                        <!-- Clear submit button with loading state -->
+                        <button type="submit" 
+                                class="btn btn-primary btn-lg w-100 mb-3"
+                                id="submit-button">
+                            <span class="button-text">Get Free Assessment Now</span>
+                            <span class="loading-spinner" style="display:none;" role="status">
+                                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                                <span class="visually-hidden">Submitting your request...</span>
+                            </span>
+                        </button>
+                        
+                        <!-- Form submission feedback -->
+                        <div class="form-feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+                        
+                        <div class="text-center">
+                            <small class="text-muted">
+                                <i class="fas fa-lock" aria-hidden="true"></i>
+                                <span>Your information is secure and will never be shared</span>
+                            </small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Accessible CSS -->
+<style>
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1rem;
+    background: #0080ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 0 0 0.25rem 0;
+}
+
+.skip-link:focus {
+    left: 0;
+    top: 0;
+}
+
+/* Animation Controls */
+.animation-controls {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.btn-animation-toggle {
+    background: white;
+    border: 2px solid #0080ff;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-animation-toggle:focus-visible {
+    outline: 3px solid #0080ff;
+    outline-offset: 2px;
+}
+
+/* Visually Hidden Text */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Focus Indicators */
+:focus-visible {
+    outline: 3px solid #0080ff;
+    outline-offset: 2px;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    :focus-visible {
+        outline: 4px solid currentColor;
+    }
+    
+    .btn-primary {
+        border: 2px solid transparent;
+    }
+}
+
+/* Form Styling */
+.form-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.required {
+    color: #dc3545;
+}
+
+.form-text {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.error-message {
+    display: none;
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.error-message.show {
+    display: block;
+}
+
+/* Ensure touch targets are 44x44px minimum */
+.btn,
+.form-control,
+.form-select {
+    min-height: 44px;
+    padding: 0.75rem 1rem;
+}
+
+/* Loading States */
+.loading-spinner {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Benefits List */
+.benefits-list li {
+    padding: 0.5rem 0;
+}
+
+.benefits-list i {
+    color: #28a745;
+    margin-right: 0.5rem;
+}
+
+/* Form Feedback */
+.form-feedback {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    display: none;
+}
+
+.form-feedback.success {
+    display: block;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-feedback.error {
+    display: block;
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Print Styles */
+@media print {
+    .skip-link,
+    .animation-controls {
+        display: none;
+    }
+}
+</style>
+
+<!-- Accessible JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Animation Toggle
+    const animationToggle = document.querySelector('.btn-animation-toggle');
+    const pauseIcon = animationToggle.querySelector('.pause-icon');
+    const playIcon = animationToggle.querySelector('.play-icon');
+    const statusText = animationToggle.querySelector('.visually-hidden');
+    
+    animationToggle.addEventListener('click', function() {
+        const isPaused = this.getAttribute('aria-pressed') === 'true';
+        
+        if (isPaused) {
+            // Resume animations
+            document.body.classList.remove('animations-paused');
+            this.setAttribute('aria-pressed', 'false');
+            pauseIcon.style.display = 'inline';
+            playIcon.style.display = 'none';
+            statusText.textContent = 'Animations are currently playing';
+        } else {
+            // Pause animations
+            document.body.classList.add('animations-paused');
+            this.setAttribute('aria-pressed', 'true');
+            pauseIcon.style.display = 'none';
+            playIcon.style.display = 'inline';
+            statusText.textContent = 'Animations are currently paused';
+        }
+    });
+    
+    // Form Validation with Accessible Error Messages
+    const form = document.querySelector('.needs-validation');
+    
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        
+        let isValid = true;
+        const requiredFields = form.querySelectorAll('[required]');
+        
+        requiredFields.forEach(field => {
+            const errorElement = document.getElementById(field.getAttribute('aria-describedby').split(' ').find(id => id.includes('error')));
+            
+            if (!field.value.trim()) {
+                isValid = false;
+                field.classList.add('is-invalid');
+                errorElement.textContent = `Please enter your ${field.labels[0].textContent.replace('*', '').trim()}`;
+                errorElement.classList.add('show');
+                
+                // Announce error to screen readers
+                errorElement.setAttribute('role', 'alert');
+            } else {
+                field.classList.remove('is-invalid');
+                errorElement.textContent = '';
+                errorElement.classList.remove('show');
+                errorElement.removeAttribute('role');
+            }
+        });
+        
+        if (isValid) {
+            // Show loading state
+            const submitButton = document.getElementById('submit-button');
+            const buttonText = submitButton.querySelector('.button-text');
+            const loadingSpinner = submitButton.querySelector('.loading-spinner');
+            
+            submitButton.disabled = true;
+            buttonText.style.display = 'none';
+            loadingSpinner.style.display = 'inline-flex';
+            
+            // Simulate form submission
+            setTimeout(() => {
+                // Show success message
+                const feedback = document.querySelector('.form-feedback');
+                feedback.className = 'form-feedback success';
+                feedback.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Thank you! We\'ll contact you within 30 minutes.';
+                
+                // Reset form
+                form.reset();
+                submitButton.disabled = false;
+                buttonText.style.display = 'inline';
+                loadingSpinner.style.display = 'none';
+                
+                // Focus success message for screen readers
+                feedback.focus();
+            }, 2000);
+        } else {
+            // Focus first error field
+            const firstError = form.querySelector('.is-invalid');
+            if (firstError) {
+                firstError.focus();
+            }
+        }
+    });
+    
+    // Ensure animations respect prefers-reduced-motion
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.body.classList.add('animations-paused');
+        animationToggle.setAttribute('aria-pressed', 'true');
+        pauseIcon.style.display = 'none';
+        playIcon.style.display = 'inline';
+        statusText.textContent = 'Animations are currently paused';
+    }
+});
+</script>

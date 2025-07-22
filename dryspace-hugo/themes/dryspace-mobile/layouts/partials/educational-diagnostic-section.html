@@ -1,0 +1,209 @@
+<!-- Educational Diagnostic Section - Superior to Competitors -->
+<section class="py-5 bg-light animate-on-scroll" data-animation="animate__fadeIn" id="diagnostics">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge bg-danger px-3 py-2 mb-3">Warning Signs</span>
+            <h2 class="display-5 fw-bold">Is Your Toronto Basement at Risk?</h2>
+            <p class="lead text-muted">Identify problems early - save thousands in repairs</p>
+        </div>
+        
+        <!-- Interactive Diagnostic Tool -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-10">
+                <div class="card shadow-lg border-0">
+                    <div class="card-body p-5">
+                        <h3 class="h4 mb-4 text-center">Quick Basement Health Check</h3>
+                        
+                        <div class="diagnostic-checklist">
+                            <div class="form-check mb-3 p-3 border rounded hover-shadow animate-on-scroll" data-animation="animate__fadeInLeft">
+                                <input class="form-check-input" type="checkbox" id="sign1" onchange="updateRiskScore()">
+                                <label class="form-check-label ms-2" for="sign1">
+                                    <strong>Water stains or discoloration on walls/floors</strong>
+                                    <small class="d-block text-muted">Dark patches, white residue (efflorescence), or peeling paint</small>
+                                </label>
+                            </div>
+                            
+                            <div class="form-check mb-3 p-3 border rounded hover-shadow animate-on-scroll" data-animation="animate__fadeInLeft" style="animation-delay: 0.1s;">
+                                <input class="form-check-input" type="checkbox" id="sign2" onchange="updateRiskScore()">
+                                <label class="form-check-label ms-2" for="sign2">
+                                    <strong>Musty smell or high humidity</strong>
+                                    <small class="d-block text-muted">Damp odor, condensation on windows, or humidity above 50%</small>
+                                </label>
+                            </div>
+                            
+                            <div class="form-check mb-3 p-3 border rounded hover-shadow animate-on-scroll" data-animation="animate__fadeInLeft" style="animation-delay: 0.2s;">
+                                <input class="form-check-input" type="checkbox" id="sign3" onchange="updateRiskScore()">
+                                <label class="form-check-label ms-2" for="sign3">
+                                    <strong>Visible cracks in walls or floor</strong>
+                                    <small class="d-block text-muted">Vertical, horizontal, or stair-step cracks in foundation</small>
+                                </label>
+                            </div>
+                            
+                            <div class="form-check mb-3 p-3 border rounded hover-shadow animate-on-scroll" data-animation="animate__fadeInLeft" style="animation-delay: 0.3s;">
+                                <input class="form-check-input" type="checkbox" id="sign4" onchange="updateRiskScore()">
+                                <label class="form-check-label ms-2" for="sign4">
+                                    <strong>Water pooling or active leaks</strong>
+                                    <small class="d-block text-muted">Puddles after rain, water seeping through walls/floor</small>
+                                </label>
+                            </div>
+                            
+                            <div class="form-check mb-3 p-3 border rounded hover-shadow animate-on-scroll" data-animation="animate__fadeInLeft" style="animation-delay: 0.4s;">
+                                <input class="form-check-input" type="checkbox" id="sign5" onchange="updateRiskScore()">
+                                <label class="form-check-label ms-2" for="sign5">
+                                    <strong>Mold or mildew growth</strong>
+                                    <small class="d-block text-muted">Black spots, fuzzy growth, or allergic reactions</small>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Risk Assessment Result -->
+                        <div id="riskResult" class="mt-4 p-4 rounded d-none">
+                            <h4 class="mb-3">Your Risk Level: <span id="riskLevel"></span></h4>
+                            <div class="progress mb-3" style="height: 30px;">
+                                <div id="riskBar" class="progress-bar" role="progressbar" style="width: 0%"></div>
+                            </div>
+                            <p id="riskMessage" class="mb-3"></p>
+                            <a href="#instant-quote" class="btn btn-primary btn-lg">Get Free Professional Assessment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Common Causes Grid -->
+        <h3 class="text-center mb-4">What Causes Basement Water Problems in Toronto?</h3>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm animate-on-scroll" data-animation="animate__fadeInUp">
+                    <div class="card-body text-center p-4">
+                        <div class="bg-primary bg-opacity-10 rounded-circle p-3 d-inline-flex mb-3">
+                            <i class="fas fa-cloud-rain fa-2x text-primary"></i>
+                        </div>
+                        <h4 class="h5">Toronto's Clay Soil</h4>
+                        <p class="text-muted mb-0">
+                            Clay expands when wet and contracts when dry, creating pressure on foundation walls and cracks over time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay: 0.1s;">
+                    <div class="card-body text-center p-4">
+                        <div class="bg-warning bg-opacity-10 rounded-circle p-3 d-inline-flex mb-3">
+                            <i class="fas fa-snowflake fa-2x text-warning"></i>
+                        </div>
+                        <h4 class="h5">Freeze-Thaw Cycles</h4>
+                        <p class="text-muted mb-0">
+                            Toronto's harsh winters cause water to freeze in cracks, expanding and creating larger openings for water entry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="card-body text-center p-4">
+                        <div class="bg-danger bg-opacity-10 rounded-circle p-3 d-inline-flex mb-3">
+                            <i class="fas fa-house-damage fa-2x text-danger"></i>
+                        </div>
+                        <h4 class="h5">Aging Infrastructure</h4>
+                        <p class="text-muted mb-0">
+                            Many Toronto homes built before 1980 lack modern waterproofing, making them vulnerable to water damage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay: 0.3s;">
+                    <div class="card-body text-center p-4">
+                        <div class="bg-info bg-opacity-10 rounded-circle p-3 d-inline-flex mb-3">
+                            <i class="fas fa-water fa-2x text-info"></i>
+                        </div>
+                        <h4 class="h5">High Water Table</h4>
+                        <p class="text-muted mb-0">
+                            Areas near Lake Ontario and rivers have high groundwater levels that put constant pressure on basements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="card-body text-center p-4">
+                        <div class="bg-success bg-opacity-10 rounded-circle p-3 d-inline-flex mb-3">
+                            <i class="fas fa-home fa-2x text-success"></i>
+                        </div>
+                        <h4 class="h5">Poor Grading</h4>
+                        <p class="text-muted mb-0">
+                            Improper slope around homes directs water toward foundations instead of away, increasing flooding risk.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm animate-on-scroll" data-animation="animate__fadeInUp" style="animation-delay: 0.5s;">
+                    <div class="card-body text-center p-4">
+                        <div class="bg-secondary bg-opacity-10 rounded-circle p-3 d-inline-flex mb-3">
+                            <i class="fas fa-plug fa-2x text-secondary"></i>
+                        </div>
+                        <h4 class="h5">Sump Pump Failure</h4>
+                        <p class="text-muted mb-0">
+                            Power outages during storms or mechanical failure can lead to rapid basement flooding in Toronto homes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Emergency CTA -->
+        <div class="text-center mt-5 p-4 bg-danger bg-opacity-10 rounded">
+            <h4 class="text-danger mb-3">
+                <i class="fas fa-exclamation-triangle me-2"></i>
+                Don't Wait Until It's Too Late!
+            </h4>
+            <p class="mb-3">Early detection saves Toronto homeowners an average of $15,000 in repairs</p>
+            <a href="tel:{{ .Site.Params.phone }}" class="btn btn-danger btn-lg">
+                <i class="fas fa-phone me-2"></i>Call for Emergency Service
+            </a>
+        </div>
+    </div>
+</section>
+
+<script>
+function updateRiskScore() {
+    const checkboxes = document.querySelectorAll('.diagnostic-checklist input[type="checkbox"]:checked');
+    const score = checkboxes.length;
+    const result = document.getElementById('riskResult');
+    const level = document.getElementById('riskLevel');
+    const bar = document.getElementById('riskBar');
+    const message = document.getElementById('riskMessage');
+    
+    result.classList.remove('d-none');
+    
+    if (score === 0) {
+        result.classList.add('d-none');
+        return;
+    }
+    
+    const percentage = (score / 5) * 100;
+    bar.style.width = percentage + '%';
+    
+    if (score <= 1) {
+        level.textContent = 'LOW';
+        bar.className = 'progress-bar bg-success';
+        message.textContent = 'Your basement shows minor signs of potential issues. Schedule a free inspection to prevent future problems.';
+    } else if (score <= 3) {
+        level.textContent = 'MODERATE';
+        bar.className = 'progress-bar bg-warning';
+        message.textContent = 'Your basement is showing concerning signs that require professional attention soon to prevent costly damage.';
+    } else {
+        level.textContent = 'HIGH';
+        bar.className = 'progress-bar bg-danger animate__animated animate__pulse animate__infinite';
+        message.textContent = 'Your basement needs immediate professional assessment! These issues can quickly lead to structural damage and health hazards.';
+    }
+}
+</script>

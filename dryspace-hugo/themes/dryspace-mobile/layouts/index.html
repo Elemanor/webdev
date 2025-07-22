@@ -1,0 +1,805 @@
+{{ define "main" }}
+<!-- SEO Dominance - Marcus Chen-Rodriguez -->
+{{ partial "seo-dominance.html" . }}
+
+<!-- Product Growth Engine - Ethan Chen-Williams (Hidden - Using SEO Dominance) -->
+<div style="display:none;">
+{{ partial "growth-engine.html" . }}
+</div>
+
+<!-- CRO-Optimized Hero Section (Hidden - Using Growth Engine) -->
+<div style="display:none;">
+{{ partial "hero-cro-optimized.html" . }}
+</div>
+
+<!-- Accessible Hero Section (Hidden - A/B Testing) -->
+<div style="display:none;">
+{{ partial "hero-accessible.html" . }}
+</div>
+
+<!-- Zara's Icon-Enhanced Hero (Hidden - Can switch between them) -->
+<div style="display:none;">
+{{ partial "hero-icons.html" . }}
+</div>
+
+<!-- Kai's DaisyUI Enhanced Hero (Hidden - Can switch between them) -->
+<div style="display:none;">
+{{ partial "hero-daisy.html" . }}
+</div>
+
+<!-- Original Hero Section (Hidden - Can switch between them) -->
+<section class="hero-section relative overflow-hidden bg-animated-waterfall min-h-screen flex items-center hook-pattern" style="display:none;">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                <!-- Trust Badge -->
+                <div class="d-inline-flex align-items-center bg-warning text-dark px-3 py-2 rounded-pill mb-3 animate__animated animate__fadeInDown">
+                    <i class="fas fa-shield-alt me-2"></i>
+                    <small class="fw-bold">Toronto's #1 Choice • 50,000+ Homes Protected Since 1999</small>
+                </div>
+                
+                <!-- Main Headline - Outperforming Competitors -->
+                <h1 class="display-4 fw-bold mb-3 animate__animated animate__fadeInLeft animate__delay-1s">
+                    Toronto Basement Waterproofing Experts Who <span class="text-primary">Guarantee</span> Your Basement Stays Dry
+                </h1>
+                
+                <!-- Superior Value Proposition -->
+                <p class="lead mb-4 animate__animated animate__fadeIn animate__delay-2s">
+                    Stop basement flooding permanently with Toronto's most experienced waterproofing contractors. 
+                    <strong>Lifetime warranty</strong>, <strong>$3,400 city rebates</strong>, and <strong>24/7 emergency response</strong> 
+                    that arrives in under 2 hours.
+                </p>
+                
+                <!-- Key Benefits Grid - Mobile Optimized -->
+                <div class="row g-3 mb-4 animate__animated animate__fadeInUp animate__delay-3s">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2 fs-5"></i>
+                            <span class="fw-bold">25+ Years Experience</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2 fs-5"></i>
+                            <span class="fw-bold">Lifetime Warranty</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2 fs-5"></i>
+                            <span class="fw-bold">Licensed & Insured</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-2 fs-5"></i>
+                            <span class="fw-bold">Free Same-Day Quote</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile CTA Buttons -->
+                <div class="d-flex flex-column flex-sm-row gap-3">
+                    <a href="tel:{{ .Site.Params.phone }}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone me-2"></i>Call (437) 545-0067
+                    </a>
+                    <a href="#instant-quote" class="btn btn-outline-primary btn-lg">
+                        Get Instant Quote
+                    </a>
+                </div>
+                
+                <!-- Urgency Message -->
+                <p class="text-danger fw-bold mt-3 mb-0">
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    Spring flooding season is here - Book your free inspection today!
+                </p>
+            </div>
+            
+            <!-- Lead Form - Mobile Optimized -->
+            <div class="col-lg-5">
+                <div class="bg-white rounded shadow-lg p-4 animate__animated animate__fadeInRight animate__delay-1s" id="instant-quote">
+                    <h3 class="h4 fw-bold mb-3 text-center">
+                        Get Your Free Waterproofing Assessment
+                    </h3>
+                    <p class="text-center text-muted mb-4">
+                        <i class="fas fa-clock me-2"></i>Same-day response guaranteed
+                    </p>
+                    
+                    <form class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control form-control-lg" placeholder="Phone Number" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-lg" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select form-select-lg" required>
+                                <option value="">Select Your Issue</option>
+                                <option>Water in Basement</option>
+                                <option>Foundation Cracks</option>
+                                <option>Wet/Damp Walls</option>
+                                <option>Sump Pump Failure</option>
+                                <option>Emergency Flooding</option>
+                                <option>Other/Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="Postal Code" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg w-100 mb-3">
+                            Get Free Assessment Now
+                        </button>
+                        
+                        <div class="text-center">
+                            <small class="text-muted">
+                                <i class="fas fa-lock me-1"></i>100% Secure • No Obligations
+                            </small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Accessible Problem Cards -->
+{{ partial "problems-accessible.html" . }}
+
+<!-- Zara's Icon Problem Cards (Hidden - Can switch between them) -->
+<div style="display:none;">
+{{ partial "problems-icons.html" . }}
+</div>
+
+<!-- Kai's DaisyUI Problem Cards (Hidden) -->
+<div style="display:none;">
+{{ partial "problems-daisy.html" . }}
+</div>
+
+<!-- Original Problem Section (Hidden) -->
+<section class="py-20 relative bg-gradient-to-b from-white via-waterproof-blue-50 to-white animate-on-scroll" data-animation="animate__fadeIn" style="display:none;">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 bg-topography-pattern opacity-5"></div>
+    
+    <div class="container relative z-10">
+        <div class="text-center mb-12 animate-on-scroll" data-animation="animate__fadeInDown">
+            <h2 class="heading-section mb-6">
+                We Fix Every Toronto Basement Problem - <span class="gradient-text-primary">Guaranteed</span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Click your problem below for an instant solution and accurate pricing
+            </p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Problem Cards with Better Content -->
+            <div class="col-md-4 col-sm-6">
+                <div class="problem-card-enhanced glass-card h-100 card-magnetic group transform transition-all duration-500 hover:scale-105">
+                    <div class="card-body text-center p-6">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center shadow-glow group-hover:animate-pulse">
+                            <i class="fas fa-water text-3xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 gradient-text-primary">Basement Flooding</h4>
+                        <p class="text-muted mb-3">
+                            Complete waterproofing systems that stop water permanently. 
+                            Interior & exterior solutions with lifetime warranty.
+                        </p>
+                        <div class="text-primary fw-bold mb-3">From $3,000</div>
+                        <a href="/services/basement-waterproofing/" class="btn btn-outline-primary btn-sm">
+                            View Solutions →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm hover-shadow problem-card magnetic-hover reveal-scale">
+                    <div class="card-body text-center p-4">
+                        <div class="text-danger mb-3">
+                            <i class="fas fa-exclamation-triangle fa-3x"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">Foundation Cracks</h4>
+                        <p class="text-muted mb-3">
+                            Professional crack injection that seals leaks forever. 
+                            Structural repairs for settling foundations.
+                        </p>
+                        <div class="text-primary fw-bold mb-3">From $500/crack</div>
+                        <a href="/services/foundation-repair/" class="btn btn-outline-primary btn-sm">
+                            Fix Cracks →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm hover-shadow problem-card magnetic-hover reveal-scale">
+                    <div class="card-body text-center p-4">
+                        <div class="text-warning mb-3">
+                            <i class="fas fa-tint fa-3x"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">Wet/Damp Basement</h4>
+                        <p class="text-muted mb-3">
+                            Advanced drainage systems and vapor barriers. 
+                            Transform damp basements into dry living space.
+                        </p>
+                        <div class="text-primary fw-bold mb-3">From $5,000</div>
+                        <a href="/services/interior-waterproofing/" class="btn btn-outline-primary btn-sm">
+                            Get Dry →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm hover-shadow problem-card magnetic-hover reveal-scale">
+                    <div class="card-body text-center p-4">
+                        <div class="text-info mb-3">
+                            <i class="fas fa-plug fa-3x"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">Sump Pump Issues</h4>
+                        <p class="text-muted mb-3">
+                            Triple-pump systems with battery backup. 
+                            Never worry about power outages again.
+                        </p>
+                        <div class="text-primary fw-bold mb-3">From $2,500</div>
+                        <a href="/services/sump-pump-installation/" class="btn btn-outline-primary btn-sm">
+                            Upgrade Now →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm hover-shadow problem-card border-primary">
+                    <div class="position-absolute top-0 end-0 bg-primary text-white px-3 py-1 rounded-start">
+                        <small>Most Popular</small>
+                    </div>
+                    <div class="card-body text-center p-4">
+                        <div class="text-success mb-3">
+                            <i class="fas fa-shield-alt fa-3x"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">Complete Protection</h4>
+                        <p class="text-muted mb-3">
+                            Full interior + exterior waterproofing. 
+                            The ultimate basement protection system.
+                        </p>
+                        <div class="text-primary fw-bold mb-3">From $15,000</div>
+                        <a href="/contact/" class="btn btn-primary btn-sm">
+                            Get Quote →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm hover-shadow problem-card magnetic-hover reveal-scale">
+                    <div class="card-body text-center p-4">
+                        <div class="text-danger mb-3">
+                            <i class="fas fa-home fa-3x"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-3">Basement Lowering</h4>
+                        <p class="text-muted mb-3">
+                            Add 2+ feet of ceiling height. Create legal basement apartments.
+                            Full underpinning services.
+                        </p>
+                        <div class="text-primary fw-bold mb-3">From $350/sqft</div>
+                        <a href="/services/basement-underpinning/" class="btn btn-outline-primary btn-sm">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Section - Better Than Competitors -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">
+                Why Toronto Homeowners Choose Dryspace Over Others
+            </h2>
+            <p class="lead text-muted">
+                See the difference experience, quality, and service makes
+            </p>
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-lg align-middle">
+                <thead>
+                    <tr>
+                        <th class="bg-white border-0"></th>
+                        <th class="bg-primary text-white text-center">
+                            <div class="py-3">
+                                <h4 class="mb-0">Dryspace</h4>
+                                <small>Your Best Choice</small>
+                            </div>
+                        </th>
+                        <th class="text-center bg-light">Other Companies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fw-bold">Experience</td>
+                        <td class="text-center bg-primary bg-opacity-10">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <strong>25+ Years, 50,000+ Homes</strong>
+                        </td>
+                        <td class="text-center">5-10 Years Average</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">Warranty</td>
+                        <td class="text-center bg-primary bg-opacity-10">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <strong>Lifetime Transferable</strong>
+                        </td>
+                        <td class="text-center">1-10 Year Limited</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">Emergency Response</td>
+                        <td class="text-center bg-primary bg-opacity-10">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <strong>24/7 - Under 2 Hours</strong>
+                        </td>
+                        <td class="text-center">Business Hours Only</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">City Rebate Help</td>
+                        <td class="text-center bg-primary bg-opacity-10">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <strong>Full $3,400 Application Support</strong>
+                        </td>
+                        <td class="text-center">DIY or No Help</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">Inspection & Quote</td>
+                        <td class="text-center bg-primary bg-opacity-10">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <strong>Free Same-Day Service</strong>
+                        </td>
+                        <td class="text-center">$250+ or 3-5 Days Wait</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">Insurance & License</td>
+                        <td class="text-center bg-primary bg-opacity-10">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <strong>$5M Liability + WSIB</strong>
+                        </td>
+                        <td class="text-center">Often Unverified</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">Customer Rating</td>
+                        <td class="text-center bg-primary bg-opacity-10">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <strong>4.9/5 (2,500+ Reviews)</strong>
+                        </td>
+                        <td class="text-center">3.5-4.0 Average</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="#instant-quote" class="btn btn-primary btn-lg">
+                Choose The Best - Get Your Free Quote Now
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Service Process - Mobile Optimized -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">
+                Our Simple 4-Step Waterproofing Process
+            </h2>
+            <p class="lead text-muted">
+                From wet basement to dry living space in days, not weeks
+            </p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-3 col-6">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                        <span class="h3 mb-0">1</span>
+                    </div>
+                    <h5 class="fw-bold">Free Inspection</h5>
+                    <p class="small text-muted">
+                        Same-day assessment of your basement issues
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-6">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                        <span class="h3 mb-0">2</span>
+                    </div>
+                    <h5 class="fw-bold">Custom Solution</h5>
+                    <p class="small text-muted">
+                        Tailored waterproofing plan with upfront pricing
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-6">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                        <span class="h3 mb-0">3</span>
+                    </div>
+                    <h5 class="fw-bold">Expert Installation</h5>
+                    <p class="small text-muted">
+                        Clean, efficient work by certified technicians
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-6">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                        <span class="h3 mb-0">4</span>
+                    </div>
+                    <h5 class="fw-bold">Lifetime Protection</h5>
+                    <p class="small text-muted">
+                        Enjoy your dry basement with our lifetime warranty
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Accessible Testimonials -->
+{{ partial "testimonials-accessible.html" . }}
+
+<!-- Zara's Icon Testimonials (Hidden - Can switch between them) -->
+<div style="display:none;">
+{{ partial "testimonials-icons.html" . }}
+</div>
+
+<!-- Kai's DaisyUI Testimonials (Hidden) -->
+<div style="display:none;">
+{{ partial "testimonials-daisy.html" . }}
+</div>
+
+<!-- Original Reviews Section (Hidden) -->
+<section class="py-20 relative bg-gradient-to-br from-gray-50 to-gray-100 animate-on-scroll" data-animation="animate__fadeIn" style="display:none;">
+    <!-- Floating Review Cards Background -->
+    <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute -top-10 -left-10 w-64 h-64 bg-warning-200/30 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute -bottom-10 -right-10 w-96 h-96 bg-primary-200/30 rounded-full blur-3xl animate-float" style="animation-delay: 3s;"></div>
+    </div>
+    
+    <div class="container relative z-10">
+        <div class="text-center mb-12">
+            <h2 class="heading-section animate-on-scroll" data-animation="animate__fadeInDown">
+                <span class="counter" data-target="2500">0</span>+ Toronto Homeowners Trust Dryspace
+            </h2>
+            <div class="inline-flex items-center glass-card px-6 py-3 rounded-full mt-6 animate-on-scroll shine-effect" data-animation="animate__bounceIn" data-animation-delay="500">
+                <div class="text-warning me-2">
+                    <i class="fas fa-star animate__animated animate__pulse animate__infinite"></i>
+                    <i class="fas fa-star animate__animated animate__pulse animate__infinite" style="animation-delay: 0.1s;"></i>
+                    <i class="fas fa-star animate__animated animate__pulse animate__infinite" style="animation-delay: 0.2s;"></i>
+                    <i class="fas fa-star animate__animated animate__pulse animate__infinite" style="animation-delay: 0.3s;"></i>
+                    <i class="fas fa-star animate__animated animate__pulse animate__infinite" style="animation-delay: 0.4s;"></i>
+                </div>
+                <strong class="counter" data-target="4.9">0</strong><strong>/5</strong>
+                <span class="text-muted ms-2">Average Rating</span>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="text-warning mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-3">
+                            "Dryspace saved our home! Water was pouring in during the spring thaw. 
+                            They arrived in 90 minutes, stopped the flooding, and installed a complete 
+                            waterproofing system. Haven't had a drop since!"
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                <span class="fw-bold">JM</span>
+                            </div>
+                            <div>
+                                <h6 class="mb-0">John M.</h6>
+                                <small class="text-muted">The Beaches, Toronto</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="text-warning mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-3">
+                            "Professional from start to finish. They helped us get the full $3,400 
+                            city rebate, making the whole project affordable. Our basement is now a 
+                            beautiful rental unit bringing in $2,500/month!"
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                <span class="fw-bold">SL</span>
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Sarah L.</h6>
+                                <small class="text-muted">High Park, Toronto</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="text-warning mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-3">
+                            "After 3 other companies failed to fix our leaky foundation, Dryspace 
+                            solved it permanently. Their lifetime warranty gives us complete peace 
+                            of mind. Worth every penny!"
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                <span class="fw-bold">MP</span>
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Michael P.</h6>
+                                <small class="text-muted">Yorkville, Toronto</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="/reviews/" class="btn btn-outline-primary">
+                Read All 2,500+ Reviews →
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Security Shield - Zoe Martinez-Kim -->
+{{ partial "security-shield.html" . }}
+
+<!-- Engineering Credibility Section -->
+{{ partial "engineering-credibility.html" . }}
+
+<!-- Author Entities for E-E-A-T -->
+{{ partial "author-entities.html" . }}
+
+<!-- Content Hub: Waterproofing Knowledge Center -->
+{{ partial "content-hub-waterproofing.html" . }}
+
+<!-- Interactive Waterproofing Calculator -->
+{{ partial "interactive-calculator.html" . }}
+
+<!-- Dynamic Content Personalization -->
+{{ partial "content-personalization.html" . }}
+
+<!-- Conversion Funnel Optimization -->
+{{ partial "conversion-funnel-optimized.html" . }}
+
+<!-- Service Areas -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">
+                Serving All of Greater Toronto
+            </h2>
+            <p class="lead text-muted">
+                Fast response times across the GTA - Usually under 2 hours
+            </p>
+        </div>
+        
+        <div class="row g-3">
+            <div class="col-md-3 col-6">
+                <div class="text-center p-3 border rounded hover-shadow">
+                    <i class="fas fa-map-marker-alt text-primary mb-2"></i>
+                    <h6 class="mb-0">Toronto</h6>
+                    <small class="text-muted">All neighborhoods</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="text-center p-3 border rounded hover-shadow">
+                    <i class="fas fa-map-marker-alt text-primary mb-2"></i>
+                    <h6 class="mb-0">Mississauga</h6>
+                    <small class="text-muted">30 min response</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="text-center p-3 border rounded hover-shadow">
+                    <i class="fas fa-map-marker-alt text-primary mb-2"></i>
+                    <h6 class="mb-0">Brampton</h6>
+                    <small class="text-muted">35 min response</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="text-center p-3 border rounded hover-shadow">
+                    <i class="fas fa-map-marker-alt text-primary mb-2"></i>
+                    <h6 class="mb-0">Vaughan</h6>
+                    <small class="text-muted">25 min response</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="text-center p-3 border rounded hover-shadow">
+                    <i class="fas fa-map-marker-alt text-primary mb-2"></i>
+                    <h6 class="mb-0">Markham</h6>
+                    <small class="text-muted">30 min response</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="text-center p-3 border rounded hover-shadow">
+                    <i class="fas fa-map-marker-alt text-primary mb-2"></i>
+                    <h6 class="mb-0">Richmond Hill</h6>
+                    <small class="text-muted">25 min response</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="text-center p-3 border rounded hover-shadow">
+                    <i class="fas fa-map-marker-alt text-primary mb-2"></i>
+                    <h6 class="mb-0">Oakville</h6>
+                    <small class="text-muted">40 min response</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="text-center p-3 border rounded hover-shadow">
+                    <i class="fas fa-map-marker-alt text-primary mb-2"></i>
+                    <h6 class="mb-0">Burlington</h6>
+                    <small class="text-muted">45 min response</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="/areas/" class="btn btn-primary">
+                Check Your Area →
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Voice Search Optimized FAQ Section -->
+{{ partial "voice-search-faq.html" . }}
+
+<!-- Original FAQ Section (Hidden) -->
+<div style="display:none;">
+{{ partial "faq-section.html" . }}
+</div>
+
+<!-- Cost Transparency Section -->
+{{ partial "cost-transparency-section.html" . }}
+
+<!-- Educational Diagnostic Section -->
+{{ partial "educational-diagnostic-section.html" . }}
+
+<!-- Blog/Resource Hub Section -->
+{{ partial "blog-resource-section.html" . }}
+
+<!-- Technical Case Studies Section -->
+{{ partial "technical-case-studies.html" . }}
+
+<!-- Original Case Studies/Portfolio Section (Hidden) -->
+<div style="display:none;">
+{{ partial "case-studies-section.html" . }}
+</div>
+
+<!-- Video Gallery Section -->
+{{ partial "video-gallery-section.html" . }}
+
+<!-- Media/Press Section -->
+{{ partial "media-press-section.html" . }}
+
+<!-- Accessible CTA Section -->
+{{ partial "cta-accessible.html" . }}
+
+<!-- Zara's Icon CTA Symphony (Hidden - Can switch between them) -->
+<div style="display:none;">
+{{ partial "cta-icons.html" . }}
+</div>
+
+<!-- Final CTA - Maya's Conversion Masterpiece (Hidden) -->
+<section class="py-24 relative overflow-hidden bg-gradient-to-br from-primary-600 via-primary-700 to-primary-900 animate-on-scroll" data-animation="animate__fadeIn" style="display:none;">
+    <!-- Animated Gradient Background -->
+    <div class="absolute inset-0 bg-gradient-to-r from-danger-500/20 via-warning-500/20 to-danger-500/20 animate-gradient-x"></div>
+    
+    <!-- Urgency Particles -->
+    <div class="absolute inset-0">
+        <div class="absolute top-1/4 left-1/4 w-2 h-2 bg-white rounded-full animate-ping"></div>
+        <div class="absolute top-3/4 left-3/4 w-2 h-2 bg-warning-400 rounded-full animate-ping" style="animation-delay: 1s;"></div>
+        <div class="absolute top-1/2 right-1/4 w-2 h-2 bg-danger-400 rounded-full animate-ping" style="animation-delay: 2s;"></div>
+    </div>
+    
+    <div class="container text-center position-relative">
+        <h2 class="display-5 fw-bold mb-4 animate-on-scroll" data-animation="animate__bounceInDown">
+            <i class="fas fa-exclamation-triangle text-warning animate__animated animate__flash animate__infinite me-3"></i>
+            Stop Water Damage Before It's Too Late
+        </h2>
+        <p class="lead mb-4 animate-on-scroll" data-animation="animate__fadeInUp" data-animation-delay="300">
+            Every day you wait, water damage gets worse and more expensive to fix. 
+            <span class="text-warning fw-bold animate__animated animate__pulse animate__infinite">Get your free assessment today</span> and protect your biggest investment.
+        </p>
+        
+        <!-- Countdown Timer -->
+        <div class="mb-4 animate-on-scroll" data-animation="animate__zoomIn" data-animation-delay="500">
+            <div class="d-inline-flex align-items-center bg-white text-primary rounded-pill px-4 py-2">
+                <i class="fas fa-clock me-2"></i>
+                <span class="fw-bold">Spring Offer Ends In: </span>
+                <span class="countdown ms-2 text-danger fw-bold" data-date="2024-06-01">
+                    <span class="days">00</span>d : 
+                    <span class="hours">00</span>h : 
+                    <span class="minutes">00</span>m : 
+                    <span class="seconds">00</span>s
+                </span>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center g-3">
+            <div class="col-auto animate-on-scroll" data-animation="animate__bounceIn" data-animation-delay="700">
+                <a href="tel:{{ .Site.Params.phone }}" class="btn btn-warning btn-lg px-5 cta-urgent micro-bounce">
+                    <i class="fas fa-phone me-2 animate__animated animate__shake animate__infinite"></i>Call (437) 545-0067 Now
+                </a>
+            </div>
+            <div class="col-auto animate-on-scroll" data-animation="animate__bounceIn" data-animation-delay="900">
+                <a href="#instant-quote" class="btn btn-outline-light btn-lg px-5 hover-grow">
+                    Get Free Quote Online
+                </a>
+            </div>
+        </div>
+        
+        <p class="mt-4 mb-0">
+            <small>
+                <i class="fas fa-shield-alt me-2"></i>
+                Licensed • Insured • Bonded • 24/7 Emergency Service
+            </small>
+        </p>
+    </div>
+</section>
+
+<style>
+/* Mobile-first styles */
+.hover-shadow {
+    transition: all 0.3s ease;
+}
+.hover-shadow:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+    transform: translateY(-2px);
+}
+.problem-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.problem-card:hover {
+    transform: translateY(-5px);
+}
+</style>
+{{ end }}

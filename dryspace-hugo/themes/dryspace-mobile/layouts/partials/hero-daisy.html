@@ -1,0 +1,210 @@
+<!-- Hero Section - Kai's DaisyUI Masterpiece -->
+<section class="hero min-h-screen bg-gradient-to-br from-base-200 via-base-100 to-primary/10">
+  <div class="hero-overlay bg-opacity-20"></div>
+  
+  <!-- Floating UI Elements -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="badge badge-primary badge-lg absolute top-20 left-10 animate-float">24/7 Service</div>
+    <div class="badge badge-secondary badge-lg absolute top-40 right-20 animate-float" style="animation-delay: 1s;">Licensed</div>
+    <div class="badge badge-accent badge-lg absolute bottom-40 left-20 animate-float" style="animation-delay: 2s;">$3,400 Rebate</div>
+  </div>
+  
+  <div class="hero-content text-center text-neutral-content">
+    <div class="max-w-4xl">
+      <!-- Trust Badge -->
+      <div class="badge badge-warning badge-lg gap-2 mb-6 badge-breathing">
+        <i class="fas fa-shield-alt"></i>
+        Toronto's #1 Choice Since 1999
+      </div>
+      
+      <!-- Main Headline -->
+      <h1 class="mb-8 text-5xl md:text-7xl font-bold leading-tight">
+        Toronto Basement Waterproofing
+        <span class="text-primary">Guaranteed</span> Dry
+      </h1>
+      
+      <!-- Value Props -->
+      <div class="flex flex-wrap justify-center gap-4 mb-8">
+        <div class="stat bg-base-100/80 backdrop-blur rounded-box shadow-xl">
+          <div class="stat-figure text-primary">
+            <i class="fas fa-home text-3xl"></i>
+          </div>
+          <div class="stat-title">Homes Protected</div>
+          <div class="stat-value text-primary">50K+</div>
+        </div>
+        
+        <div class="stat bg-base-100/80 backdrop-blur rounded-box shadow-xl">
+          <div class="stat-figure text-secondary">
+            <i class="fas fa-clock text-3xl"></i>
+          </div>
+          <div class="stat-title">Response Time</div>
+          <div class="stat-value text-secondary">2hrs</div>
+        </div>
+        
+        <div class="stat bg-base-100/80 backdrop-blur rounded-box shadow-xl">
+          <div class="stat-figure text-accent">
+            <i class="fas fa-star text-3xl"></i>
+          </div>
+          <div class="stat-title">Rating</div>
+          <div class="stat-value text-accent">4.9/5</div>
+        </div>
+      </div>
+      
+      <p class="mb-8 text-xl opacity-90">
+        Stop basement flooding permanently with lifetime warranty & city rebates.
+        Emergency response arrives in under 2 hours!
+      </p>
+      
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:{{ .Site.Params.phone }}" class="btn btn-primary btn-lg gap-2 btn-kai">
+          <i class="fas fa-phone animate-pulse"></i>
+          Call (437) 545-0067
+        </a>
+        <label for="quote-modal" class="btn btn-outline btn-secondary btn-lg btn-kai">
+          Get Instant Quote
+        </label>
+      </div>
+      
+      <!-- Urgency Alert -->
+      <div class="alert alert-warning shadow-lg mt-8 max-w-lg mx-auto alert-slide-in">
+        <div>
+          <i class="fas fa-exclamation-triangle"></i>
+          <span>Spring flooding season! Book your free inspection today.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+    <div class="mouse-scroll">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quote Modal -->
+<input type="checkbox" id="quote-modal" class="modal-toggle" />
+<div class="modal modal-kai">
+  <div class="modal-box relative">
+    <label for="quote-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+    
+    <h3 class="text-lg font-bold mb-4">Get Your Free Waterproofing Quote</h3>
+    
+    <div class="form-control w-full">
+      <label class="label">
+        <span class="label-text">Your Name</span>
+      </label>
+      <input type="text" placeholder="John Smith" class="input input-bordered w-full" />
+    </div>
+    
+    <div class="form-control w-full mt-4">
+      <label class="label">
+        <span class="label-text">Phone Number</span>
+      </label>
+      <input type="tel" placeholder="(416) 123-4567" class="input input-bordered w-full" />
+    </div>
+    
+    <div class="form-control w-full mt-4">
+      <label class="label">
+        <span class="label-text">Your Issue</span>
+      </label>
+      <select class="select select-bordered">
+        <option disabled selected>Select your basement problem</option>
+        <option>Water in Basement</option>
+        <option>Foundation Cracks</option>
+        <option>Wet/Damp Walls</option>
+        <option>Sump Pump Failure</option>
+        <option>Emergency Flooding</option>
+      </select>
+    </div>
+    
+    <div class="modal-action">
+      <button class="btn btn-primary btn-block" onclick="AlertMagic.show('Quote request sent! We\'ll call you within 30 minutes.', 'success'); document.getElementById('quote-modal').checked = false;">
+        Get Free Quote Now
+      </button>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Mouse Scroll Indicator */
+.mouse-scroll {
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 100px;
+  margin-top: 40px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid white;
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+  animation: wheel-scroll 1.6s ease infinite;
+}
+
+@keyframes wheel-scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.arrow span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+  margin: -3px 0;
+  animation: arrow-scroll 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -.4s;
+}
+
+@keyframes arrow-scroll {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+</style>

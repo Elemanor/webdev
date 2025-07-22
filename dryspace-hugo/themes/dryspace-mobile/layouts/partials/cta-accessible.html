@@ -1,0 +1,309 @@
+<!-- Accessible CTA Section - Dr. Amara Johnson-Liu's Implementation -->
+<section class="cta-section py-5 bg-danger text-white" role="region" aria-label="Take action to protect your basement">
+    <div class="container text-center">
+        <h2 class="display-5 fw-bold mb-4">
+            <i class="fas fa-exclamation-triangle me-2" aria-hidden="true"></i>
+            Stop Water Damage Before It's Too Late
+        </h2>
+        
+        <p class="lead mb-4">
+            Every day you wait, water damage gets worse and more expensive to fix. 
+            Get your free assessment today and protect your biggest investment.
+        </p>
+        
+        <!-- Special Offer Timer -->
+        <div class="offer-timer mb-5" role="timer" aria-label="Spring flooding offer countdown">
+            <div class="d-inline-flex align-items-center bg-white bg-opacity-25 rounded-pill px-4 py-3">
+                <i class="fas fa-clock me-3" aria-hidden="true"></i>
+                <strong class="me-3">Spring Flooding Offer Ends In:</strong>
+                <div class="countdown-display" aria-live="polite" aria-atomic="true">
+                    <span class="countdown-segment">
+                        <span class="countdown-value" id="days-accessible">00</span>
+                        <span class="countdown-label">days</span>
+                    </span>
+                    <span class="mx-1" aria-hidden="true">:</span>
+                    <span class="countdown-segment">
+                        <span class="countdown-value" id="hours-accessible">00</span>
+                        <span class="countdown-label">hours</span>
+                    </span>
+                    <span class="mx-1" aria-hidden="true">:</span>
+                    <span class="countdown-segment">
+                        <span class="countdown-value" id="minutes-accessible">00</span>
+                        <span class="countdown-label">minutes</span>
+                    </span>
+                    <span class="mx-1" aria-hidden="true">:</span>
+                    <span class="countdown-segment">
+                        <span class="countdown-value" id="seconds-accessible">00</span>
+                        <span class="countdown-label">seconds</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Key Benefits -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <div class="row g-4 text-center">
+                    <div class="col-sm-4">
+                        <div class="benefit-card">
+                            <i class="fas fa-dollar-sign fa-3x mb-2" aria-hidden="true"></i>
+                            <h3 class="h5 fw-bold mb-1">Save $3,400</h3>
+                            <p class="mb-0 small">City Rebates Available</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="benefit-card">
+                            <i class="fas fa-clock fa-3x mb-2" aria-hidden="true"></i>
+                            <h3 class="h5 fw-bold mb-1">2 Hour Response</h3>
+                            <p class="mb-0 small">24/7 Emergency Service</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="benefit-card">
+                            <i class="fas fa-infinity fa-3x mb-2" aria-hidden="true"></i>
+                            <h3 class="h5 fw-bold mb-1">Lifetime Warranty</h3>
+                            <p class="mb-0 small">Fully Transferable</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CTA Buttons -->
+        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-4">
+            <a href="tel:4375450067" 
+               class="btn btn-warning btn-lg px-5"
+               aria-label="Call us now at 437-545-0067">
+                <i class="fas fa-phone me-2" aria-hidden="true"></i>
+                Call (437) 545-0067 Now
+            </a>
+            <a href="#quote-form" 
+               class="btn btn-outline-light btn-lg px-5"
+               aria-label="Get free assessment online">
+                <i class="fas fa-clipboard-check me-2" aria-hidden="true"></i>
+                Get Free Assessment
+            </a>
+        </div>
+        
+        <!-- Trust Indicators -->
+        <div class="trust-indicators">
+            <ul class="list-inline mb-0" role="list">
+                <li class="list-inline-item" role="listitem">
+                    <i class="fas fa-shield-alt me-1" aria-hidden="true"></i>
+                    <span>Licensed</span>
+                </li>
+                <li class="list-inline-item" role="listitem">
+                    <i class="fas fa-certificate me-1" aria-hidden="true"></i>
+                    <span>Insured</span>
+                </li>
+                <li class="list-inline-item" role="listitem">
+                    <i class="fas fa-award me-1" aria-hidden="true"></i>
+                    <span>Bonded</span>
+                </li>
+                <li class="list-inline-item" role="listitem">
+                    <i class="fas fa-ambulance me-1" aria-hidden="true"></i>
+                    <span>24/7 Emergency</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Accessible CSS -->
+<style>
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    position: relative;
+}
+
+/* Offer Timer */
+.offer-timer {
+    font-size: 1.1rem;
+}
+
+.countdown-display {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.countdown-segment {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 2.5rem;
+}
+
+.countdown-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.countdown-label {
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+/* Benefit Cards */
+.benefit-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    height: 100%;
+}
+
+/* Focus Styles */
+.btn:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 2px;
+}
+
+/* Trust Indicators */
+.trust-indicators {
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+.list-inline-item:not(:last-child)::after {
+    content: "•";
+    margin: 0 0.5rem;
+    opacity: 0.5;
+}
+
+/* High Contrast Support */
+@media (prefers-contrast: high) {
+    .cta-section {
+        background: #dc3545;
+    }
+    
+    .benefit-card {
+        border: 2px solid currentColor;
+    }
+    
+    .btn-warning {
+        border: 2px solid #000;
+    }
+    
+    .btn-outline-light {
+        border-width: 2px;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .countdown-value {
+        transition: none;
+    }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .countdown-value {
+        font-size: 1.25rem;
+    }
+    
+    .countdown-label {
+        font-size: 0.625rem;
+    }
+    
+    .benefit-card {
+        padding: 0.75rem;
+    }
+    
+    .benefit-card i {
+        font-size: 2rem !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .cta-section {
+        background: #fff !important;
+        color: #000 !important;
+        border: 2px solid #000;
+    }
+    
+    .countdown-display {
+        display: none;
+    }
+}
+</style>
+
+<!-- Accessible JavaScript -->
+<script>
+// Accessible Countdown Timer
+(function() {
+    const endDate = new Date('2024-06-01T00:00:00');
+    let lastAnnouncement = '';
+    
+    function updateAccessibleCountdown() {
+        const now = new Date();
+        const diff = endDate - now;
+        
+        if (diff > 0) {
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            // Update display
+            document.getElementById('days-accessible').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours-accessible').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes-accessible').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds-accessible').textContent = String(seconds).padStart(2, '0');
+            
+            // Update screen reader announcement every minute
+            if (minutes !== lastAnnouncement) {
+                lastAnnouncement = minutes;
+                const announcement = `Spring offer ends in ${days} days, ${hours} hours, and ${minutes} minutes`;
+                
+                // Create announcement element
+                const announcer = document.createElement('div');
+                announcer.setAttribute('role', 'status');
+                announcer.setAttribute('aria-live', 'polite');
+                announcer.className = 'visually-hidden';
+                announcer.textContent = announcement;
+                
+                document.body.appendChild(announcer);
+                setTimeout(() => announcer.remove(), 1000);
+            }
+        } else {
+            // Offer expired
+            const timerElement = document.querySelector('.offer-timer');
+            if (timerElement) {
+                timerElement.innerHTML = '<p class="mb-0"><strong>This offer has expired.</strong> Contact us for current promotions.</p>';
+            }
+        }
+    }
+    
+    // Update every second
+    setInterval(updateAccessibleCountdown, 1000);
+    updateAccessibleCountdown();
+    
+    // Respect prefers-reduced-motion for countdown updates
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        // Update less frequently
+        clearInterval(updateAccessibleCountdown);
+        setInterval(updateAccessibleCountdown, 5000);
+    }
+})();
+
+// Enhanced keyboard navigation
+document.addEventListener('DOMContentLoaded', function() {
+    const ctaButtons = document.querySelectorAll('.cta-section .btn');
+    
+    ctaButtons.forEach((button, index) => {
+        button.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' && ctaButtons[index + 1]) {
+                e.preventDefault();
+                ctaButtons[index + 1].focus();
+            } else if (e.key === 'ArrowLeft' && ctaButtons[index - 1]) {
+                e.preventDefault();
+                ctaButtons[index - 1].focus();
+            }
+        });
+    });
+});
+</script>

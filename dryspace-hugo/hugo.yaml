@@ -1,0 +1,76 @@
+baseURL: 'https://dryspacewaterproofing.ca/'
+languageCode: 'en-ca'
+title: 'Toronto Basement Waterproofing Experts | Dryspace #1 Since 1999'
+theme: 'dryspace-mobile'
+
+# SEO and metadata
+params:
+  description: "Toronto's most trusted basement waterproofing contractors. 25+ years, 50,000+ homes protected. Lifetime warranty, 24/7 emergency service. Get $3,400 city rebates. Free same-day estimates."
+  keywords: "basement waterproofing toronto, wet basement repair, foundation crack repair toronto, waterproofing contractors toronto, leaky basement solutions, basement flooding toronto, exterior waterproofing, interior waterproofing, sump pump installation toronto, foundation repair toronto"
+  author: "Dryspace Waterproofing & Underpinning"
+  
+  # Company info
+  phone: "437-545-0067"
+  email: "info@dryspacewaterproofing.ca"
+  address: "1450 O'Connor Drive, Toronto, ON M4C 1A1"
+  
+  # Social media
+  facebook: "https://facebook.com/dryspacewaterproofing"
+  instagram: "https://instagram.com/dryspacewaterproofing"
+  youtube: "https://youtube.com/dryspacewaterproofing"
+  
+  # Features
+  googleAnalytics: "G-XXXXXXXXXX"
+  enableEmoji: true
+
+# Menu configuration
+menu:
+  main:
+    - name: "Services"
+      url: "/services/"
+      weight: 1
+      hasChildren: true
+    - name: "Service Areas"
+      url: "/areas/"
+      weight: 2
+    - name: "About"
+      url: "/about/"
+      weight: 3
+    - name: "Reviews"
+      url: "/reviews/"
+      weight: 4
+    - name: "Blog"
+      url: "/blog/"
+      weight: 5
+    - name: "Contact"
+      url: "/contact/"
+      weight: 6
+
+# Permalinks
+permalinks:
+  blog: /blog/:title/
+  services: /services/:slug/
+  areas: /:slug-basement-waterproofing/
+
+# Output formats
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+  section: ["HTML", "RSS"]
+
+# Minify output for production
+minify:
+  disableHTML: false
+  disableCSS: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+
+# Enable robots.txt
+enableRobotsTXT: true
+
+# Enable sitemap
+sitemap:
+  changefreq: "weekly"
+  filename: "sitemap.xml"
+  priority: 0.5
