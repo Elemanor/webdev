@@ -1,0 +1,15 @@
+{{- /* Optimized footer partial */ -}}
+<footer>
+    <div class="container">
+        <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+        <p>Licensed • Insured • Bonded • Serving Toronto & GTA</p>
+        <p>24/7 Emergency: {{ .Site.Params.phone }}</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="/accessibility/">Accessibility Statement</a>
+            <span aria-hidden="true">|</span>
+            <a href="/privacy/">Privacy Policy</a>
+            <span aria-hidden="true">|</span>
+            <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+    </div>
+</footer>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    {{- /* Use cached partials for better build performance */ -}}
+    {{ partialCached "head/meta.html" . }}
+    {{ partial "head/preload.html" . }}
+    {{ partial "head/critical-css.html" . }}
+    
+    {{- /* Load main CSS asynchronously for better performance */ -}}
+    {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript><link rel="stylesheet" href="{{ $css.RelPermalink }}"></noscript>
+</head>
+<body class="loading">
+    {{- /* Use cached header for better performance */ -}}
+    {{ partialCached "header.html" . "header" }}
+
+    <!-- Hero -->
+    <section class="hero" role="banner">
+        <div class="container">
+            <h1>Toronto's Most Trusted Basement Waterproofing</h1>
+            <p>Protecting homes since 1999 • Lifetime warranty • 24/7 emergency service</p>
+            <div class="cta-group">
+                <a href="#quote" class="btn btn-primary">Get Free Quote</a>
+                <a href="tel:{{ .Site.Params.phone }}" class="btn btn-secondary">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" aria-labelledby="features-heading">
+        <h2 id="features-heading" class="sr-only">Why Choose Dryspace</h2>
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>24/7 Emergency</h3>
+                    <p>2-hour response time across Toronto & GTA</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Lifetime Warranty</h3>
+                    <p>Transferable protection for complete peace of mind</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                            <path d="M4 22h16"></path>
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                        </svg>
+                    </div>
+                    <h3>25+ Years</h3>
+                    <p>50,000+ homes protected and counting</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3>City Rebates</h3>
+                    <p>Save up to $3,400 with Toronto rebate program</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" aria-labelledby="services-heading">
+        <div class="container">
+            <h2 id="services-heading">Our Waterproofing Services</h2>
+            <p class="section-intro">Complete solutions for every basement water problem</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Interior Waterproofing</h3>
+                    <p>Advanced drainage systems and vapor barriers installed from inside your basement. Perfect for finished basements.</p>
+                    <div class="price">From $3,000</div>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Exterior Waterproofing</h3>
+                    <p>Complete excavation and waterproof membrane installation. The most comprehensive protection available.</p>
+                    <div class="price">From $8,000</div>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Foundation Repair</h3>
+                    <p>Professional crack injection and structural repairs. Stop leaks and prevent future damage.</p>
+                    <div class="price">From $500</div>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Sump Pump Systems</h3>
+                    <p>Triple-pump protection with battery backup. Keep your basement dry even during power outages.</p>
+                    <div class="price">From $2,500</div>
+                </div>
+                
+                <div class="service-card">
+                    <h3>French Drains</h3>
+                    <p>Interior perimeter drainage to channel water away from your foundation effectively.</p>
+                    <div class="price">From $4,000</div>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Window Wells</h3>
+                    <p>Proper drainage around basement windows to prevent water infiltration.</p>
+                    <div class="price">From $800</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+        <div class="container">
+            <h2 id="testimonials-heading">What Our Customers Say</h2>
+            <p class="section-intro">Join thousands of satisfied Toronto homeowners</p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="stars" role="img" aria-label="5 out of 5 stars">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p>"Dryspace saved our home! Water was pouring in during the spring thaw. They arrived quickly and installed a complete system. Haven't had a drop since."</p>
+                    <div class="testimonial-author">- Sarah M., North York</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="stars" role="img" aria-label="5 out of 5 stars">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p>"Professional from start to finish. They helped us get the city rebate and now our basement is a beautiful rental unit. Best investment ever!"</p>
+                    <div class="testimonial-author">- John L., Etobicoke</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="stars" role="img" aria-label="5 out of 5 stars">
+                        <span aria-hidden="true">★★★★★</span>
+                    </div>
+                    <p>"After 3 other companies failed, Dryspace fixed our foundation leak permanently. The lifetime warranty gives us incredible peace of mind."</p>
+                    <div class="testimonial-author">- Mike & Lisa D., Scarborough</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Section for E-E-A-T -->
+    <section class="expert-section" aria-labelledby="expert-heading">
+        <div class="container">
+            <h2 id="expert-heading">Meet Our Master Technician</h2>
+            <div class="expert-card">
+                <div class="expert-content">
+                    <h3>John Smith, P.Eng</h3>
+                    <p class="expert-title">Master Waterproofing Technician & Founder</p>
+                    <div class="expert-credentials">
+                        <div class="credential">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>25+ Years Experience</span>
+                        </div>
+                        <div class="credential">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Professional Engineer (P.Eng)</span>
+                        </div>
+                        <div class="credential">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>George Brown College Alumni</span>
+                        </div>
+                        <div class="credential">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>WSIB Certified</span>
+                        </div>
+                    </div>
+                    <blockquote class="expert-quote">
+                        "Every home is unique, and water finds its way differently in each one. My 25 years of experience in Toronto homes has taught me that proper diagnosis is 90% of the solution. We don't just waterproof basements – we protect your family's health and your home's value."
+                    </blockquote>
+                    <div class="certifications">
+                        <p><strong>Certifications:</strong></p>
+                        <ul>
+                            <li>Certified Waterproofing Technician (CWT)</li>
+                            <li>Foundation Repair Specialist</li>
+                            <li>Mold Remediation Certified</li>
+                            <li>City of Toronto Licensed Contractor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="quote" role="complementary">
+        <div class="container">
+            <h2>Ready to Protect Your Home?</h2>
+            <p>Get your free assessment today - no obligation</p>
+            
+            <form class="quote-form" action="/submit-quote" method="POST" novalidate>
+                <input type="hidden" name="csrf_token" value="{{ .Site.Data.csrf.token }}">
+                
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Name <span aria-label="required">*</span></label>
+                        <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-error" pattern="[A-Za-z\s]{2,50}" title="Please enter a valid name (2-50 characters)">
+                        <span id="name-error" class="error-message" role="alert"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone <span aria-label="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required aria-required="true" aria-describedby="phone-error" pattern="[\d\s\-\(\)]{10,15}" title="Please enter a valid phone number">
+                        <span id="phone-error" class="error-message" role="alert"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" aria-describedby="email-error" title="Please enter a valid email address">
+                        <span id="email-error" class="error-message" role="alert"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="interior">Interior Waterproofing</option>
+                            <option value="exterior">Exterior Waterproofing</option>
+                            <option value="foundation">Foundation Repair</option>
+                            <option value="sump">Sump Pump System</option>
+                            <option value="french">French Drain</option>
+                            <option value="window">Window Wells</option>
+                            <option value="emergency">Emergency Service</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="message">Tell us about your water problem</label>
+                    <textarea id="message" name="message" rows="4" maxlength="500"></textarea>
+                    <span class="char-count">0/500</span>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Get Free Quote</button>
+                
+                <p class="form-note">Or call us directly: <a href="tel:{{ .Site.Params.phone }}" class="phone-link">{{ .Site.Params.phone }}</a></p>
+            </form>
+        </div>
+    </section>
+
+    {{- /* Use cached footer */ -}}
+    {{ partialCached "footer.html" . "footer" }}
+
+    <!-- Enhanced Schema Markup for 2025 SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "LocalBusiness",
+                "@id": "{{ .Site.BaseURL }}#organization",
+                "name": "Dryspace Waterproofing",
+                "alternateName": "Dryspace Basement Waterproofing Toronto",
+                "description": "{{ .Site.Params.description }}",
+                "telephone": "{{ .Site.Params.phone }}",
+                "email": "{{ .Site.Params.email }}",
+                "image": "{{ .Site.BaseURL }}og-image.jpg",
+                "logo": "{{ .Site.BaseURL }}logo.png",
+                "url": "{{ .Site.BaseURL }}",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Toronto",
+                    "addressRegion": "ON",
+                    "addressCountry": "CA",
+                    "postalCode": "M5V 3A8"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 43.6426,
+                    "longitude": -79.3871
+                },
+                "areaServed": [
+                    {
+                        "@type": "City",
+                        "name": "Toronto"
+                    },
+                    {
+                        "@type": "AdministrativeArea",
+                        "name": "Greater Toronto Area"
+                    }
+                ],
+                "priceRange": "$$$",
+                "openingHours": "Mo-Su 00:00-24:00",
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday", "Tuesday", "Wednesday", "Thursday", 
+                        "Friday", "Saturday", "Sunday"
+                    ],
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
+                "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "E-Transfer"],
+                "currenciesAccepted": "CAD",
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Waterproofing Services",
+                    "itemListElement": [
+                        {
+                            "@type": "Service",
+                            "name": "Interior Waterproofing",
+                            "description": "Advanced drainage systems and vapor barriers installed from inside your basement",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "3000",
+                                "priceCurrency": "CAD",
+                                "priceValidUntil": "2025-12-31"
+                            }
+                        },
+                        {
+                            "@type": "Service",
+                            "name": "Exterior Waterproofing",
+                            "description": "Complete excavation and waterproof membrane installation",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "8000",
+                                "priceCurrency": "CAD"
+                            }
+                        }
+                    ]
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "523",
+                    "bestRating": "5"
+                },
+                "founder": {
+                    "@type": "Person",
+                    "name": "John Smith",
+                    "jobTitle": "Master Waterproofing Technician",
+                    "alumniOf": "George Brown College",
+                    "knowsAbout": ["Basement Waterproofing", "Foundation Repair", "Drainage Systems"]
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "{{ .Site.BaseURL }}"
+                }]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "How much does basement waterproofing cost in Toronto?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Basement waterproofing in Toronto typically costs between $3,000-$15,000 depending on the method. Interior waterproofing starts at $3,000, while exterior waterproofing starts at $8,000."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is basement waterproofing covered by insurance?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Most insurance policies don't cover waterproofing as preventive maintenance. However, the City of Toronto offers rebates up to $3,400 for basement flooding protection."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+    
+    {{- /* Load optimized scripts */ -}}
+    {{ partial "scripts.html" . }}
+</body>
+</html>

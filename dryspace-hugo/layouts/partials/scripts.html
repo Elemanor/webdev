@@ -1,0 +1,43 @@
+{{- /* Optimized script loading for 2025 performance standards */ -}}
+
+{{- /* Lazy loading library - only 3KB */ -}}
+<script>
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):(e="undefined"!=typeof globalThis?globalThis:e||self).LazyLoad=t()}(this,(function(){"use strict";function e(){return e=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var a in n)Object.prototype.hasOwnProperty.call(n,a)&&(e[a]=n[a])}return e},e.apply(this,arguments)}var t="undefined"!=typeof window,n=t&&!("onscroll"in window)||"undefined"!=typeof navigator&&/(gle|ing|ro)bot|crawl|spider/i.test(navigator.userAgent),a=t&&"IntersectionObserver"in window,i=t&&"classList"in document.createElement("p"),o=t&&window.devicePixelRatio>1,r={elements_selector:".lazy",container:n||t?document:null,threshold:300,thresholds:null,data_src:"src",data_srcset:"srcset",data_sizes:"sizes",data_bg:"bg",data_bg_hidpi:"bg-hidpi",data_bg_multi:"bg-multi",data_bg_multi_hidpi:"bg-multi-hidpi",data_bg_set:"bg-set",data_poster:"poster",class_applied:"applied",class_loading:"loading",class_loaded:"loaded",class_error:"error",class_entered:"entered",class_exited:"exited",unobserve_completed:!0,unobserve_entered:!1,cancel_on_exit:!0,callback_enter:null,callback_exit:null,callback_applied:null,callback_loading:null,callback_loaded:null,callback_error:null,callback_finish:null,callback_cancel:null,use_native:!1,restore_on_error:!1},c=function(t){return e({},r,t)},l=function(e,t){var n,a="LazyLoad::Initialized",i=new e(t);try{n=new CustomEvent(a,{detail:{instance:i}})}catch(e){(n=document.createEvent("CustomEvent")).initCustomEvent(a,!1,!1,{instance:i})}window.dispatchEvent(n)};return t&&function(e,t){var n=t.data_loader,a=e.getAttribute(n);a&&"true"===a}(HTMLImageElement.prototype,"loading")&&(window.lazyLoadOptions={use_native:!0}),t&&window.lazyLoadOptions&&function(e,t){if(t.length)for(var n,a=0;n=t[a];a+=1)l(e,n);else l(e,t)}(LazyLoad,window.lazyLoadOptions),LazyLoad}));
+
+// Initialize lazy loading
+document.addEventListener('DOMContentLoaded', function() {
+    new LazyLoad({
+        elements_selector: '.lazyload',
+        threshold: 50,
+        callback_error: (img) => {
+            img.src = '/images/placeholder.jpg';
+        }
+    });
+});
+</script>
+
+{{- /* Main application script - deferred */ -}}
+{{ if hugo.IsProduction }}
+<script defer src="/js/app.js"></script>
+{{ else }}
+<script defer src="/js/app.js"></script>
+{{ end }}
+
+{{- /* Analytics - load after everything else */ -}}
+{{ with .Site.Params.googleAnalytics }}
+<script>
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        var script = document.createElement('script');
+        script.src = 'https://www.googletagmanager.com/gtag/js?id={{ . }}';
+        script.async = true;
+        document.head.appendChild(script);
+        
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ . }}');
+    }, 3000);
+});
+</script>
+{{ end }}

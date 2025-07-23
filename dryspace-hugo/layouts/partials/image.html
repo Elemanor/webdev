@@ -1,0 +1,50 @@
+{{- /* 
+  Optimized image partial with lazy loading and responsive images
+  Usage: {{ partial "image.html" (dict "src" "image.jpg" "alt" "Description" "lazy" true "sizes" "100vw") }}
+*/ -}}
+
+{{- $src := .src -}}
+{{- $alt := .alt | default "Image" -}}
+{{- $lazy := .lazy | default true -}}
+{{- $sizes := .sizes | default "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" -}}
+{{- $class := .class | default "" -}}
+
+{{- /* Check if image is a page resource */ -}}
+{{- $img := "" -}}
+{{- if $.Page -}}
+  {{- $img = $.Page.Resources.GetMatch $src -}}
+{{- end -}}
+
+{{- if $img -}}
+  {{- /* Process image for responsive sizes */ -}}
+  {{- $img320 := $img.Resize "320x webp q85" -}}
+  {{- $img640 := $img.Resize "640x webp q85" -}}
+  {{- $img1024 := $img.Resize "1024x webp q85" -}}
+  {{- $img1920 := $img.Resize "1920x webp q85" -}}
+  {{- $imgOriginal := $img.Resize (printf "%dx jpg q85" $img.Width) -}}
+  
+  <picture>
+    <source type="image/webp" 
+            srcset="{{ $img320.RelPermalink }} 320w,
+                    {{ $img640.RelPermalink }} 640w,
+                    {{ $img1024.RelPermalink }} 1024w,
+                    {{ $img1920.RelPermalink }} 1920w"
+            sizes="{{ $sizes }}">
+    <img src="{{ if $lazy }}data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 {{ $img.Width }} {{ $img.Height }}'%3E%3C/svg%3E{{ else }}{{ $imgOriginal.RelPermalink }}{{ end }}"
+         {{ if $lazy }}data-src="{{ $imgOriginal.RelPermalink }}"{{ end }}
+         alt="{{ $alt }}"
+         width="{{ $img.Width }}"
+         height="{{ $img.Height }}"
+         class="{{ $class }}{{ if $lazy }} lazyload{{ end }}"
+         {{ if $lazy }}loading="lazy"{{ end }}
+         decoding="async">
+  </picture>
+{{- else -}}
+  {{- /* Fallback for non-resource images */ -}}
+  <img src="{{ if $lazy }}data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E{{ else }}{{ $src | relURL }}{{ end }}"
+       {{ if $lazy }}data-src="{{ $src | relURL }}"{{ end }}
+       alt="{{ $alt }}"
+       class="{{ $class }}{{ if $lazy }} lazyload{{ end }}"
+       {{ if $lazy }}loading="lazy"{{ end }}
+       decoding="async">
+{{- end -}}

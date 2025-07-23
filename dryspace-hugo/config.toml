@@ -1,0 +1,8 @@
+baseURL = 'https://dryspacewaterproofing.ca/'
+languageCode = 'en-ca'
+title = 'Dryspace Waterproofing - Toronto Basement Waterproofing Experts'
+
+[params]
+  description = "Toronto's trusted basement waterproofing contractor. 25+ years experience, lifetime warranty, 24/7 emergency service. Get your free quote today."
+  phone = "(437) 545-0067"
+  email = "info@dryspacewaterproofing.ca"

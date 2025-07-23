@@ -1,0 +1,108 @@
+# Production build configuration for optimal performance
+
+baseURL = 'https://dryspacewaterproofing.ca/'
+languageCode = 'en-ca'
+title = 'Dryspace Waterproofing - Toronto Basement Waterproofing Experts'
+
+# Enable Git info for lastmod dates
+enableGitInfo = true
+
+# Optimize builds
+[build]
+  noJSConfigInAssets = true
+  useResourceCacheWhen = "always"
+
+# Minification settings
+[minify]
+  minifyOutput = true
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      keepCSS2 = true
+      precision = 0
+    [minify.tdewolff.html]
+      keepComments = false
+      keepConditionalComments = false
+      keepDefaultAttrVals = false
+      keepDocumentTags = true
+      keepEndTags = false
+      keepQuotes = false
+      keepWhitespace = false
+    [minify.tdewolff.js]
+      keepVarNames = false
+      precision = 0
+    [minify.tdewolff.json]
+      keepNumbers = false
+      precision = 0
+    [minify.tdewolff.svg]
+      keepComments = false
+      precision = 0
+    [minify.tdewolff.xml]
+      keepComments = false
+
+# Caching configuration
+[caches]
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = "24h"
+  [caches.getcsv]
+    dir = ":cacheDir/:project"
+    maxAge = "24h"
+  [caches.getresource]
+    dir = ":cacheDir/:project"
+    maxAge = "24h"
+  [caches.images]
+    dir = ":resourceDir/_gen"
+    maxAge = -1
+  [caches.assets]
+    dir = ":resourceDir/_gen"
+    maxAge = -1
+
+# Site params
+[params]
+  description = "Toronto's trusted basement waterproofing contractor. 25+ years experience, lifetime warranty, 24/7 emergency service. Get your free quote today."
+  phone = "(437) 545-0067"
+  email = "info@dryspacewaterproofing.ca"
+
+# Taxonomies (optimized - only essential ones)
+[taxonomies]
+  service = "services"
+  location = "locations"
+
+# Permalinks
+[permalinks]
+  guides = "/guides/:slug/"
+  services = "/services/:slug/"
+  locations = "/:slug-basement-waterproofing/"
+
+# Sitemap configuration
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Output formats
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss+xml"
+    baseName = "feed"
+
+# Disable unused features for faster builds
+disableKinds = ["RSS", "robotsTXT"]  # We have custom robots.txt
+enableRobotsTXT = false
+
+# Security settings
+[security]
+  enableInlineShortcodes = false
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+  [security.funcs]
+    getenv = ['^HUGO_']
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']
