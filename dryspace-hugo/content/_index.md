@@ -25,11 +25,63 @@ schema:
     "@type": "AggregateRating"
     "ratingValue": "4.9"
     "reviewCount": "1247"
+  "speakable":
+    "@type": "SpeakableSpecification"
+    "cssSelector": [".quick-answer", ".voice-summary", "h1"]
+  "knowsAbout": ["basement waterproofing", "foundation repair", "water damage", "mold remediation"]
+  "hasOfferCatalog":
+    "@type": "OfferCatalog"
+    "name": "Waterproofing Services"
+    "itemListElement":
+      - "@type": "Offer"
+        "itemOffered":
+          "@type": "Service"
+          "name": "Basement Waterproofing"
+          "description": "Interior and exterior waterproofing solutions"
+      - "@type": "Offer"
+        "itemOffered":
+          "@type": "Service"
+          "name": "Foundation Repair"
+          "description": "Crack repair and structural solutions"
 ---
 
 # Transform Your Wet Basement with Toronto's Most Trusted Waterproofing Experts
 
+<div class="quick-answer voice-summary">
+<p><strong>Quick Answer:</strong> Dryspace Waterproofing provides professional basement waterproofing services in Toronto with 24/7 emergency response, lifetime warranties, and over 25 years of experience. Call 416-XXX-XXXX for immediate assistance or free inspection.</p>
+</div>
+
 That persistent dampness in your basement isn't just an inconvenience—it's actively damaging your Toronto home's foundation. After 25 years and 10,000+ successful waterproofing projects across the GTA, we've learned that the most effective solution is often simpler (and more affordable) than homeowners expect.
+
+<div class="main-navigation">
+  <h2>Quick Navigation</h2>
+  <div class="nav-grid">
+    <a href="/services" class="nav-card">
+      <h3>🛡️ Our Services</h3>
+      <p>Waterproofing, foundation repair, renovations</p>
+    </a>
+    <a href="/locations" class="nav-card">
+      <h3>📍 Service Areas</h3>
+      <p>Toronto, GTA & surrounding regions</p>
+    </a>
+    <a href="/guides" class="nav-card">
+      <h3>📚 Expert Guides</h3>
+      <p>Learn about waterproofing solutions</p>
+    </a>
+    <a href="/blog" class="nav-card">
+      <h3>📰 Blog & News</h3>
+      <p>Tips, insights, and updates</p>
+    </a>
+    <a href="/tools" class="nav-card">
+      <h3>🛠️ Free Tools</h3>
+      <p>Calculators and assessments</p>
+    </a>
+    <a href="/emergency" class="nav-card">
+      <h3>🚨 Emergency Service</h3>
+      <p>24/7 flooding response</p>
+    </a>
+  </div>
+</div>
 
 <div class="trust-badges">
   <div class="badge">Founded 1998 - 25+ Years of Excellence</div>
@@ -231,3 +283,106 @@ Join us for a live virtual tour of an active waterproofing project every Thursda
 *Still researching? Download our "Toronto Homeowner's Guide to Dry Basements"—62 pages of everything we've learned in 25 years, including solutions you can try yourself before calling a professional.*
 
 <a href="/guides/toronto-basement-waterproofing-guide-pdf" class="button secondary">Download Free Guide</a>
+
+## All Services
+
+<div class="footer-services">
+  <div class="service-column">
+    <h3>Waterproofing Services</h3>
+    <ul>
+      <li><a href="/services/exterior-waterproofing">Exterior Waterproofing</a></li>
+      <li><a href="/services/interior-waterproofing">Interior Waterproofing</a></li>
+      <li><a href="/services/foundation-crack-repair">Foundation Crack Repair</a></li>
+      <li><a href="/services/sump-pump-installation">Sump Pump Installation</a></li>
+      <li><a href="/services/french-drain-installation">French Drain Installation</a></li>
+      <li><a href="/services/drain-tile-repair">Drain Tile Repair</a></li>
+      <li><a href="/services/vapor-barrier-installation">Vapor Barrier Installation</a></li>
+    </ul>
+  </div>
+  
+  <div class="service-column">
+    <h3>Foundation Services</h3>
+    <ul>
+      <li><a href="/services/foundation-repair">Foundation Repair</a></li>
+      <li><a href="/services/underpinning">Basement Underpinning</a></li>
+      <li><a href="/services/basement-lowering">Basement Lowering</a></li>
+      <li><a href="/services/concrete-crack-injection">Concrete Crack Injection</a></li>
+      <li><a href="/services/foundation-membrane">Foundation Membrane</a></li>
+      <li><a href="/services/parging">Foundation Parging</a></li>
+    </ul>
+  </div>
+  
+  <div class="service-column">
+    <h3>Renovation Services</h3>
+    <ul>
+      <li><a href="/services/basement-renovation">Basement Renovation</a></li>
+      <li><a href="/services/legal-basements">Legal Basement Suites</a></li>
+      <li><a href="/services/walkout-basement-home-additions">Walkout Basements</a></li>
+      <li><a href="/services/basement-heated-floors">Heated Floor Installation</a></li>
+      <li><a href="/services/concrete-services">Concrete Driveways & Patios</a></li>
+      <li><a href="/services/concrete-floor-installation">Concrete Floors</a></li>
+    </ul>
+  </div>
+  
+  <div class="service-column">
+    <h3>Emergency Services</h3>
+    <ul>
+      <li><a href="/services/water-damage-restoration">Water Damage Restoration</a></li>
+      <li><a href="/services/mold-remediation">Mold Remediation</a></li>
+      <li><a href="/services/basement-leak-detection">Leak Detection</a></li>
+      <li><a href="/emergency">24/7 Emergency Response</a></li>
+      <li><a href="/services/crawl-space-waterproofing">Crawl Space Solutions</a></li>
+    </ul>
+  </div>
+</div>
+
+## Service Areas
+
+<div class="location-links">
+  <h3>Toronto Neighborhoods</h3>
+  <p>
+    <a href="/locations/yorkville-basement-waterproofing">Yorkville</a> | 
+    <a href="/locations/forest-hill-basement-waterproofing">Forest Hill</a> | 
+    <a href="/locations/beaches-basement-waterproofing">The Beaches</a> | 
+    <a href="/locations/leslieville-basement-waterproofing">Leslieville</a> | 
+    <a href="/locations/riverdale-basement-waterproofing">Riverdale</a> | 
+    <a href="/locations/high-park-basement-waterproofing">High Park</a> | 
+    <a href="/locations/roncesvalles-basement-waterproofing">Roncesvalles</a> | 
+    <a href="/locations/junction-basement-waterproofing">The Junction</a> | 
+    <a href="/locations/liberty-village-basement-waterproofing">Liberty Village</a> | 
+    <a href="/locations/danforth-basement-waterproofing">Danforth</a> | 
+    <a href="/locations/north-york-basement-waterproofing">North York</a> | 
+    <a href="/locations/scarborough-basement-waterproofing">Scarborough</a> | 
+    <a href="/locations/etobicoke-basement-waterproofing">Etobicoke</a> | 
+    <a href="/locations/york-basement-waterproofing">York</a> | 
+    <a href="/locations/east-york-basement-waterproofing">East York</a>
+  </p>
+  
+  <h3>GTA Cities</h3>
+  <p>
+    <a href="/locations/mississauga-basement-waterproofing">Mississauga</a> | 
+    <a href="/locations/brampton-basement-waterproofing">Brampton</a> | 
+    <a href="/locations/hamilton-basement-waterproofing">Hamilton</a> | 
+    <a href="/locations/richmond-hill-basement-waterproofing">Richmond Hill</a> | 
+    <a href="/locations/oakville-basement-renovations">Oakville</a> | 
+    <a href="/locations/barrie-basement-waterproofing">Barrie</a> | 
+    <a href="/locations/london-basement-waterproofing">London</a>
+  </p>
+  
+  <p><a href="/locations">View All Service Areas →</a></p>
+</div>
+
+## Popular Guides
+
+<div class="guide-links">
+  <p>
+    <a href="/guides/basement-leak-guide">Basement Leak Guide</a> | 
+    <a href="/guides/foundation-crack-analysis">Foundation Crack Analysis</a> | 
+    <a href="/guides/drainage-systems-guide">Drainage Systems Guide</a> | 
+    <a href="/guides/basement-waterproofing-cost-toronto-2025">2025 Cost Guide</a> | 
+    <a href="/guides/exterior-waterproofing-process">Exterior Waterproofing Process</a> | 
+    <a href="/guides/how-to-finish-a-basement">Basement Finishing Guide</a> | 
+    <a href="/guides/sump-pump-selection">Sump Pump Selection</a> | 
+    <a href="/guides">View All Guides →</a>
+  </p>
+</div>

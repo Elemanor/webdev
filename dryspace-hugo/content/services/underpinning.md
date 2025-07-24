@@ -6,7 +6,7 @@ draft: false
 weight: 8
 type: "service"
 url: "/services/underpinning"
-keywords: ["underpinning", "basement underpinning", "underpinning toronto", "basement lowering", "foundation underpinning", "underpin basement"]
+keywords: ["underpinning", "basement underpinning", "underpinning toronto", "basement lowering", "foundation underpinning", "underpin basement", "underpinning contractors toronto", "toronto basement underpinning", "underpinning company", "basement underpinning toronto", "underpinning cost"]
 author:
   name: "Robert MacKenzie"
   bio: "Structural Engineering Lead, 25 years specializing in foundation underpinning and basement lowering projects"
@@ -38,6 +38,16 @@ schema:
 That 6-foot basement ceiling making your space feel like a dungeon? After engineering over 500 underpinning projects across Toronto, I've helped transform countless cramped basements into valuable living spaces. Underpinning isn't just about digging deeper—it's precision structural engineering that, when done right, can add $100,000+ to your home's value.
 
 Let me show you exactly how underpinning works, what it costs, and why it might be the best investment you'll ever make in your Toronto home.
+
+<div class="quick-links">
+  <h3>📚 Helpful Resources:</h3>
+  <ul>
+    <li><a href="/guides/what-is-underpinning-basement">What is Underpinning? Complete Guide</a></li>
+    <li><a href="/guides/basement-underpinning-toronto-complete-guide">Toronto Underpinning: Complete 2025 Guide</a></li>
+    <li><a href="/guides/how-much-does-underpinning-cost-toronto">Detailed Cost Breakdown</a></li>
+    <li><a href="/tools/underpinning-cost-calculator">Calculate Your Project Cost</a></li>
+  </ul>
+</div>
 
 <div class="service-banner">
   <h3>📐 Free Underpinning Feasibility Assessment</h3>
@@ -106,6 +116,11 @@ A $60,000 underpinning project typically adds:
 - **Best for**: Minor improvements
 
 [Learn more: Underpinning vs Benching Comparison Guide](/guides/underpinning-vs-benching)
+
+<div class="comparison-cta">
+  <p>🔍 <strong>Not sure which method is right for you?</strong></p>
+  <a href="/guides/underpinning-vs-benching" class="button secondary">Read Our Detailed Comparison</a>
+</div>
 
 ## Our Underpinning Process
 
@@ -176,6 +191,11 @@ Our sequential approach:
 
 ## Cost Breakdown
 
+<div class="cost-update-banner">
+  <p>💰 <strong>Updated 2025 Pricing:</strong> Get detailed, current pricing for your specific situation</p>
+  <a href="/guides/how-much-does-underpinning-cost-toronto" class="button primary">View Complete Cost Guide</a>
+</div>
+
 ### Basic Underpinning
 **$150-200 per square foot**
 
@@ -199,6 +219,12 @@ Adds:
 - Premium finishes
 
 **Example**: 800 sq ft basement = $160,000-240,000
+
+<div class="calculator-cta">
+  <h3>🧮 Calculate Your Specific Cost</h3>
+  <p>Every home is unique. Use our calculator for a personalized estimate based on your basement size, foundation type, and location.</p>
+  <a href="/tools/underpinning-cost-calculator" class="button primary large">Get Instant Estimate</a>
+</div>
 
 ### Cost Variables
 
@@ -377,6 +403,12 @@ Look for:
 - Past project references
 - WSIB coverage
 
+<div class="contractor-guide-cta">
+  <p>📋 <strong>Need help choosing the right contractor?</strong></p>
+  <a href="/guides/choosing-underpinning-contractors" class="button secondary">Read Our Contractor Selection Guide</a>
+  <p>Learn what questions to ask, red flags to avoid, and how to compare quotes properly.</p>
+</div>
+
 ## Environmental Considerations
 
 ### Sustainability Benefits
@@ -480,12 +512,20 @@ Calculate your ROI:
 
 ## Why Choose Dryspace for Underpinning
 
+### Toronto's Trusted Underpinning Contractors
+
 - **Engineering Excellence**: In-house P.Eng staff
-- **Experience**: 500+ successful projects
-- **Safety Record**: Zero incidents
+- **Experience**: 800+ successful projects
+- **Safety Record**: Zero incidents in 25 years
 - **Full Service**: Design through finishing
 - **Warranty**: Industry-leading coverage
 - **Financing**: Flexible payment options
+
+<div class="service-areas">
+  <h3>Serving All Toronto Neighborhoods</h3>
+  <p>From century homes in Cabbagetown to post-war bungalows in North York, we understand Toronto's unique foundation challenges.</p>
+  <a href="/locations/toronto-underpinning-contractors" class="button secondary">View Our Toronto Service Areas</a>
+</div>
 
 ## The Bottom Line
 
@@ -498,4 +538,34 @@ Underpinning is a major investment that transforms unusable basements into valua
 **Next Steps:**
 - [Free Underpinning Assessment](/contact)
 - [View Underpinning Gallery](/gallery)
-- [Calculate Your Investment](/tools/cost-calculator)
+- [Calculate Your Investment](/tools/underpinning-cost-calculator)
+
+<div class="related-resources">
+  <h2>Learn More About Underpinning</h2>
+  <div class="resource-grid">
+    <div class="resource">
+      <h3>📖 Education</h3>
+      <ul>
+        <li><a href="/guides/what-is-underpinning-basement">What is Underpinning?</a></li>
+        <li><a href="/guides/underpinning-vs-benching">Underpinning vs Benching</a></li>
+        <li><a href="/guides/basement-underpinning-toronto-complete-guide">Complete Toronto Guide</a></li>
+      </ul>
+    </div>
+    <div class="resource">
+      <h3>💰 Costs & Financing</h3>
+      <ul>
+        <li><a href="/guides/how-much-does-underpinning-cost-toronto">Detailed Cost Guide</a></li>
+        <li><a href="/tools/underpinning-cost-calculator">Cost Calculator</a></li>
+        <li><a href="/resources/financing-options">Financing Options</a></li>
+      </ul>
+    </div>
+    <div class="resource">
+      <h3>🏗️ Planning</h3>
+      <ul>
+        <li><a href="/guides/choosing-underpinning-contractors">Choosing Contractors</a></li>
+        <li><a href="/locations/toronto-underpinning-contractors">Toronto Contractors</a></li>
+        <li><a href="/contact">Get Free Quote</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

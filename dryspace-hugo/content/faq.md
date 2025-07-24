@@ -8,6 +8,9 @@ keywords: ["basement waterproofing faq", "waterproofing questions toronto", "bas
 schema:
   "@context": "https://schema.org"
   "@type": "FAQPage"
+  "speakable":
+    "@type": "SpeakableSpecification"
+    "cssSelector": [".quick-answer", ".faq-answer-summary"]
   "mainEntity": [
     {
       "@type": "Question",
@@ -15,6 +18,38 @@ schema:
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Basement waterproofing in Toronto typically costs between $3,500-$15,000, depending on the size of your basement, severity of issues, and method chosen. Interior waterproofing averages $70-$150 per linear foot, while exterior waterproofing ranges from $150-$300 per linear foot."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does basement waterproofing take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Interior waterproofing typically takes 2-3 days for an average Toronto home. Exterior waterproofing takes 5-10 days depending on excavation needs. Emergency repairs can be completed within 24 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does basement waterproofing come with a warranty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, professional basement waterproofing comes with warranties. At Dryspace, we offer a lifetime transferable warranty on our waterproofing systems, which adds value when selling your home."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is the best time to waterproof a basement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The best time is before problems occur, but you can waterproof year-round in Toronto. Interior waterproofing works in any weather. Exterior waterproofing is best done in dry conditions from May to October."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between interior and exterior waterproofing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Interior waterproofing manages water that enters your basement using drainage systems and sump pumps. Exterior waterproofing prevents water from reaching your foundation walls through excavation and membrane installation. Exterior is more comprehensive but also more expensive."
       }
     }
   ]

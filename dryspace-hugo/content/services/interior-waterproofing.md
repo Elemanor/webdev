@@ -134,6 +134,8 @@ Professional-grade water removal:
 - Smart monitoring available
 - Discharge to city storm (where permitted)
 
+For complete sump pump solutions, see our [sump pump installation](/services/sump-pump-installation) service.
+
 ### Step 5: Vapor Barrier Installation
 Complete moisture control:
 - Heavy-duty polyethylene membrane
@@ -680,7 +682,7 @@ A: Yes, systems are modular:
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 <h3 itemprop="name">Should I waterproof before or after crack repair?</h3>
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<p itemprop="text">Always repair cracks first. Active leaks need immediate attention through injection. Once sealed, interior waterproofing provides comprehensive protection. We offer package deals that include both services, saving you 20% versus separate installations.</p>
+<p itemprop="text">Always repair cracks first. Active leaks need immediate attention through [concrete crack injection](/services/concrete-crack-injection). Once sealed, interior waterproofing provides comprehensive protection. We offer package deals that include both services, saving you 20% versus separate installations.</p>
 </div>
 </div>
 

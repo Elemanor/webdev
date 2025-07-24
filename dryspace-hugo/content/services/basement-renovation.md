@@ -1,12 +1,12 @@
 ---
 title: "Basement Renovation Toronto | Complete Finishing | Design to Build"
-description: "Full-service basement renovation in Toronto. Design, permits, construction, finishing. Create legal suites, family rooms, home theatres. Licensed contractors. Call 416-XXX-XXXX"
+description: "Full-service basement renovation and finishing in Toronto. Design, permits, construction, all trades included. Create legal suites, rec rooms, home offices. Licensed contractors. Call 416-XXX-XXXX"
 date: 2025-01-22
 draft: false
 weight: 15
 type: "service"
 url: "/services/basement-renovation"
-keywords: ["basement renovation toronto", "basement finishing", "basement remodeling", "finished basement", "basement contractor toronto"]
+keywords: ["basement renovation toronto", "basement finishing", "basement remodeling", "finished basement", "basement contractor toronto", "basement development", "basement design build"]
 author:
   name: "Maria Santos"
   bio: "Project Manager, 10 years specializing in basement transformations"
@@ -15,7 +15,7 @@ schema:
   "@context": "https://schema.org"
   "@type": "Service"
   "name": "Basement Renovation Toronto"
-  "description": "Complete basement renovation services from design through finishing, including permits and all trades"
+  "description": "Complete basement renovation and finishing services from design through construction, including permits and all trades"
   "provider":
     "@type": "LocalBusiness"
     "name": "Dryspace Waterproofing & Construction"
@@ -32,6 +32,7 @@ schema:
   <div class="author-info">
     <p><strong>Written by Maria Santos</strong></p>
     <p>Project Manager • 10 years experience • 400+ basements transformed</p>
+    <p><em>With insights from Alex Thompson, Design-Build Manager</em></p>
   </div>
 </div>
 
@@ -46,7 +47,7 @@ That dark, unused basement beneath your feet represents 30-50% of your home's to
     </div>
     <div class="option">
       <h4>🎬 Home Theatre</h4>
-      <p>Ultimate entertainment space</p>
+      <p>Cinema experience at home</p>
     </div>
     <div class="option">
       <h4>👨‍👩‍👧‍👦 Family Room</h4>
@@ -54,15 +55,15 @@ That dark, unused basement beneath your feet represents 30-50% of your home's to
     </div>
     <div class="option">
       <h4>💼 Home Office</h4>
-      <p>Perfect work-from-home setup</p>
+      <p>Professional workspace</p>
     </div>
     <div class="option">
-      <h4>🏋️ Gym/Wellness</h4>
+      <h4>🏋️ Home Gym</h4>
       <p>Personal fitness center</p>
     </div>
     <div class="option">
-      <h4>🎮 Kids' Paradise</h4>
-      <p>Play room and study space</p>
+      <h4>🎮 Game Room</h4>
+      <p>Ultimate entertainment space</p>
     </div>
   </div>
 </div>
@@ -72,25 +73,25 @@ That dark, unused basement beneath your feet represents 30-50% of your home's to
 ### Phase 1: Design & Planning (2-3 weeks)
 
 **Initial Consultation:**
-- Space assessment
-- Needs analysis
-- Budget discussion
+- Space assessment and measurements
+- Needs analysis and vision discussion
+- Budget planning
+- Code requirements review
 - Possibility exploration
-- Timeline planning
 
-**Design Development:**
-- 3D renderings
-- Space planning
-- Material selection
-- Lighting design
-- Permit drawings
+**Professional Design Package:**
+- 3D renderings of your space
+- Detailed floor plans
+- Electrical and plumbing layouts
+- Material selections
+- Permit-ready drawings
 
 **What's Included:**
-- Professional design
-- Detailed floor plans
-- Electrical/plumbing layouts
-- Material specifications
-- Accurate budgeting
+- 2-3 design revisions
+- Material samples
+- Fixed price quote
+- Timeline projection
+- Permit application prep
 
 **Design Fee:** $2,500-$5,000 (credited to project)
 
@@ -116,53 +117,127 @@ That dark, unused basement beneath your feet represents 30-50% of your home's to
 - Plumbing: $200-$500
 - HVAC: $150-$300
 
-### Phase 3: Structural Work (1-2 weeks)
+### Phase 3: Waterproofing First (Critical Step)
 
-**Foundation & Waterproofing:**
+**Before Any Finishing:**
 - Moisture assessment
-- Waterproofing upgrades
-- Crack repairs
-- Drainage improvements
-- Vapor barriers
+- [Crack repair](/services/concrete-crack-injection) if needed
+- [Waterproofing upgrades](/services/interior-waterproofing)
+- Humidity control
+- [Mold prevention](/services/mold-remediation)
 
-**Framing:**
-- Wall construction
-- Ceiling systems
+**Options Based on Conditions:**
+- [Interior drainage](/services/interior-waterproofing): $4,000-8,000
+- [Crack injection](/services/concrete-crack-injection): $500-1,000 per crack
+- [Vapor barriers](/services/vapor-barrier-installation): $2-4/sq ft
+- Dehumidification: $1,500-2,500
+
+### Phase 4: Framing & Structural (1-2 weeks)
+
+**Professional Framing:**
+- Steel or wood studs
+- Proper insulation (R-20 minimum)
+- Vapor barriers
+- Sound insulation between rooms
+- Fire-rated assemblies where required
+
+**Common Structural Work:**
+- Beam boxing/decorative wraps
+- Support post integration
 - Bulkhead creation
 - Window enlargement
-- Door openings
+- Ceiling solutions
 
-**Critical Elements:**
-- Load-bearing considerations
-- Proper insulation (R20 minimum)
-- Sound isolation
-- Fire separation
-- Code compliance
+## Material Options & Quality Levels
 
-### Phase 4: Mechanical Systems (1-2 weeks)
+### Framing Materials Comparison
 
-**Electrical:**
-- Panel upgrades (if needed)
-- Circuit installation
-- Pot light rough-in
-- Outlet placement
+**Steel Studs (Recommended)**
+- Won't warp or rot
+- Straighter walls
+- Mold resistant
+- Fire resistant
+- Cost: +$2-3/sq ft vs wood
+
+**Wood Framing**
+- Traditional method
+- Easier to modify
+- Must be treated
+- Check moisture content
+- Standard cost
+
+### Insulation Comparison
+
+**Closed Cell Spray Foam**
+- R-6 per inch
+- Vapor barrier included
+- Air sealing
+- Mold resistant
+- Cost: $3-5/sq ft
+
+**Rigid Foam Boards**
+- R-5 per inch
+- Moisture resistant
+- Requires sealing
+- DIY friendly
+- Cost: $1.50-3/sq ft
+
+**Fiberglass Batts**
+- R-3.5 per inch
+- Requires vapor barrier
+- Budget option
+- Professional install recommended
+- Cost: $1-2/sq ft
+
+### Ceiling Options
+
+**Drywall Ceiling**
+- Maximum height
+- Clean look
+- Access panels needed
+- Fire rated
+- Cost: $3-5/sq ft
+
+**Suspended Ceiling**
+- Easy access
+- Lost height (4")
+- Acoustic options
+- Traditional look
+- Cost: $2-4/sq ft
+
+**Exposed Painted**
+- Industrial look
+- Full height
+- Requires neat mechanicals
+- Sound treatment needed
+- Cost: $1-3/sq ft
+
+### Phase 5: Mechanical Systems (1-2 weeks)
+
+**Electrical Work:**
+- Panel upgrade if needed
+- Pot light installation
+- Dedicated circuits
+- USB outlets
 - Smart home prep
 
 **Plumbing:**
-- Bathroom rough-in
-- Kitchen connections
+- Bathroom rough-ins
+- Bar/kitchen connections
 - Laundry setup
 - Backwater valve
-- Sump pump upgrade
+- Shut-off access
 
 **HVAC:**
 - Ductwork extension
 - Return air systems
 - Bathroom ventilation
-- HRV integration
-- Zone control
+- Zone control options
+- Air quality solutions
 
-### Phase 5: Insulation & Drywall (1-2 weeks)
+For moisture-related ventilation needs, consider our [crawl space encapsulation](/services/crawl-space-encapsulation) solutions.
+
+### Phase 6: Insulation & Drywall (1-2 weeks)
 
 **Insulation Package:**
 - Spray foam (optimal)
@@ -178,284 +253,337 @@ That dark, unused basement beneath your feet represents 30-50% of your home's to
 - Primer application
 - Texture (if desired)
 
-### Phase 6: Finishing (2-3 weeks)
+### Phase 7: Flooring Installation (3-5 days)
 
-**Flooring Options:**
-- Luxury vinyl plank (LVP)
-- Engineered hardwood
-- Polished concrete
-- Carpet (bedrooms)
-- Heated floors
+**Best Basement Flooring Options:**
 
-**Trim & Doors:**
-- Baseboards/casings
+**Luxury Vinyl Plank (Most Popular)**
+- 100% waterproof
+- Warm underfoot
+- Wood/stone looks
+- $4-8/sq ft installed
+
+**Polished Concrete**
+- Modern aesthetic
+- Extremely durable
+- Radiant heat compatible
+- $3-8/sq ft
+
+**Engineered Hardwood**
+- Real wood beauty
+- Moisture resistant
+- Subfloor required
+- $8-15/sq ft installed
+
+**Carpet (Bedrooms Only)**
+- Warmth and comfort
+- Moisture-resistant pad
+- Antimicrobial options
+- $3-6/sq ft installed
+
+### Phase 8: Final Finishes (1 week)
+
+**Interior Finishes:**
+- Trim and baseboards
 - Interior doors
 - Closet systems
-- Built-ins
-- Stair finishing
+- Painting (2 coats)
+- Hardware installation
 
-**Painting:**
-- Color consultation
-- Premium paints
-- Two-coat system
-- Accent walls
-- Touch-ups
+**Fixture Installation:**
+- Bathroom fixtures
+- Kitchen appliances
+- Lighting fixtures
+- Plumbing fixtures
+- HVAC registers
 
-### Phase 7: Final Systems (1 week)
+## Cost Breakdown by Basement Type
 
-**Electrical Finishing:**
-- Light fixtures
-- Switches/outlets
-- Ceiling fans
-- Under-cabinet lighting
-- Specialty wiring
+### Basic Rec Room Finish
 
-**Plumbing Fixtures:**
-- Bathroom installation
-- Kitchen setup
-- Laundry connections
-- Testing/commissioning
+**600 sq ft Open Concept:**
+- Framing & insulation: $4,000-6,000
+- Electrical (basic): $3,000-4,000
+- Drywall & paint: $4,000-5,000
+- Flooring (LVP): $3,000-4,000
+- Trim & doors: $2,000-3,000
+- **Total: $16,000-22,000**
 
-**Final Details:**
-- Appliance installation
-- Hardware mounting
-- Final cleaning
-- System testing
-- Deficiency walkthrough
+### Family Entertainment Suite
 
-## Popular Basement Layouts
+**1000 sq ft with Bathroom:**
+- All basic finishes
+- 3-piece bathroom: $8,000-12,000
+- Wet bar area: $3,000-5,000
+- Built-in storage: $2,000-4,000
+- Enhanced lighting: $2,000-3,000
+- **Total: $35,000-50,000**
 
-### Legal Rental Suite
+### Legal Basement Apartment
 
-Creating income-generating space:
+**800 sq ft Self-Contained:**
+- Separate entrance: $5,000-10,000
+- Full kitchen: $8,000-15,000
+- Full bathroom: $10,000-15,000
+- Bedroom with egress: $8,000-12,000
+- All code requirements: $5,000-8,000
+- **Total: $55,000-85,000**
 
-**Requirements:**
-- Separate entrance
-- Minimum ceiling height (6'5")
-- Bedroom windows (egress)
-- Full kitchen
-- Fire separation
-- Sound insulation
+### Luxury Basement Retreat
 
-**Typical Layout:**
-- 1-2 bedrooms
-- Full bathroom
-- Kitchen/living combo
-- Separate laundry
-- Storage space
+**1200 sq ft High-End:**
+- Premium materials throughout
+- Home theater: $15,000-30,000
+- Wine cellar: $10,000-20,000
+- Gym area: $5,000-10,000
+- Spa bathroom: $20,000-30,000
+- **Total: $80,000-150,000**
 
-**Investment:** $60,000-$100,000
-**Rental Income:** $2,000-$3,500/month
-**ROI:** 2-4 years
+## Service Integration & Smart Features
 
-### Open Concept Family Space
+### Pre-Finishing Requirements
 
-Modern living expansion:
+**Waterproofing First Package**
+- [Interior drainage system](/services/interior-waterproofing)
+- [Crack repairs](/services/concrete-crack-injection)
+- [Sump pump upgrade](/services/sump-pump-installation)
+- Humidity control
+- Save 20% bundled
+- Total: $8,000-15,000
 
-**Design Elements:**
-- Removed walls (where possible)
-- Multiple zones
-- Integrated storage
-- Natural light maximized
-- Seamless flow
+**Structural Prep Package**
+- Load bearing wall removal
+- Beam installation
+- Post relocation
+- [Floor leveling](/services/concrete-floor-installation)
+- Engineering included
+- Total: $10,000-25,000
 
-**Typical Zones:**
-- Entertainment area
-- Kids' play space
-- Home office nook
-- Exercise area
-- Storage solutions
+For major structural work, see our [foundation repair](/services/foundation-repair) services.
 
-**Investment:** $40,000-$70,000
+### Smart Basement Features
 
-### Home Theatre
+**Home Automation**
+- Smart lighting control
+- Automated climate
+- Security integration
+- Voice control
+- Entertainment systems
+- Add: $2,000-5,000
 
-Cinema-quality experience:
+**Advanced HVAC**
+- Zoned heating/cooling
+- Smart thermostats
+- Air quality monitoring
+- Humidity control
+- Energy recovery
+- Add: $3,000-8,000
 
-**Technical Requirements:**
-- Sound isolation
-- Light control
-- Proper dimensions
-- HVAC considerations
-- Wiring infrastructure
-
-**Features:**
-- Tiered seating
-- Acoustic panels
-- Projection system
-- Surround sound
-- Smart integration
-
-**Investment:** $30,000-$80,000
-
-## Cost Breakdown by Space Type
-
-### Basic Finishing
-
-Simple, functional spaces:
-
-**Includes:**
-- Basic framing/insulation
-- Standard drywall
-- Basic electrical/lighting
-- Vinyl plank flooring
-- Simple bathroom
-
-**Cost:** $50-$70 per square foot
-
-**600 sq ft:** $30,000-$42,000
-**1000 sq ft:** $50,000-$70,000
-**1500 sq ft:** $75,000-$105,000
-
-### Mid-Range Renovation
-
-Quality finishes, good design:
-
-**Includes:**
-- Open concept design
-- Pot lights throughout
-- Quality flooring
-- Full bathroom
-- Some built-ins
-
-**Cost:** $70-$100 per square foot
-
-**600 sq ft:** $42,000-$60,000
-**1000 sq ft:** $70,000-$100,000
-**1500 sq ft:** $105,000-$150,000
-
-### Premium Renovation
-
-High-end everything:
-
-**Includes:**
-- Custom design
-- Premium materials
-- Multiple bathrooms
-- Full kitchen
-- Smart home features
-- Custom millwork
-
-**Cost:** $100-$150+ per square foot
-
-**600 sq ft:** $60,000-$90,000
-**1000 sq ft:** $100,000-$150,000
-**1500 sq ft:** $150,000-$225,000
+**Integrated Audio/Video**
+- In-ceiling speakers
+- Hidden wiring
+- Multi-room audio
+- Smart TV prep
+- Gaming setup
+- Add: $2,000-10,000
 
 ## Toronto Building Code Requirements
 
-### Ceiling Height
+### Legal Suite Requirements
 
-**Legal Requirements:**
-- Living areas: 6'5" minimum
-- Under beams: 6'0" minimum
-- Bathrooms: 6'5" minimum
-- Mechanical: No minimum
+**Minimum Standards:**
+- Ceiling height: 6'5" minimum
+- Bedroom window: 5.7 sq ft opening
+- Separate entrance required
+- Kitchen and bathroom mandatory
+- Fire separation from main house
+- Parking consideration
 
-**Solutions for Low Ceilings:**
-- Basement lowering
-- Creative layouts
-- Dropped areas only where needed
+**Safety Requirements:**
+- Interconnected smoke alarms
+- Carbon monoxide detectors
+- Fire-rated assemblies
+- Proper egress routes
+- Arc-fault breakers
 
-### Egress Windows
+### General Basement Finishing
 
-**Bedroom Requirements:**
-- Minimum opening: 3.8 sq ft
-- No dimension less than 15"
-- Maximum sill height: 1.5m
-- Direct outdoor access
+**Permits Required For:**
+- New walls/layout changes
+- Electrical work
+- Plumbing additions
+- HVAC modifications
+- Structural changes
+- Window modifications
 
-**Cost per Window:** $3,000-$5,000
-
-### Fire Separation
-
-**Legal Suite Requirements:**
-- 5/8" Type X drywall
-- Fire-rated doors
-- Sealed penetrations
-- Interconnected alarms
-- Proper exits
-
-### Permits & Inspections
-
-**Required Inspections:**
-- Framing
-- Insulation
+**Inspection Schedule:**
+- Framing inspection
+- Insulation/vapor barrier
 - Electrical rough-in
 - Plumbing rough-in
 - Final inspection
 
-**Timeline Impact:** Plan for inspection delays
+## Common Mistakes to Avoid
 
-## Common Challenges & Solutions
+### Planning Mistakes
 
-### Low Ceiling Height
+**Skipping Waterproofing**
+- #1 cause of basement failures
+- Mold and moisture damage
+- Insurance may not cover
+- Fix BEFORE finishing
 
-**Problem:** Under 6'5"
-**Solutions:**
-- Basement lowering ($75,000+)
-- Creative design
-- Bench solution
-- Partial height areas
+**Ignoring Code Requirements**
+- Illegal suites = big fines
+- Safety hazards
+- Insurance void
+- Resale issues
 
-### Moisture Issues
+**Underestimating Costs**
+- Hidden issues common
+- Permits add up
+- Quality matters
+- Budget 20% contingency
 
-**Problem:** Damp/wet basement
-**Solutions:**
-- Interior waterproofing first
-- Proper vapor barriers
-- Dehumidification
-- Sump pump upgrade
+### Construction Errors
 
-### Support Posts
+**Wrong Insulation**
+- Vapor barriers on wrong side
+- Insufficient R-value
+- Air gaps left
+- Moisture trapped
 
-**Problem:** Posts in wrong places
-**Solutions:**
-- Design around them
-- Decorative wraps
-- Integrate into features
-- Relocate (engineer required)
+**Improper Ventilation**
+- Stale air and odors
+- Moisture buildup
+- Code violations
+- Health issues
 
-### Limited Natural Light
+**Ceiling Too Low**
+- Minimum 6'5" required
+- Plan around ducts
+- Consider lowering floor
+- Suspended ceiling last resort
 
-**Problem:** Dark spaces
-**Solutions:**
-- Window wells
-- Light wells
-- Strategic lighting
-- Light colors
-- Mirrors
+## Timeline & Project Management
+
+### Typical Timeline (1000 sq ft)
+
+**Week 1-3:** Design and permits
+**Week 4:** Waterproofing if needed
+**Week 5:** Framing and mechanicals
+**Week 6:** Inspections and insulation
+**Week 7-8:** Drywall and paint
+**Week 9:** Flooring installation
+**Week 10:** Final finishes and cleanup
+
+**Total: 10-12 weeks typical**
+
+### Project Coordination
+
+**Our Management Includes:**
+- Dedicated project manager
+- Weekly progress updates
+- All trade coordination
+- Quality control checks
+- Issue resolution
+- Schedule management
 
 ## ROI & Value Analysis
 
 ### Financial Returns
 
-**Rental Suite:**
-- Cost: $80,000
-- Income: $2,500/month
-- Annual: $30,000
-- Payback: 2.7 years
-- Property value: +$150,000
+**Rental Income Potential:**
+- 1-bedroom: $1,800-2,200/month
+- 2-bedroom: $2,200-3,000/month
+- Annual income: $21,600-36,000
+- Payback: 2-4 years
 
-**Family Space:**
-- Cost: $60,000
-- Value add: $80,000
-- Immediate ROI: 133%
-- Lifestyle value: Priceless
+**Property Value Increase:**
+- Basic finish: +$30-40/sq ft
+- Quality finish: +$50-70/sq ft
+- Legal suite: +$100,000-150,000
+- ROI: 70-75% average
 
-### Market Impact
+### Lifestyle Value
 
-**Finished vs Unfinished:**
-- Sale price: +10-15%
-- Days on market: -50%
-- Buyer pool: 3x larger
-- Bidding wars: More likely
+**Immediate Benefits:**
+- 30-50% more living space
+- Reduced cost per sq ft
+- Family accommodation
+- Work from home space
+- Entertainment options
 
-## Your Basement Transformation
+## Advanced FAQ
+
+**Q: How long does basement finishing take?**
+A: Typical timeline 8-12 weeks:
+- Design/permits: 3-4 weeks
+- Construction: 4-6 weeks
+- Final finishes: 1-2 weeks
+- Complex projects: 12-16 weeks
+
+**Q: Do I need to move out?**
+A: No, but expect:
+- Noise during work hours
+- Dust control measures
+- Limited basement access
+- Some utility interruptions
+- We minimize disruption
+
+**Q: What about moisture and mold?**
+A: Prevention is key:
+- Waterproof first
+- Proper insulation
+- Vapor barriers
+- Ventilation systems
+- Mold-resistant materials
+
+**Q: Can any basement be finished?**
+A: Most can, but check:
+- Minimum 6'5" ceiling
+- Moisture under control
+- Proper access/egress
+- Structural soundness
+- Local zoning
+
+**Q: Best flooring for basements?**
+A: Depends on use:
+- LVP: Best all-around
+- Polished concrete: Modern
+- Engineered wood: Warmth
+- Carpet: Bedrooms only
+- Avoid: Solid hardwood
+
+**Q: Is a bathroom necessary?**
+A: Highly recommended:
+- Adds major value
+- Convenience factor
+- Required for suites
+- Rough-in saves money
+- Plan for future
+
+**Q: What's the difference between renovation and finishing?**
+A: Both terms describe transforming an unfinished basement:
+- Renovation: Often implies updating existing space
+- Finishing: Converting raw space to living space
+- We provide both services with the same quality
+
+**Q: Do you handle basement lowering?**
+A: Yes, when needed:
+- [Underpinning](/services/underpinning): $350-450/linear foot
+- Benching: $250-350/linear foot
+- Adds 6-24" height
+- Requires engineer
+- 4-6 week process
+
+Learn more in our [underpinning guide](/guides/basement-underpinning-toronto-complete-guide).
+
+## Your Dream Basement Awaits
 
 <div class="service-cta">
-  <h3>From Dark Storage to Dream Space</h3>
-  <p>Complete renovation management from concept to completion</p>
+  <h3>From Concrete Box to Comfortable Living</h3>
+  <p>Complete design-build services for your perfect basement</p>
   
   <div class="cta-options">
     <div>
@@ -465,15 +593,15 @@ High-end everything:
     </div>
     
     <div>
-      <h4>Call Maria Direct</h4>
-      <p>Project planning advice</p>
+      <h4>Call Direct</h4>
+      <p>Quick questions answered</p>
       <p class="phone-large"><a href="tel:416-XXX-XXXX">416-XXX-XXXX</a></p>
     </div>
     
     <div>
-      <h4>Renovation Guide</h4>
-      <p>Costs, timelines, ideas</p>
-      <a href="/downloads/basement-renovation-guide.pdf" class="button secondary">Download Guide</a>
+      <h4>Basement Ideas Gallery</h4>
+      <p>Browse completed projects</p>
+      <a href="/gallery/basements" class="button secondary">View Gallery</a>
     </div>
   </div>
 </div>
@@ -481,16 +609,69 @@ High-end everything:
 ---
 
 <div class="renovation-guarantee">
-  <h3>The Dryspace Renovation Difference</h3>
+  <h3>The Dryspace Renovation Advantage</h3>
   <ul>
     <li>✓ Single source responsibility</li>
     <li>✓ Fixed price contracts</li>
-    <li>✓ Licensed trades only</li>
     <li>✓ 2-year warranty on everything</li>
-    <li>✓ On-time, on-budget delivery</li>
+    <li>✓ Licensed and insured trades</li>
+    <li>✓ 1000+ basements completed</li>
   </ul>
 </div>
 
-*"A basement renovation isn't just about adding space—it's about adding life to your home."*
+*"A properly finished basement isn't just extra space—it's where families create their best memories. Whether you call it renovation or finishing, we deliver the basement of your dreams."*
 
 *- Maria Santos, Project Manager*
+
+## Related Services
+
+<div class="related-services">
+  <h3>Complete Basement Solutions</h3>
+  <div class="services-grid">
+    <div class="service-link">
+      <h4><a href="/services/interior-waterproofing">Interior Waterproofing</a></h4>
+      <p>Essential first step before any renovation</p>
+    </div>
+    <div class="service-link">
+      <h4><a href="/services/basement-finishing-services">Basement Finishing</a></h4>
+      <p>Transform unfinished space into living area</p>
+    </div>
+    <div class="service-link">
+      <h4><a href="/services/underpinning">Basement Underpinning</a></h4>
+      <p>Create more headroom and living space</p>
+    </div>
+    <div class="service-link">
+      <h4><a href="/services/concrete-floor-installation">Concrete Floors</a></h4>
+      <p>Level, waterproof flooring solutions</p>
+    </div>
+  </div>
+</div>
+
+## Renovation Guides & Resources
+
+<div class="guide-links">
+  <h3>Planning Your Basement Project</h3>
+  <ul>
+    <li><a href="/guides/how-to-finish-a-basement">Complete Basement Finishing Guide</a></li>
+    <li><a href="/guides/basement-renovation-cost-guide">Basement Renovation Cost Guide</a></li>
+    <li><a href="/guides/egress-window-requirements">Egress Window Requirements in Toronto</a></li>
+    <li><a href="/guides/basement-humidity-control">Humidity Control for Finished Basements</a></li>
+    <li><a href="/guides/what-is-basement-underpinning">Understanding Basement Underpinning</a></li>
+  </ul>
+</div>
+
+## Service Areas
+
+<div class="location-ctas">
+  <h3>Basement Renovation Services Across the GTA</h3>
+  <p>Professional renovation in your area:</p>
+  <div class="location-links">
+    <a href="/locations/toronto-basement-renovations">Toronto</a> |
+    <a href="/locations/mississauga-basement-renovations">Mississauga</a> |
+    <a href="/locations/brampton-basement-renovations">Brampton</a> |
+    <a href="/locations/oakville-basement-renovations">Oakville</a> |
+    <a href="/locations/richmond-hill-basement-waterproofing">Richmond Hill</a> |
+    <a href="/locations/yorkville-basement-waterproofing">Yorkville</a>
+  </div>
+  <p><a href="/services" class="view-all">Back to all services →</a></p>
+</div>

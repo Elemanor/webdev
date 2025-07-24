@@ -116,7 +116,7 @@ Your foundation is literally what holds your home together. When it fails, every
     <div class="service-card">
       <img src="/images/services/underpinning.jpg" alt="Foundation underpinning">
       <h4>Underpinning & Stabilization</h4>
-      <p>Deepen and strengthen existing foundations. Essential for additions, lowering basements, or correcting severe settling.</p>
+      <p>Deepen and strengthen existing foundations. Essential for additions, lowering basements, or correcting severe settling. Learn more about our [underpinning services](/services/underpinning).</p>
       <ul>
         <li>Mini-pile underpinning</li>
         <li>Concrete pier systems</li>
@@ -517,6 +517,59 @@ Your foundation is literally what holds your home together. When it fails, every
       <span>Warranty Honor Rate</span>
     </div>
   </div>
+</div>
+
+## Related Services
+
+<div class="related-services">
+  <h3>Complete Foundation Solutions</h3>
+  <div class="services-grid">
+    <div class="service-link">
+      <h4><a href="/services/exterior-waterproofing">Exterior Waterproofing</a></h4>
+      <p>Prevent water damage while repairing structure</p>
+    </div>
+    <div class="service-link">
+      <h4><a href="/services/interior-waterproofing">Interior Waterproofing</a></h4>
+      <p>Manage water after foundation repairs</p>
+    </div>
+    <div class="service-link">
+      <h4><a href="/services/concrete-crack-injection">Crack Injection</a></h4>
+      <p>Seal cracks to prevent water and structural issues</p>
+    </div>
+    <div class="service-link">
+      <h4><a href="/services/underpinning">Underpinning Services</a></h4>
+      <p>Deepen foundations for stability or basement lowering</p>
+    </div>
+  </div>
+</div>
+
+## Foundation Repair Guides
+
+<div class="guide-links">
+  <h3>Expert Resources</h3>
+  <ul>
+    <li><a href="/guides/foundation-crack-analysis">Foundation Crack Analysis Guide</a></li>
+    <li><a href="/guides/underpinning-vs-benching">Underpinning vs Benching Comparison</a></li>
+    <li><a href="/guides/basement-underpinning-toronto-complete-guide">Complete Underpinning Guide</a></li>
+    <li><a href="/guides/excavation-costs">Excavation Cost Guide</a></li>
+    <li><a href="/guides/insurance-claims-guide">Insurance Claims for Foundation Damage</a></li>
+  </ul>
+</div>
+
+## Service Areas
+
+<div class="location-ctas">
+  <h3>Foundation Repair Across Toronto</h3>
+  <p>Emergency and scheduled service throughout the GTA:</p>
+  <div class="location-links">
+    <a href="/locations/toronto-underpinning-contractors">Toronto</a> |
+    <a href="/locations/mississauga-basement-waterproofing">Mississauga</a> |
+    <a href="/locations/richmond-hill-basement-waterproofing">Richmond Hill</a> |
+    <a href="/locations/forest-hill-basement-waterproofing">Forest Hill</a> |
+    <a href="/locations/riverdale-basement-waterproofing">Riverdale</a> |
+    <a href="/locations/high-park-basement-waterproofing">High Park</a>
+  </div>
+  <p><a href="/services" class="view-all">View all services →</a></p>
 </div>
 
 <div class="emergency-banner bottom">

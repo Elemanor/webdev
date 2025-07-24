@@ -1,0 +1,19 @@
+# Redirects for consolidated pages
+# Format: from to [status]
+
+# Basement service consolidations
+/services/basement-finishing /services/basement-renovation 301
+/services/basement-finishing-services /services/basement-renovation 301
+/services/basement-renovations /services/basement-renovation 301
+
+# Concrete service consolidations
+/services/concrete-driveways /services/concrete-services 301
+/services/concrete-patio-installation /services/concrete-services 301
+/services/concrete-patios /services/concrete-services 301
+
+# Guide consolidations
+/guides/what-is-french-drain /guides/drainage-systems-guide 301
+/guides/what-is-weeping-tile /guides/drainage-systems-guide 301
+/guides/french-drain-system /guides/drainage-systems-guide 301
+
+# Placeholder for additional redirects as we consolidate more pages

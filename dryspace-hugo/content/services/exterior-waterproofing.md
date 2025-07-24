@@ -40,7 +40,7 @@ schema:
   </div>
 </div>
 
-When you absolutely need the most comprehensive protection for your Toronto home, exterior waterproofing remains the gold standard. By stopping water before it ever reaches your foundation walls, this method provides unmatched, long-term security for your investment.
+When you absolutely need the most comprehensive protection for your Toronto home, exterior waterproofing remains the gold standard. By stopping water before it ever reaches your foundation walls, this method provides unmatched, long-term security for your investment. While [interior waterproofing](/services/interior-waterproofing) offers an excellent solution for many homes, exterior methods provide the ultimate barrier against water intrusion.
 
 As someone who's overseen 3,000+ exterior waterproofing projects across Toronto—from heritage homes in Cabbagetown to modern builds in Richmond Hill—I can guide you through everything you need to know about this premium solution.
 
@@ -151,7 +151,7 @@ Modern drainage exceeds old standards:
 - Cleanout access ports
 - Connection to storm or sump
 
-**Toronto Modification**: Extra drainage at frost line to handle freeze-thaw
+**Toronto Modification**: Extra drainage at frost line to handle freeze-thaw. For existing drainage issues, see our [drain tile repair](/services/drain-tile-repair) service.
 
 ### Step 6: Proper Backfilling
 
@@ -298,6 +298,8 @@ Toronto's clay soil presents unique challenges:
 - Mature landscaping
 - Underground utilities
 
+In these cases, [interior waterproofing](/services/interior-waterproofing) provides an excellent alternative.
+
 **Budget Constraints**
 - 2-3x interior cost
 - Significant restoration
@@ -307,6 +309,8 @@ Toronto's clay soil presents unique challenges:
 - Winter emergencies
 - Immediate need
 - Special events
+
+For urgent situations, see our [emergency wet basement response](/emergency/wet-basement-emergency) services.
 
 ## Real Toronto Success Stories
 
@@ -548,10 +552,12 @@ Toronto's clay soil presents unique challenges:
 ### Complementary Services
 
 **Before Waterproofing:**
-- Foundation crack repair
+- [Foundation crack repair](/services/foundation-repair)
 - Structural reinforcement
 - Window well replacement
 - Grade correction
+
+Our [concrete crack injection](/services/concrete-crack-injection) service ensures all cracks are sealed before waterproofing begins.
 
 **During Waterproofing:**
 - Weeping tile upgrade
@@ -560,10 +566,12 @@ Toronto's clay soil presents unique challenges:
 - Landscaping prep
 
 **After Waterproofing:**
-- Interior finishing
+- [Basement renovation](/services/basement-renovation)
 - Egress windows
 - Walkout creation
-- Patio installation
+- [Patio installation](/services/concrete-services)
+
+Consider our complete [basement finishing services](/services/basement-finishing-services) to maximize your newly protected space.
 
 ## Installation Best Practices
 
@@ -751,6 +759,59 @@ Our comprehensive evaluation includes:
       <span class="label">BBB Rating Since 2001</span>
     </div>
   </div>
+</div>
+
+## Related Services
+
+<div class="related-services">
+  <h3>Complementary Waterproofing Solutions</h3>
+  <div class="services-grid">
+    <div class="service-link">
+      <h4><a href="/services/interior-waterproofing">Interior Waterproofing</a></h4>
+      <p>Cost-effective alternative when exterior access is limited</p>
+    </div>
+    <div class="service-link">
+      <h4><a href="/services/foundation-repair">Foundation Repair</a></h4>
+      <p>Fix structural issues before or with waterproofing</p>
+    </div>
+    <div class="service-link">
+      <h4><a href="/services/sump-pump-installation">Sump Pump Systems</a></h4>
+      <p>Essential backup for complete water management</p>
+    </div>
+    <div class="service-link">
+      <h4><a href="/services/drain-tile-repair">Drain Tile Repair</a></h4>
+      <p>Restore or upgrade your perimeter drainage</p>
+    </div>
+  </div>
+</div>
+
+## Helpful Guides
+
+<div class="guide-links">
+  <h3>Learn More About Waterproofing</h3>
+  <ul>
+    <li><a href="/guides/exterior-waterproofing-process">Complete Exterior Waterproofing Process Guide</a></li>
+    <li><a href="/guides/waterproofing-materials-guide">Waterproofing Materials Comparison</a></li>
+    <li><a href="/guides/french-drain-system">French Drain Installation Guide</a></li>
+    <li><a href="/guides/foundation-crack-analysis">Foundation Crack Analysis Guide</a></li>
+    <li><a href="/guides/insurance-claims-guide">Insurance Claims for Water Damage</a></li>
+  </ul>
+</div>
+
+## Service Areas
+
+<div class="location-ctas">
+  <h3>Exterior Waterproofing Across Toronto</h3>
+  <p>Expert service in your neighbourhood:</p>
+  <div class="location-links">
+    <a href="/locations/mississauga-basement-waterproofing">Mississauga</a> |
+    <a href="/locations/brampton-basement-waterproofing">Brampton</a> |
+    <a href="/locations/richmond-hill-basement-waterproofing">Richmond Hill</a> |
+    <a href="/locations/yorkville-basement-waterproofing">Yorkville</a> |
+    <a href="/locations/forest-hill-basement-waterproofing">Forest Hill</a> |
+    <a href="/locations/beaches-basement-waterproofing">The Beaches</a>
+  </div>
+  <p><a href="/services" class="view-all">View all services →</a></p>
 </div>
 
 *This page represents current best practices in exterior waterproofing based on 25 years of Toronto experience. Last updated: January 2025*
