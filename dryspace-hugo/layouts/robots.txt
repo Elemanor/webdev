@@ -1,0 +1,44 @@
+User-agent: *
+Allow: /
+
+# Disallow temporary or development directories
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Allow search engines to access all content
+Allow: /services/
+Allow: /guides/
+Allow: /locations/
+
+# Sitemap location
+Sitemap: {{ .Site.BaseURL }}sitemap.xml
+
+# Crawl-delay for considerate crawling
+Crawl-delay: 1
+
+# Specific bot rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

@@ -6,6 +6,11 @@ draft: false
 weight: 13
 type: "service"
 url: "/services/concrete-works"
+aliases:
+  - "/services/concrete-works"
+outputs:
+  - HTML
+  - REDIRECTS
 keywords: ["concrete works toronto", "concrete contractor", "concrete foundation", "concrete repair", "concrete services toronto"]
 author:
   name: "Frank DiMarco"

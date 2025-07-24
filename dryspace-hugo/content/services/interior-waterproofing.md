@@ -51,7 +51,7 @@ schema:
 
 That musty smell in your basement isn't just unpleasant—it's your home's cry for help. As Toronto's foundation experts since 1998, we've transformed over 10,000 wet basements into dry, healthy spaces using our proven interior waterproofing systems.
 
-Unlike exterior excavation—which can be impractical during Toronto's long winters and risky for homes near subway lines—interior waterproofing works with your home's natural systems to manage water effectively, year-round.
+Unlike <a href="/services/exterior-waterproofing">exterior excavation</a>—which can be impractical during Toronto's long winters and risky for homes near subway lines—interior waterproofing works with your home's natural systems to manage water effectively, year-round. Compare all <a href="/basement-waterproofing">waterproofing methods</a> to find your best solution.
 
 <div class="emergency-cta">
   <h3>🚨 Emergency Water Issues?</h3>
@@ -245,6 +245,7 @@ Our system addresses the full spectrum of basement water issues:
 - Window well leakage
 - Cove joint seepage
 - Hydrostatic pressure relief
+- May require <a href="/services/foundation-repair">foundation repair</a>
 
 ### Moisture Issues
 - High humidity levels (over 50%)
@@ -573,6 +574,7 @@ A: Yes, systems are modular:
 - Upgrade pumps
 - Extend coverage
 - Enhance barriers
+- Consider <a href="/services/basement-lowering">underpinning</a> for height
 
 ## Common Installation Scenarios
 

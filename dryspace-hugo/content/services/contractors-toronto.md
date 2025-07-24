@@ -1,15 +1,15 @@
 ---
-title: "Professional Contractors Toronto - Dryspace Waterproofing"
-description: "Trusted Toronto contractors specializing in basement waterproofing, foundation repair, and construction services. Licensed, insured, and experienced contractors serving GTA."
+title: "Waterproofing & Foundation Contractors Toronto | Specialist Directory"
+description: "Find specialized contractors in Toronto for waterproofing, foundations, and basements. Directory of our expert teams: commercial, residential, and specialty contractors."
 keywords: ["contractors toronto", "toronto contractors", "contractors in toronto", "contractor in toronto", "construction contractors toronto", "construction contractor toronto"]
 author: "Dryspace Waterproofing"
 date: 2024-01-23
 type: "service"
 ---
 
-# Professional Contractors in Toronto
+# Find the Right Contractor for Your Toronto Project
 
-Looking for reliable contractors in Toronto? Dryspace Waterproofing has been serving the Greater Toronto Area for over 25 years as trusted construction contractors specializing in basement waterproofing, foundation repair, and general construction services.
+**This is your directory to Dryspace's specialized contractor teams.** With over 25 years serving Toronto, we've built dedicated teams for every type of waterproofing and foundation project. Find the right specialists for your needs below.
 
 ## Why Choose Dryspace as Your Toronto Contractor
 
@@ -25,29 +25,39 @@ Looking for reliable contractors in Toronto? Dryspace Waterproofing has been ser
 - Specialized equipment and techniques
 - In-house certified technicians
 
-## Our Contractor Services in Toronto
+## Our Specialized Contractor Teams
 
-### Waterproofing Contractors
-As specialized waterproofing contractors in Toronto, we offer:
-- Interior basement waterproofing
-- Exterior foundation waterproofing
-- French drain installation
-- Sump pump systems
-- Foundation crack repair
+### 🏠 [Basement Contractors](/services/basement-contractors)
+**Specializing in:** Complete basement solutions from waterproofing to finishing
+- Basement waterproofing systems
+- Basement renovations
+- Moisture control
+- Finishing and remodeling
+**Best for:** Homeowners with basement projects
 
-### Foundation Contractors
-Our foundation contractor services include:
-- Foundation repair and stabilization
-- Basement underpinning
-- Foundation wall reinforcement
-- Concrete crack injection
-- Structural repairs
+### 🏢 [Commercial Contractors](/services/commercial-contractors-toronto)
+**Specializing in:** Large-scale commercial and industrial projects
+- Commercial waterproofing
+- Industrial foundation work
+- Multi-unit residential
+- Institutional buildings
+**Best for:** Property managers, businesses, institutions
 
-### General Construction Services
-- Basement renovation and finishing
-- Concrete work and repairs
-- Excavation services
-- Drainage solutions
+### 🔨 [General Contractors](/services/general-contractors-toronto)
+**Specializing in:** Full-service residential construction
+- Home additions
+- Major renovations
+- Structural modifications
+- Complete project management
+**Best for:** Whole-home projects and additions
+
+### 💧 Waterproofing Specialists
+**Our core expertise:**
+- [Exterior waterproofing](/services/exterior-waterproofing)
+- [Interior waterproofing](/services/interior-waterproofing)
+- [Foundation repair](/services/foundation-repair)
+- [Drainage systems](/services/french-drain-installation)
+**Best for:** Water problems and foundation issues
 - Emergency water damage restoration
 
 ## Service Areas for Toronto Contractors

@@ -6,6 +6,11 @@ draft: false
 weight: 18
 type: "service"
 url: "/services/concrete-slabs"
+aliases:
+  - "/services/concrete-slabs"
+outputs:
+  - HTML
+  - REDIRECTS
 keywords: ["concrete slabs toronto", "garage slab", "basement floor", "patio slab", "concrete floor installation"]
 author:
   name: "Mike Patterson"

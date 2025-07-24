@@ -656,7 +656,7 @@ Learn more in our [underpinning guide](/guides/basement-underpinning-toronto-com
     <li><a href="/guides/basement-renovation-cost-guide">Basement Renovation Cost Guide</a></li>
     <li><a href="/guides/egress-window-requirements">Egress Window Requirements in Toronto</a></li>
     <li><a href="/guides/basement-humidity-control">Humidity Control for Finished Basements</a></li>
-    <li><a href="/guides/what-is-basement-underpinning">Understanding Basement Underpinning</a></li>
+    <li><a href="/guides/what-is-underpinning-basement">Understanding Basement Underpinning</a></li>
   </ul>
 </div>
 

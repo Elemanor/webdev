@@ -1,0 +1,117 @@
+{{- /* Breadcrumb navigation with schema markup */ -}}
+{{ if and (not .IsHome) (not (eq .Section "")) }}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <div class="container">
+        <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+            <!-- Home -->
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="{{ .Site.BaseURL }}">
+                    <span itemprop="name">Home</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+            
+            <!-- Section/Hub Pages -->
+            {{ if or (eq .Section "services") (eq .Type "service") }}
+                {{ if .Site.GetPage "/basement-waterproofing" }}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/basement-waterproofing">
+                        <span itemprop="name">Waterproofing</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                {{ else if eq .Section "services" }}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/services">
+                        <span itemprop="name">Services</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                {{ end }}
+            {{ else if eq .Section "guides" }}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/guides">
+                        <span itemprop="name">Guides</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+            {{ else if eq .Section "locations" }}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/locations">
+                        <span itemprop="name">Service Areas</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+            {{ else if .Parent }}
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="{{ .Parent.Permalink }}">
+                        <span itemprop="name">{{ .Parent.Title }}</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+            {{ end }}
+            
+            <!-- Current Page -->
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="current">
+                <span itemprop="name">{{ .Title }}</span>
+                <meta itemprop="position" content="3" />
+            </li>
+        </ol>
+    </div>
+</nav>
+
+<style>
+.breadcrumbs {
+    background: #f8f9fa;
+    padding: 0.75rem 0;
+    font-size: 0.875rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.breadcrumbs ol {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs li {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: "›";
+    margin: 0 0.5rem;
+    color: #6c757d;
+}
+
+.breadcrumbs a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.breadcrumbs a:hover {
+    color: #0052a3;
+    text-decoration: underline;
+}
+
+.breadcrumbs .current {
+    color: #495057;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs {
+        font-size: 0.8125rem;
+    }
+    
+    .breadcrumbs li:not(:last-child)::after {
+        margin: 0 0.25rem;
+    }
+}
+</style>
+{{ end }}

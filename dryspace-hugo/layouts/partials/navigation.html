@@ -1,0 +1,113 @@
+{{- /* Enhanced navigation with mega-menu */ -}}
+<nav class="main-navigation" role="navigation" aria-label="Main navigation">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a href="/" class="logo" aria-label="{{ .Site.Title }} Home">
+                <span class="logo-text">DRYSPACE</span>
+                <span class="tagline">Waterproofing Experts</span>
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <div class="nav-menu">
+                <!-- Services Mega Menu -->
+                <div class="nav-item has-mega-menu">
+                    <button class="nav-link" aria-expanded="false">
+                        Services <span class="arrow"></span>
+                    </button>
+                    <div class="mega-menu" aria-hidden="true">
+                        <div class="mega-menu-content">
+                            <div class="mega-column">
+                                <h3><a href="/basement-waterproofing">💧 Waterproofing Solutions</a></h3>
+                                <ul>
+                                    <li><a href="/services/exterior-waterproofing">Exterior Waterproofing</a></li>
+                                    <li><a href="/services/interior-waterproofing">Interior Waterproofing</a></li>
+                                    <li><a href="/services/french-drain-installation">French Drain Systems</a></li>
+                                    <li><a href="/services/sump-pump-installation">Sump Pump Installation</a></li>
+                                    <li><a href="/services/waterproof-membrane">Membrane Systems</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><a href="/foundation-solutions">🏠 Foundation Services</a></h3>
+                                <ul>
+                                    <li><a href="/services/foundation-repair">Foundation Repair</a></li>
+                                    <li><a href="/services/concrete-crack-injection">Crack Injection</a></li>
+                                    <li><a href="/services/basement-lowering">Underpinning</a></li>
+                                    <li><a href="/services/parging">Parging Services</a></li>
+                                    <li><a href="/services/drain-tile-repair">Drain Tile Repair</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><a href="/concrete-solutions">🏗️ Concrete Services</a></h3>
+                                <ul>
+                                    <li><a href="/services/concrete-services">All Concrete Work</a></li>
+                                    <li><a href="/services/concrete-services#driveways">Driveways</a></li>
+                                    <li><a href="/services/concrete-services#patios">Patios & Walkways</a></li>
+                                    <li><a href="/services/concrete-services#foundations">Foundations</a></li>
+                                    <li><a href="/services/concrete-services#decorative">Decorative Concrete</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3>🔧 Other Services</h3>
+                                <ul>
+                                    <li><a href="/services/basement-renovation">Basement Renovation</a></li>
+                                    <li><a href="/services/window-well-installation">Window Wells</a></li>
+                                    <li><a href="/services/crawl-space-waterproofing">Crawl Spaces</a></li>
+                                    <li><a href="/services/mold-remediation">Mold Remediation</a></li>
+                                    <li><a href="/services">View All Services →</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mega-menu-cta">
+                            <p>🚨 <strong>Emergency?</strong> We're available 24/7</p>
+                            <a href="tel:{{ .Site.Params.phone }}" class="button-small">Call Now: {{ .Site.Params.phone }}</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Guides -->
+                <div class="nav-item">
+                    <a href="/guides" class="nav-link">Resources</a>
+                </div>
+                
+                <!-- Service Areas -->
+                <div class="nav-item has-dropdown">
+                    <button class="nav-link" aria-expanded="false">
+                        Areas <span class="arrow"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-hidden="true">
+                        <li><a href="/locations/toronto-waterproofing">Toronto</a></li>
+                        <li><a href="/locations/north-york-basement-waterproofing">North York</a></li>
+                        <li><a href="/locations/scarborough-basement-waterproofing">Scarborough</a></li>
+                        <li><a href="/locations/etobicoke-basement-waterproofing">Etobicoke</a></li>
+                        <li><a href="/locations/mississauga-basement-waterproofing">Mississauga</a></li>
+                        <li><a href="/locations">All Areas →</a></li>
+                    </ul>
+                </div>
+                
+                <!-- About -->
+                <div class="nav-item">
+                    <a href="/about" class="nav-link">About</a>
+                </div>
+                
+                <!-- Contact -->
+                <div class="nav-item">
+                    <a href="/contact" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- Phone CTA -->
+                <div class="nav-cta">
+                    <a href="tel:{{ .Site.Params.phone }}" class="phone-button" aria-label="Call us at {{ .Site.Params.phone }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>{{ .Site.Params.phone }}</span>
+                    </a>
+                    <a href="/contact" class="quote-button">Get Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

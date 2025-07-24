@@ -40,7 +40,7 @@ schema:
   </div>
 </div>
 
-When you absolutely need the most comprehensive protection for your Toronto home, exterior waterproofing remains the gold standard. By stopping water before it ever reaches your foundation walls, this method provides unmatched, long-term security for your investment. While [interior waterproofing](/services/interior-waterproofing) offers an excellent solution for many homes, exterior methods provide the ultimate barrier against water intrusion.
+When you absolutely need the most comprehensive protection for your Toronto home, exterior waterproofing remains the gold standard. By stopping water before it ever reaches your foundation walls, this method provides unmatched, long-term security for your investment. While [interior waterproofing](/services/interior-waterproofing) offers an excellent solution for many homes, exterior methods provide the ultimate barrier against water intrusion. Explore all <a href="/basement-waterproofing">waterproofing solutions</a> to find the right fit for your needs.
 
 As someone who's overseen 3,000+ exterior waterproofing projects across Toronto—from heritage homes in Cabbagetown to modern builds in Richmond Hill—I can guide you through everything you need to know about this premium solution.
 
@@ -277,6 +277,7 @@ Toronto's clay soil presents unique challenges:
 - Protects foundation structure
 - No interior humidity
 - Addresses all water sources
+- Fixes <a href="/services/foundation-repair">foundation issues</a> simultaneously
 
 **Longevity**
 - 25-40 year lifespan
@@ -486,6 +487,7 @@ For urgent situations, see our [emergency wet basement response](/emergency/wet-
    - Surface water management
    - Connected system
    - Cost: +$30-40/linear ft
+   - See our <a href="/services/french-drain-installation">French drain services</a>
 
 ## Common Mistakes to Avoid
 
@@ -570,6 +572,7 @@ Our [concrete crack injection](/services/concrete-crack-injection) service ensur
 - Egress windows
 - Walkout creation
 - [Patio installation](/services/concrete-services)
+- <a href="/services/basement-renovation">Complete basement finishing</a>
 
 Consider our complete [basement finishing services](/services/basement-finishing-services) to maximize your newly protected space.
 

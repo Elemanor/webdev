@@ -50,6 +50,25 @@ All foundation drainage operates on simple physics:
 - **Filter Fabric**: Prevents soil/silt infiltration
 - **Proper Slope**: Minimum 1/8" per foot fall
 - **Discharge System**: Sump pump or gravity outlet
+- **Cleanouts**: Maintenance access points
+
+### The Water Management Process
+
+**Step-by-Step Operation:**
+1. Groundwater rises around foundation
+2. Water enters through pipe perforations
+3. Gravity guides water through system
+4. Collected water flows to discharge
+5. Sump pump or gravity outlet removes water
+
+### Physics Behind the System
+
+**Key Principles:**
+- Water follows path of least resistance
+- Gravel provides easy flow channel
+- Perforations allow water entry
+- Slope ensures continuous movement
+- System relieves hydrostatic pressure
 
 ## Types of Drainage Systems
 
@@ -201,7 +220,9 @@ All foundation drainage operates on simple physics:
 
 ## Common Problems & Solutions
 
-### Clogged Systems
+### System Failures
+
+#### 1. Clogged Systems
 
 **Signs**:
 - Water in basement
@@ -209,27 +230,55 @@ All foundation drainage operates on simple physics:
 - Visible sediment
 - System backup
 
+**Causes**:
+- Sediment buildup
+- Root intrusion
+- Iron ochre
+- Filter fabric failure
+- Poor installation
+
 **Solutions**:
-- High-pressure flushing
+- High-pressure cleaning
 - Root cutting
-- Pipe replacement
+- Chemical treatments
+- System replacement
+- Improved filtration
 - Add cleanouts
 
-### Crushed/Collapsed Pipe
+#### 2. Crushed/Collapsed Pipe
 
 **Causes**:
 - Poor backfill
 - Vehicle traffic
 - Tree roots
 - Age deterioration
+- Freeze damage
 
 **Solutions**:
 - Spot repairs
-- Pipe relining
-- Full replacement
+- Section replacement
+- Complete rebuild
+- Rerouting
+- Insulation improvements
 - Upgrade materials
 
-### Inadequate Discharge
+#### 3. Insufficient Capacity
+
+**Signs**:
+- System overwhelm
+- Slow drainage
+- Backup during storms
+- Standing water
+- Foundation seepage
+
+**Remedies**:
+- Add supplementary drains
+- Increase pipe diameter
+- Improve discharge
+- Add pumping capacity
+- Surface water control
+
+#### 4. Inadequate Discharge
 
 **Problems**:
 - Pump failure
@@ -309,6 +358,76 @@ All foundation drainage operates on simple physics:
 - Proper termination required
 - Inspection requirements
 
+## Modern Drainage Tile Materials
+
+### Pipe Options
+
+**1. Rigid PVC Pipe**
+- Smooth interior surface
+- Maximum flow capacity
+- 50+ year lifespan
+- Professional preference
+- Higher material cost
+
+**2. Corrugated Plastic**
+- Flexible installation
+- Lower material cost
+- Easier handling
+- 20-30 year lifespan
+- Good for DIY
+
+**3. Sock-Wrapped Pipe**
+- Pre-filtered system
+- Reduces clogging
+- Faster installation
+- Premium option
+- Excellent performance
+
+### Aggregate Requirements
+
+**Proper Gravel Selection:**
+- Size: ¾" to 1½"
+- Type: Washed river rock
+- Free of fines/dust
+- Angular or rounded
+- Coverage: 2-3" all around pipe
+
+## Design Considerations
+
+### Sizing Calculations
+
+**Flow Rate Factors:**
+- Roof area
+- Surface drainage
+- Soil permeability
+- Water table height
+- Storm intensity
+
+**Pipe Sizing:**
+- 4" minimum residential
+- 6" high flow areas
+- 8" commercial
+- Multiple lines possible
+- Engineer for complex
+
+### Layout Planning
+
+**Design Elements:**
+- Complete perimeter
+- Proper connections
+- Access points
+- Discharge planning
+- Future considerations
+
+### Special Situations
+
+**Challenging Conditions:**
+- High water tables
+- Clay soils
+- Hillside locations
+- Limited discharge
+- Historic properties
+
 ## FAQs
 
 **Q: French drain or weeping tile - which is better?**
@@ -326,6 +445,137 @@ A: Common causes: clogging (roots/silt), crushing, inadequate slope, or pump fai
 **Q: Do I need both interior and exterior drainage?**
 A: Rarely. Exterior is preferred for new work. Interior is a good retrofit option when exterior isn't feasible.
 
+**Q: What's the difference between drainage tile and drain tile?**
+A: No difference - they're interchangeable terms for the same perimeter drainage system.
+
+**Q: How do I know if my system is working?**
+A: Test during heavy rain - check for water flow at discharge, dry basement, and no pooling around foundation.
+
+**Q: Can tree roots damage drainage tiles?**
+A: Yes, roots seek water and can infiltrate joints or perforations. Regular maintenance prevents major damage.
+
+**Q: Is interior drainage a permanent solution?**
+A: Yes, when properly installed and maintained. It manages water effectively but doesn't prevent it from entering walls.
+
+**Q: What causes iron ochre in drains?**
+A: Iron bacteria feeding on minerals in groundwater create gel-like deposits. Special cleaning methods are required.
+
+## Drainage System Myths Debunked
+
+### Myth 1: "One-Time Installation"
+**Reality:** Regular maintenance extends life significantly
+
+### Myth 2: "Interior is Just as Good"
+**Reality:** Exterior prevents water entry entirely
+
+### Myth 3: "New Homes Don't Need It"
+**Reality:** Code requires it for good reason
+
+### Myth 4: "Gravel Isn't Important"
+**Reality:** Proper aggregate is critical for function
+
+### Myth 5: "DIY is Fine"
+**Reality:** Professional installation ensures performance
+
+### Myth 6: "All Pipes Are Equal"
+**Reality:** Material quality varies greatly - invest in durability
+
+### Myth 7: "Maintenance Isn't Necessary"
+**Reality:** Regular service prevents costly failures
+
+## Future-Proofing Your System
+
+### Planning Ahead
+
+**Considerations:**
+- Climate change impacts
+- Increased rain intensity
+- Rising water tables
+- Aging infrastructure
+- Property modifications
+
+### Upgrade Options
+
+**Improvements:**
+- Increase capacity
+- Add monitoring
+- Improve discharge
+- Supplement systems
+- Enhanced filtration
+
+## Technology Advances
+
+### Smart Monitoring
+
+**Modern Features:**
+- Flow sensors
+- Clog detection
+- Remote alerts
+- Performance tracking
+- Predictive maintenance
+
+### Improved Materials
+
+**Latest Innovations:**
+- Self-cleaning designs
+- Anti-root coatings
+- Enhanced flow rates
+- Longer lifespans
+- Eco-friendly options
+
+## Environmental Considerations
+
+### Sustainable Drainage
+
+**Green Solutions:**
+- Permeable surfaces
+- Rain gardens
+- Bioswales
+- Infiltration systems
+- Natural discharge
+
+### Water Conservation
+
+**Reuse Options:**
+- Rainwater harvesting
+- Irrigation systems
+- Grey water potential
+- Groundwater recharge
+- Reduced runoff
+
+## Choosing a Contractor
+
+### Qualifications
+
+**Essential Requirements:**
+- Licensed and insured
+- Drainage experience
+- Local knowledge
+- Good references
+- Warranty offerings
+
+### Questions to Ask
+
+**Interview Topics:**
+1. Similar projects completed?
+2. Installation method?
+3. Materials used?
+4. Warranty terms?
+5. Maintenance included?
+6. Camera inspection offered?
+7. Emergency service available?
+
+### Red Flags
+
+**Warning Signs:**
+- No written quotes
+- Extremely low prices
+- Permit avoidance
+- Poor communication
+- No insurance proof
+- Pressure tactics
+- Cash only demands
+
 ## Professional Assessment
 
 <div class="cta-box">
@@ -335,4 +585,6 @@ A: Rarely. Exterior is preferred for new work. Interior is a good retrofit optio
   <p class="phone">Or call: <a href="tel:416-XXX-XXXX">416-XXX-XXXX</a></p>
 </div>
 
-Remember: Proper drainage is your foundation's first line of defense against water damage. Whether you need French drains for yard drainage or weeping tile for foundation protection, professional assessment ensures you get the right solution for your specific situation.
+Remember: Proper drainage is your foundation's first line of defense against water damage. Whether you need French drains for yard drainage, weeping tile for foundation protection, or modern drainage tile systems, professional assessment ensures you get the right solution for your specific situation.
+
+Dryspace Waterproofing specializes in all types of drainage systems throughout Toronto and the GTA. With over 25 years of experience, we understand the unique challenges of local conditions and provide solutions that last.

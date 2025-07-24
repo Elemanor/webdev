@@ -158,9 +158,9 @@ Your foundation is literally what holds your home together. When it fails, every
       <p>Most foundation problems start with water. We fix the source to prevent future damage.</p>
       <ul>
         <li>Grading and slope correction</li>
-        <li>French drain installation</li>
+        <li><a href="/services/french-drain-installation">French drain installation</a></li>
         <li>Downspout extensions</li>
-        <li>Waterproofing integration</li>
+        <li><a href="/services/waterproof-membrane">Waterproofing membrane</a> integration</li>
       </ul>
       <div class="price-range">$3,000 - $12,000</div>
     </div>
@@ -239,6 +239,7 @@ Your foundation is literally what holds your home together. When it fails, every
 
 <div class="toronto-challenges">
   <h3>Why Toronto Foundations Fail</h3>
+  <p>Explore our <a href="/foundation-solutions">complete foundation services hub</a> for more solutions.</p>
   
   <div class="challenge-cards">
     <div class="challenge">

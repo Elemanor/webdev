@@ -27,8 +27,14 @@ schema:
     "reviewCount": "1247"
   "speakable":
     "@type": "SpeakableSpecification"
-    "cssSelector": [".quick-answer", ".voice-summary", "h1"]
-  "knowsAbout": ["basement waterproofing", "foundation repair", "water damage", "mold remediation"]
+    "cssSelector": [".quick-answer", ".voice-summary", "h1", ".voice-faq"]
+  "knowsAbout": ["basement waterproofing", "foundation repair", "water damage", "mold remediation", "sump pumps", "french drains", "concrete repair"]
+  "sameAs": 
+    - "https://www.facebook.com/dryspacewaterproofing"
+    - "https://www.instagram.com/dryspacewaterproofing"
+    - "https://www.youtube.com/dryspacewaterproofing"
+  "paymentAccepted": ["Cash", "Check", "Credit Card", "Debit Card", "Financing Available"]
+  "currenciesAccepted": "CAD"
   "hasOfferCatalog":
     "@type": "OfferCatalog"
     "name": "Waterproofing Services"
@@ -96,9 +102,37 @@ That persistent dampness in your basement isn't just an inconvenience—it's act
   <a href="/contact" class="button primary">Get Your Free Inspection</a> - Book online in 30 seconds
 </div>
 
+<div class="trust-indicators">
+  <div class="guarantee-box">
+    <h3>🔒 Our Triple Guarantee</h3>
+    <ul>
+      <li>✅ <strong>Price Match Promise</strong> - We'll beat any written quote by 5%</li>
+      <li>✅ <strong>On-Time Guarantee</strong> - $100 off for every day we're late</li>
+      <li>✅ <strong>Clean Site Promise</strong> - We leave your home cleaner than we found it</li>
+    </ul>
+  </div>
+  
+  <div class="certifications">
+    <h3>🏆 Industry Recognition</h3>
+    <p>HomeStars Best of 2024 | BBB Torch Award | Tarion Authorized | WCA Certified</p>
+  </div>
+</div>
+
 ## Is Your Toronto Basement At Risk?
 
+<div class="voice-summary">
+<p><strong>Voice Search Answer:</strong> Signs your Toronto basement needs waterproofing include musty odors, visible water stains, efflorescence on walls, cracks in foundation, high humidity levels, or mold growth. Our free 2-minute assessment helps identify your specific risk factors.</p>
+</div>
+
 Take our 2-minute assessment based on 10,000+ Toronto basement inspections to get your personalized risk score and recommendations.
+
+**Common Warning Signs:**
+- 💧 Water stains or dampness on walls/floor
+- 👃 Musty smell or high humidity
+- ⚠️ White powder on concrete (efflorescence)
+- 🆘 Visible cracks in walls or floor
+- 🍄 Mold or mildew growth
+- 😰 Peeling paint or bubbling drywall
 
 <a href="/tools/basement-health-score" class="button secondary">Start Free Assessment</a>
 
@@ -213,6 +247,10 @@ Take our 2-minute assessment based on 10,000+ Toronto basement inspections to ge
 
 Based on our exclusive 25-year database, see your neighbourhood's specific water challenges and most effective solutions.
 
+<div class="voice-summary">
+<p><strong>Voice Assistant Summary:</strong> Dryspace has identified high water risk areas in Toronto including The Beaches with high water tables, Leslieville with former industrial land issues, Trinity Bellwoods with aging infrastructure, Rosedale near ravines, and High Park with natural springs. Each area requires specific waterproofing solutions based on local conditions.</p>
+</div>
+
 **High-Risk Areas We Specialize In:**
 - The Beaches (high water table)
 - Leslieville (former industrial land)
@@ -247,6 +285,10 @@ Based on our exclusive 25-year database, see your neighbourhood's specific water
 
 ### Transparent Pricing for Toronto Homeowners
 
+<div class="voice-summary">
+<p><strong>Quick Cost Answer:</strong> Most Toronto basement waterproofing projects cost between $4,000-$15,000. Interior waterproofing runs $80-120 per linear foot, exterior waterproofing $150-300 per linear foot. Your exact cost depends on basement size, water issues, and chosen solution.</p>
+</div>
+
 Get an instant estimate based on our database of 10,000+ completed projects:
 
 **Average Toronto Investments:**
@@ -255,6 +297,16 @@ Get an instant estimate based on our database of 10,000+ completed projects:
 - Large basement (over 1500 sq ft): $9,000-$15,000
 
 *Prices vary by neighbourhood, foundation type, and severity of issues*
+
+<div class="financing-options">
+  <h4>💳 Flexible Payment Options</h4>
+  <ul>
+    <li>0% financing for 12 months (OAC)</li>
+    <li>Extended payment plans up to 60 months</li>
+    <li>All major credit cards accepted</li>
+    <li>Insurance claim assistance available</li>
+  </ul>
+</div>
 
 <a href="/tools/cost-calculator" class="button">Get Your Detailed Estimate</a>
 
@@ -284,6 +336,45 @@ Join us for a live virtual tour of an active waterproofing project every Thursda
 
 <a href="/guides/toronto-basement-waterproofing-guide-pdf" class="button secondary">Download Free Guide</a>
 
+## Frequently Asked Questions
+
+<div class="voice-faq" itemscope itemtype="https://schema.org/FAQPage">
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">How much does basement waterproofing cost in Toronto?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Basement waterproofing in Toronto typically costs between $4,000-$15,000 depending on basement size and solution type. Interior waterproofing averages $80-120 per linear foot, while exterior waterproofing costs $150-300 per linear foot. Get a free assessment for accurate pricing.</p>
+    </div>
+  </div>
+  
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">What's the best waterproofing method for Toronto homes?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">The best method depends on your specific situation. Interior waterproofing with our ClimateGuard™ system works for 90% of Toronto homes and can be installed year-round. Exterior waterproofing provides maximum protection but requires excavation. Our free assessment determines the best solution for your home.</p>
+    </div>
+  </div>
+  
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">How long does basement waterproofing take?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Interior waterproofing typically takes 2-3 days for an average Toronto basement. Exterior waterproofing takes 5-7 days including excavation and restoration. Emergency repairs can often be completed same-day. We provide exact timelines during your free consultation.</p>
+    </div>
+  </div>
+  
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">Do you offer emergency waterproofing services?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Yes, we provide 24/7 emergency waterproofing services throughout Toronto and the GTA. Call 416-XXX-XXXX for immediate response to flooding, foundation cracks, or water damage. Our emergency team typically arrives within 2 hours.</p>
+    </div>
+  </div>
+  
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">What warranty comes with your waterproofing?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">We offer a lifetime transferable warranty on interior waterproofing systems and a 25-year warranty on exterior waterproofing. Our warranties cover materials, labor, and guarantee a dry basement. Annual inspections are included to maintain warranty validity.</p>
+    </div>
+  </div>
+</div>
+
 ## All Services
 
 <div class="footer-services">
@@ -307,7 +398,7 @@ Join us for a live virtual tour of an active waterproofing project every Thursda
       <li><a href="/services/underpinning">Basement Underpinning</a></li>
       <li><a href="/services/basement-lowering">Basement Lowering</a></li>
       <li><a href="/services/concrete-crack-injection">Concrete Crack Injection</a></li>
-      <li><a href="/services/foundation-membrane">Foundation Membrane</a></li>
+      <li><a href="/services/waterproof-membrane">Waterproofing Membrane</a></li>
       <li><a href="/services/parging">Foundation Parging</a></li>
     </ul>
   </div>
@@ -334,6 +425,30 @@ Join us for a live virtual tour of an active waterproofing project every Thursda
       <li><a href="/services/crawl-space-waterproofing">Crawl Space Solutions</a></li>
     </ul>
   </div>
+</div>
+
+<div class="seasonal-content" data-season="winter">
+  <h2>❄️ Winter Waterproofing Alert</h2>
+  <p><strong>Toronto's freeze-thaw cycles are active!</strong> Winter is actually an ideal time for interior waterproofing - no excavation needed and we work in your heated basement. Plus, you'll be protected before spring thaw.</p>
+  <a href="/guides/winter-waterproofing" class="button">Learn About Winter Solutions</a>
+</div>
+
+<div class="seasonal-content" data-season="spring">
+  <h2>🌧️ Spring Thaw Protection</h2>
+  <p><strong>Toronto's wettest season is here!</strong> Spring snowmelt and rain create the highest risk for basement flooding. Don't wait for water damage - protect your home now.</p>
+  <a href="/emergency" class="button primary">Get Emergency Service</a>
+</div>
+
+<div class="seasonal-content" data-season="summer">
+  <h2>☀️ Summer Renovation Season</h2>
+  <p><strong>Perfect weather for exterior waterproofing!</strong> Summer's dry conditions are ideal for excavation and exterior membrane installation. Book now while scheduling is available.</p>
+  <a href="/services/exterior-waterproofing" class="button">Explore Exterior Options</a>
+</div>
+
+<div class="seasonal-content" data-season="fall">
+  <h2>🍂 Fall Maintenance Time</h2>
+  <p><strong>Prepare for Toronto's wet winter!</strong> Fall is the perfect time for waterproofing inspections and preventive maintenance before freeze-thaw cycles begin.</p>
+  <a href="/tools/basement-health-score" class="button">Get Free Fall Inspection</a>
 </div>
 
 ## Service Areas

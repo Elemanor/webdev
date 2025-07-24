@@ -164,7 +164,7 @@ Major repairs and modifications:
   </div>
 
   <div class="guide-card">
-    <h3><a href="/guides/what-is-basement-underpinning">What is Basement Underpinning?</a></h3>
+    <h3><a href="/guides/what-is-underpinning-basement">What is Basement Underpinning?</a></h3>
     <p>Complete overview of the underpinning process.</p>
     <span class="reading-time">15 min read</span>
   </div>
@@ -278,7 +278,7 @@ Keep your systems working properly:
   </div>
 
   <div class="guide-card">
-    <h3><a href="/guides/concrete-efflorescence">Dealing with Efflorescence</a></h3>
+    <h3><a href="/guides/efflorescence-white-deposits">Dealing with Efflorescence</a></h3>
     <p>Remove and prevent white deposits.</p>
     <span class="reading-time">8 min read</span>
   </div>
@@ -296,9 +296,9 @@ In-depth technical information:
   </div>
 
   <div class="guide-card">
-    <h3><a href="/guides/drainage-tile-systems">Drainage Tile Systems</a></h3>
+    <h3><a href="/guides/drainage-systems-guide">Drainage Tile Systems</a></h3>
     <p>Modern drain tile technology explained.</p>
-    <span class="reading-time">12 min read</span>
+    <span class="reading-time">25 min read</span>
   </div>
 
   <div class="guide-card">

@@ -30,7 +30,12 @@ schema:
 <p><strong>Quick Answer:</strong> Interior drainage systems manage water that enters your basement by channeling it to a sump pump for removal. Installation costs $80-120 per linear foot, takes 2-3 days, and comes with a lifetime warranty. No exterior excavation needed.</p>
 </div>
 
-When exterior waterproofing isn't feasible or cost-effective, an interior drainage system provides reliable water management without disrupting your landscaping or requiring major excavation. Our proven systems have protected over 5,000 Toronto basements from water damage.
+**Interior drainage is a key component of our <a href="/services/interior-waterproofing">complete interior waterproofing systems</a>.** When exterior waterproofing isn't feasible or cost-effective, an interior drainage system provides reliable water management without disrupting your landscaping or requiring major excavation. Our proven systems have protected over 5,000 Toronto basements from water damage.
+
+<div class="info-box">
+<strong>How This Service Relates to Interior Waterproofing:</strong>
+<p>Interior drainage systems are the foundation of most interior waterproofing solutions. While this page focuses on the drainage component specifically, most projects combine drainage with sump pumps, vapor barriers, and other elements for complete protection. <a href="/services/interior-waterproofing">Learn about complete interior waterproofing →</a></p>
+</div>
 
 ## How Interior Drainage Works
 

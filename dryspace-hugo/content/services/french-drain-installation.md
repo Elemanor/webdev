@@ -233,6 +233,7 @@ Every successful system starts with proper planning:
 - Protect utilities
 - Manage excavated soil
 - Minimize landscape damage
+- Alternative: <a href="/services/interior-waterproofing">Interior waterproofing</a> avoids excavation
 
 **System Installation**
 - Fabric placement
@@ -289,6 +290,7 @@ Every successful system starts with proper planning:
 - Each additional foot: +$10-15/linear foot
 - Rock excavation: +50-100%
 - High water table: +20-30%
+- May require <a href="/services/foundation-repair">foundation stabilization</a>
 
 **Access Challenges**
 - Hand digging required: +40%
@@ -403,6 +405,7 @@ Toronto's notorious clay requires special approaches:
 
 **Discharge Options:**
 - Connect to French drain
+- Integrate with <a href="/services/sump-pump-installation">sump pump systems</a>
 - Separate discharge line
 - Backup overflow routing
 - Code compliance critical
@@ -411,13 +414,14 @@ Toronto's notorious clay requires special approaches:
 
 **Complementary Systems:**
 - French drain handles surface
-- Waterproofing stops groundwater
+- <a href="/services/exterior-waterproofing">Waterproofing</a> stops groundwater
 - Combined approach optimal
 - Integrated warranties
 
 ## Maintenance Requirements
 
 ### Annual Tasks
+See our comprehensive <a href="/guides/drainage-maintenance-guide">drainage maintenance guide</a>
 
 **Spring Inspection:**
 - Check discharge points
